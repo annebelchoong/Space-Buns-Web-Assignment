@@ -73,36 +73,116 @@ nav a{
     position: fixed;
     right:0;
     left: 0;
+    top:0;
     z-index: 1030;
 }
 
-a:link,
-a:visited{
+.navbar-collapse a:link,
+.navbar-collapse a:visited{
     color: white;
 }
 
-a:hover,
-a:active{
+.navbar-collapse a:hover,
+.navbar-collapse a:active{
     color:white;
     border-bottom: 5px solid white;
 }
 
-section{
-    padding-top: 100px;
+div#navbar{
+    padding:0;
+    border:0;
+    line-height: 1;
+    font-weight:400;
+    top:10px;
+    right: 10px;
+    margin:0;
 }
 
+
+
+/* Footer layout */
 footer{
     background-color: #1A1A1A;
-    text-align:center;
-    padding: 10px 0 15px 0;
-    color: white;
-    line-height: 10px;
-    font-size: 12px;
+    padding: 10px 40px;
+    padding: 50px 50px 20px 50px;
+    font-family: Verdana, sans-serif;
 }
+
+footer div.footer{
+    display:flex;
+    flex-direction: row;
+}
+
+div#footerlogo{
+    display: inline;
+    margin: 50px 40px;
+    padding-top:25px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+footer div.ourStore{
+    width: 30%;
+    margin: 0;
+    vertical-align: middle;
+}
+
+footer div.legal{
+    width:20%;
+}
+
+footer h2{
+    color:#B97836;
+    font-size:18px;
+    margin-top:0;
+    margin-left: 56px;
+}
+
+
+footer a{
+    color:white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+footer li a:hover {
+    opacity: 0.5;
+ }
+
+
+.ourStore ul{
+    display:inline-block;
+    column-count: 2;
+}
+
+ .legal ul,
+ .followUs ul{
+    padding-top: 15px;
+}
+
+
+ .ourStore li,
+ .legal li{
+     flex: 0 0 50%;
+     position: relative;
+     margin-bottom: 18px;
+     padding-right: 10px;
+     flex-direction:column;
+ }
+
+ footer div.copyright{
+     color: white;
+     display: inline-flex;
+     font-size:11px;
+     padding-top: 50px; 
+     padding-left: 56px;
+ }
+
+
 
 /* Desktop Display */
 @media only screen and (min-width: 1280px){
-    nav > button#navbar, div.navbar-collapse .loginnav{
+    nav > div#navbar, div.navbar-collapse .loginnav{
         display: none;
     }
 
@@ -110,6 +190,25 @@ footer{
     div.navbar-collapse{
         display:flex;
     }
+
+}
+
+
+/* Mobile display */
+@media only screen and (max-width: 1280px){
+    div.navbar-collapse ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        flex-direction: column;
+        text-align:center;
+    }
+    div.login{
+        display:none;
+    }
+
+
+
 
 }
 
