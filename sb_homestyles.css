@@ -5,11 +5,6 @@
     src:
         url('Fonts/Amsterdam\ Variation_2.ttf') format(truetype);
 }
-@font-face{
-    font-family: OpenSansBold;
-    src:
-        url('Fonts/OpenSans-Bold.ttf') format(truetype);
-}
 
 
 

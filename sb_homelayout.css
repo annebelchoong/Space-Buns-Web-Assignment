@@ -5,6 +5,9 @@ html{
     height:100%;
 }
 
+
+
+/* Header Layout */
 header{
     margin: 0;
     padding: 0;
@@ -99,8 +102,7 @@ div#navbar{
 /* Footer layout */
 footer{
     background-color: #1A1A1A;
-    padding: 10px 40px;
-    padding: 50px 50px 20px 50px;
+    padding: 40px 50px 20px 50px;
     font-family: Verdana, sans-serif;
 }
 
@@ -170,7 +172,7 @@ footer li a:hover {
      color: white;
      display: inline-flex;
      font-size:11px;
-     padding-top: 50px; 
+     padding-top: 30px; 
      padding-left: 56px;
  }
 
