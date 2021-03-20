@@ -102,7 +102,7 @@ div#navbar{
 /* Footer layout */
 footer{
     background-color: #1A1A1A;
-    padding: 40px 50px 20px 50px;
+    padding: 40px 15% 20px 15%;
     font-family: Verdana, sans-serif;
 }
 
@@ -113,27 +113,35 @@ footer div.footer{
 
 div#footerlogo{
     display: inline;
-    margin: 50px 40px;
+    margin: 50px 20px 50px 20px;
     padding-top:25px;
     vertical-align: middle;
     overflow: hidden;
 }
 
 footer div.ourStore{
-    width: 30%;
+    width: 40%;
     margin: 0;
     vertical-align: middle;
 }
 
-footer div.legal{
-    width:20%;
+footer div.followUs{
+    width:40%;
+    padding-left:50px;
 }
 
-footer h2{
+footer .ourStore h2{
     color:#B97836;
     font-size:18px;
     margin-top:0;
-    margin-left: 56px;
+    margin-left: 90px;
+}
+
+footer .followUs h2{
+    color:#B97836;
+    font-size:18px;
+    margin-top:0;
+    margin-left:47px;
 }
 
 
@@ -151,16 +159,16 @@ footer li a:hover {
 .ourStore ul{
     display:inline-block;
     column-count: 2;
+    margin-left: 10%;
 }
 
- .legal ul,
  .followUs ul{
     padding-top: 15px;
+    padding-left: 30px;
 }
 
 
- .ourStore li,
- .legal li{
+footer li{
      flex: 0 0 50%;
      position: relative;
      margin-bottom: 18px;
@@ -173,8 +181,11 @@ footer li a:hover {
      display: inline-flex;
      font-size:11px;
      padding-top: 30px; 
-     padding-left: 56px;
+     margin-left: 56px;
+     text-align:center;
  }
+
+
 
 
 

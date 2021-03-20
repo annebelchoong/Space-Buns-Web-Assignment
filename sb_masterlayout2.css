@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+html{
+    background-color: #252627;
+    height:100%;
+}
+
+
+
+/* Header Layout */
+header{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    background-color: #B97836;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items: center;
+    
+}
+
+
+div.navbar-collapse {
+    padding:0;
+    margin: 0 10% 0 10%;
+    display:flex;
+    flex-direction: row;
+
+}
+
+ul{
+    list-style-type:none;
+}
+
+
+li{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+nav a{
+    width: 100px; 
+    padding: 20px 5px;
+    font-family: Cambria, serif;
+    text-decoration: none;
+    font-weight: 10px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #252627;
+}
+
+.login{
+    font-size: 14px;
+    background-color:#252627;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px ;
+    margin-right: 20px;
+}
+
+.logo{
+    display: inline;
+    margin-top: 10px;
+    vertical-align: middle;
+    overflow: hidden;
+ }
+
+.fixedtop{
+    position: fixed;
+    right:0;
+    left: 0;
+    top:0;
+    z-index: 1030;
+}
+
+.navbar-collapse a:link,
+.navbar-collapse a:visited{
+    color: white;
+}
+
+.navbar-collapse a:hover,
+.navbar-collapse a:active{
+    color:white;
+    border-bottom: 5px solid white;
+}
+
+div#navbar{
+    padding:0;
+    border:0;
+    line-height: 1;
+    font-weight:400;
+    top:10px;
+    right: 10px;
+    margin:0;
+}
+
+
+
+/* Footer layout */
+footer{
+    background-color: #1A1A1A;
+    padding: 5px;
+
+}
+
+footer p.copyright{
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+/* Desktop Display */
+@media only screen and (min-width: 1280px){
+    nav > div#navbar, div.navbar-collapse .loginnav{
+        display: none;
+    }
+
+
+    div.navbar-collapse{
+        display:flex;
+    }
+
+}
+
+
+/* Mobile display */
+@media only screen and (max-width: 1280px){
+    div.navbar-collapse ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        flex-direction: column;
+        text-align:center;
+    }
+    div.login{
+        display:none;
+    }
+
+
+
+
+}
+
