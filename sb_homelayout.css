@@ -37,8 +37,7 @@ ul{
 
 li{
     float: left;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px 10px 20px;
     font-size: 20px;
 }
 
@@ -52,6 +51,13 @@ nav a{
     color: white;
     text-align: center;
     text-shadow: 1px 1px #252627;
+}
+
+.order{
+    background-color:#B97836;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    vertical-align:middle;
 }
 
 .login{
