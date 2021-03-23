@@ -275,3 +275,4 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
     #checkbox:checked~ul {
         transform: translateX(0%);
     }
+}
