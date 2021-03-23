@@ -45,11 +45,13 @@
 .navbar-links a:hover,
 .navbar-links a:active{
     color:#1A1A1A;
+    padding-bottom: 0.5em;
     border-bottom: 5px solid #1A1A1A;
 }
 
 #order a{
-    background-color:#1A1A1A;
+    background-color: #ffffff;
+    color: #B97836;
     border-radius: 20px;
     padding: 10px 20px 10px 20px;
     vertical-align:middle;
@@ -57,8 +59,8 @@
 
 #order a:hover,
 #order a:active{
-    background-color: white;
-    color:#B97836;
+    background-color:#1A1A1A;
+    color:white;
     border-radius: 20px;
 }
 
@@ -106,7 +108,7 @@ label.navbar-mobileNav{
     .navbar-links{
         position:fixed;
         height:100vh;
-        top:50px;
+        top:65px;
         background-color:#1A1A1A;
         opacity:0.8;
         display:block;
