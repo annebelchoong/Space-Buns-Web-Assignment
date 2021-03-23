@@ -1,3 +1,9 @@
+@font-face{
+    font-family: Amsterdam Variation_2;
+    src:
+        url('Fonts/Amsterdam\ Variation_2.ttf') format(truetype);
+}
+
 *{
     margin:0;
     padding:0;
@@ -90,9 +96,29 @@ label.navbar-mobileNav{
     color:#252627;
 }
 
-/* #################################### Banner ################################### */
+/* ###################################### Banner ##################################### */
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Pics/burgerbanner.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bannerCaption{
+    font-family: 'Amsterdam Variation_2', serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 
 
+
+/* #################################### Content ################################### */
 
 
 
@@ -115,8 +141,9 @@ label.navbar-mobileNav{
         position:fixed;
         height:100vh;
         top:65px;
-        background-color:#252627;
-        opacity:0.8;
+        z-index:1; /*sit on top*/
+        background-color:black;
+        opacity:0.9;
         display:block;
         text-align: center;
         line-height: 10vh;
@@ -155,6 +182,7 @@ label.navbar-mobileNav{
 
     label.navbar-mobileNav{
         display:block;
+
     }
 
     #checkbox:checked ~ ul{
