@@ -116,8 +116,155 @@ label.navbar-mobileNav{
     color: white;
 }
 
-/* #################################### Content ################################### */
 
+
+/* #################################### Content ################################### */
+nav.menu-nav {
+    /* max-width: 500px;
+    position: sticky;
+    top: 0; */
+    float: none;
+    position: sticky;
+    top: 0%;
+    /* left: 30%; */
+    /* max-width: 500px; */
+    /* transform: translate(-50%, -50%); */
+    /* background-color: hsl(30, 55%, 47%); */
+    /* background-color: hsl(29, 26%, 16%); */
+    /* background-color: hsl(0, 0%, 10%); */
+    background-color: black;
+    padding: 10px;
+}
+
+/* .menu-nav ul {
+    margin: 0px;
+    padding: 0px;
+} */
+
+nav.menu-nav ul li {
+    margin: 0px auto;
+    /* padding: 15px 0px;      Padding blocks the title */
+    text-align: center;
+    /* width: 50%; */
+}
+
+.menu-nav ul li a {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+/* nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
+    text-decoration: none;
+} */
+
+.menu-nav a:hover, .menu-nav a:active {
+    color: #B97836;
+    border-bottom: 5px #ffffff;
+    transition: 0.3s;
+    /* font-size: 1.5em;
+    margin: 10px; */
+}
+
+/* .menu-nav a:active {
+    font-size: 10em;
+    transition: 5s;
+} */
+
+/* ###################### Menu Item Style ###################### */
+
+.menu-wrapper {
+    padding-bottom: 15px;
+}
+
+.menu-row {
+    padding-top: 50px;
+    /* original is padding-top: 15px */
+    padding-bottom: 30px;
+    /* edit padding */
+    /* background-color: grey; */
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1140px;
+}
+
+.menu-category-name {
+    color: #B97836
+}
+
+.menu-item-desc, .menu-item-price {
+    color: #ffffff;
+}
+
+.menu-category-name {
+    padding-left: 65px;
+    font-size: 2em;
+    font-weight: 800;
+    /* edit font weight,size,style */
+    font-style: italic;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.menu-item {
+    /* background-color: aquamarine;      */
+    /* border: 3px solid black;           */
+    text-align: center;
+    /* width: 33%; */
+    margin: 10px;
+}
+
+.menu-item img {
+    border-style: none;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 25px;
+}
+
+.menu-item-texts {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.menu-item-name {
+    font-size: 1.4em;
+    /* edit font weight,size,style */
+    font-weight: bold;
+    color: #B97836;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.menu-item-desc {
+    max-width: fit-content;
+}
+
+/* #menu-item-1 {
+    min-height: 100px;
+    click in pic zoom in pic here i think
+}
+
+#menu-item-2 {
+    min-height: 100px;
+    click in pic zoom in pic here i think
+}
+
+#menu-item-3 {
+    min-height: 100px;
+    click in pic zoom in pic here i think
+} */
+
+.menu-wrapper:nth-child(even) {
+    background-color: #1A1A1A;
+}
 
 
 
