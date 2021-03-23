@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    background-color:#1A1A1A;
+}
+
 /* #################################### Nav Bar ################################### */
 .navbar-fixedtop{
     display:flex;
@@ -44,9 +48,8 @@
 
 .navbar-links a:hover,
 .navbar-links a:active{
-    color:#1A1A1A;
     padding-bottom: 0.5em;
-    border-bottom: 5px solid #1A1A1A;
+    border-bottom: 3px solid white;
 }
 
 #order a{
@@ -62,12 +65,9 @@
     background-color:#1A1A1A;
     color:white;
     border-radius: 20px;
-}
-
-#order a:hover,
-#order a:active{
     border-bottom:0;
 }
+
 
 label.navbar-mobileNav{
     font-size: 24px;
@@ -87,7 +87,7 @@ label.navbar-mobileNav{
 
 .navbar-login a:hover,
 .navbar-login a:active{
-    color: black;
+    color:#1A1A1A;
 }
 
 /* #################################### Banner ################################### */
