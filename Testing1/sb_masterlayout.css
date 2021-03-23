@@ -13,6 +13,7 @@
 html{
     background-color:#252627;
     scroll-behavior: smooth;
+    font-family:'Segoe UI',Verdana, sans-serif;
 }
 
 /* #################################### Nav Bar ################################### */
