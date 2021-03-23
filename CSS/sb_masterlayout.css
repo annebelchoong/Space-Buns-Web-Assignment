@@ -86,14 +86,11 @@ label.navbar-mobileNav{
     display:none;
 }
 
-#checkbox,
-#checkboxClose{
+#checkbox{
     display:none;
 }
 
-.navbar-mobileNavClose{
-    display:none;
-}
+
 
 .navbar-login a{
     font-size:24px;
@@ -132,7 +129,16 @@ label.navbar-mobileNav{
 
 
 
-/* #################################### Mobile Display ################################### */
+
+/* #################################### Footer ################################### */
+
+
+
+
+
+
+
+/* #################################### Media Query ################################### */
 @media only screen and (max-width:940px){
     .navbar-links a{
         font-size:0.75em;
