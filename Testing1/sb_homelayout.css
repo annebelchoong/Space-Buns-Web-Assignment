@@ -5,7 +5,7 @@
 }
 
 html{
-    background-color:#1A1A1A;
+    background-color:#252627;
 }
 
 /* #################################### Nav Bar ################################### */
@@ -62,7 +62,7 @@ html{
 
 #order a:hover,
 #order a:active{
-    background-color:#1A1A1A;
+    background-color:#252627;
     color:white;
     border-radius: 20px;
     border-bottom:0;
@@ -87,7 +87,7 @@ label.navbar-mobileNav{
 
 .navbar-login a:hover,
 .navbar-login a:active{
-    color:#1A1A1A;
+    color:#252627;
 }
 
 /* #################################### Banner ################################### */
@@ -100,6 +100,12 @@ label.navbar-mobileNav{
 
 
 /* #################################### Mobile Display ################################### */
+@media only screen and (max-width:940px){
+    .navbar-links a{
+        font-size:0.75em;
+        transition: 0.3s ease-in-out;
+    }
+}
 @media only screen and (max-width:768px){
     body{
         overflow-x: hidden;
@@ -109,7 +115,7 @@ label.navbar-mobileNav{
         position:fixed;
         height:100vh;
         top:65px;
-        background-color:#1A1A1A;
+        background-color:#252627;
         opacity:0.8;
         display:block;
         text-align: center;
