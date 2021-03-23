@@ -24,7 +24,7 @@ html{
     height: 65px;
     background-color: #B97836;
     font-family: Verdana, sans-serif;
-
+    position:relative;
 }
 
 .navbar-logo,
@@ -84,7 +84,12 @@ label.navbar-mobileNav{
     display:none;
 }
 
-#checkbox{
+#checkbox,
+#checkboxClose{
+    display:none;
+}
+
+.navbar-mobileNavClose{
     display:none;
 }
 
@@ -101,7 +106,7 @@ label.navbar-mobileNav{
 /* ###################################### Banner ##################################### */
 .banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Pics/burgerbanner.png");
-    height: 50%;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,6 +158,7 @@ label.navbar-mobileNav{
         overflow-y: visible;
     }
 
+
     .navbar-logo,
     .navbar-login{
         padding:0;
@@ -182,8 +188,9 @@ label.navbar-mobileNav{
 
     label.navbar-mobileNav{
         display:block;
-
     }
+
+
 
     #checkbox:checked ~ ul{
         transform: translateX(0%);
