@@ -1,29 +1,2 @@
 @charset "utf-8";
 
-@font-face{
-    font-family: Amsterdam Variation_2;
-    src:
-        url('Fonts/Amsterdam\ Variation_2.ttf') format(truetype);
-}
-
-
-
-.banner{
-    opacity: 0.7;
-    border-style: none;
-}
-
-.caption{
-    font-family: 'Amsterdam Variation_2', serif;
-    font-size: 1500%;
-    color:rgb(255, 255, 255);
-    position: absolute;
-    left: 0;
-    top: 18.52%;
-    width: 100%;
-    text-align:center;
-}
-
-@media only screen and (max-width: 1200px){
-
-}

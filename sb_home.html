@@ -7,46 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Pics/favicon.ico">
     <link rel="stylesheet" href="sb_homelayout.css">
-    <link rel="stylesheet" href="sb_homestyles.css">
 </head>
 
 <body>
     <header>
 
-        <nav class=" fixedtop">
-            <div class="logo">
-                <a href="sb_home.html"><img src="Pics/Space Buns Logo.png" alt="Space Buns Logo" width="120px"></a>
+        <nav class="navbar fixedtop">
+            <div class="navbar-logo">
+                <a href="sb_home.html"><img src="Pics/Space Buns Logo.png" alt="Space Buns Logo" width="70px"></a>
             </div>
-
-
 
             <div class="navbar-collapse">
                 <ul>
-                    <li class="menu"><a href="sb_menu.html"> Menu</a></li>
-                    <li class="promotions"><a href="sb_promotions.html"> Promotions</a></li>
-                    <li class="events"><a href="sb_events.html"> Events</a></li>
-                    <li class="reviews"><a href="sb_reviews.html"> Reviews</a></li>
-                    <li class="aboutus"><a href="sb_about.html"> About Us</a></li>
-                    <li class="contactus"><a href="sb_contact.html"> Contact Us</a></li>
-                    <li class="order"><a href="sb_order.html"> Order Now</a></li>
-                    <li class="loginnav"><a href="#"> Log In</a></li>
+                    <li class="navbar-item" id="menu"><a href="sb_menu.html"> Menu</a></li>
+                    <li class="navbar-item" id="promotions"><a href="sb_promotions.html"> Promotions</a></li>
+                    <li class="navbar-item" id="events"><a href="sb_events.html"> Events</a></li>
+                    <li class="navbar-item" id="reviews"><a href="sb_reviews.html"> Reviews</a></li>
+                    <li class="navbar-item" id="aboutUs"><a href="sb_about.html"> About Us</a></li>
+                    <li class="navbar-item" id="contactUs"><a href="sb_contact.html"> Contact Us</a></li>
+                    <li class="navbar-item" id="order"><a href="sb_order.html"> Order Now</a></li>
                 </ul>
             </div>
-            <div class="login">
-                <a href="#"> Log In</a>
+
+            <div class="navbar-login">
+                <a href="#">Log In</a>
+                <!-- <a href="sb_login.html"><svg sr></svg></a> -->
             </div>
 
-            <div id="navbar">
+            <div id="navbar-icon">
+                <!--hamburger menu-->
                 <img src="Pics/Navbarcollapse.png" width="20px">
             </div>
         </nav>
 
         <div class="banner">
-            <img src="Pics/BurgerPic.jpg" width="100%">
-        </div>
-
-        <div class="caption">
-            <span>Delicious.</span>
+            <div class="caption">
+                <span>Delicious.</span>
+            </div>
         </div>
 
     </header>
@@ -84,7 +81,7 @@
 
 
     <footer>
-        <div class="footer">
+        <div class="footer-wrapper">
             <div id="footerlogo">
                 <a href="sb_home.html"><img src="Pics/Space Buns Logo.png" width="130px"></a>
             </div>

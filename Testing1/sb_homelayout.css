@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* #################################### Nav Bar ################################### */
+.navbar-fixedtop{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #B97836;
+    font-family: Verdana, sans-serif;
+    font-weight:bold;
+}
+
+.navbar-logo,
+.navbar-login{
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+
+.navbar-links{
+    display:flex;
+    justify-content: space-around;
+    width:800px;
+}
+
+.navbar-links li{
+    list-style-type: none;
+}
+
+.navbar-links a{
+    color:white;
+    text-decoration:none;
+    font-size:10px;
+}
+
+.navbar-links a:visited,
+.navbar-links a:link{
+    color:white;
+}
+
+.navbar-links a:hover,
+.navbar-links a:active{
+    color:#1A1A1A;
+    border-bottom: 5px solid #1A1A1A;
+}
+
+#order a{
+    background-color:#1A1A1A;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    vertical-align:middle;
+}
+
+#order a:hover,
+#order a:active{
+    background-color: white;
+    color:#B97836;
+    border-radius: 20px;
+}
+
+#order a:hover,
+#order a:active{
+    border-bottom:0;
+}
+
+label.navbar-mobileNav{
+    font-size: 24px;
+    color:white;
+    cursor:pointer;
+    display:none;
+}
+
+#checkbox{
+    display:none;
+}
+
+.navbar-login a{
+    font-size:24px;
+    color: white;
+}
+
+.navbar-login a:hover,
+.navbar-login a:active{
+    color: black;
+}
+
+/* #################################### Banner ################################### */
+
+
+
+
+
+
+
+
+/* #################################### Mobile Display ################################### */
+@media only screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar-links{
+        position:fixed;
+        height:100vh;
+        top:50px;
+        background-color:#1A1A1A;
+        opacity:0.8;
+        display:block;
+        text-align: center;
+        line-height: 10vh;
+        width:100%;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+        overflow-y: visible;
+    }
+
+    .navbar-logo,
+    .navbar-login{
+        padding:0;
+    }
+
+
+    .navbar-links a{
+        font-size:12px;
+    }
+
+    
+    .navbar-links a:hover,
+    .navbar-links a:active{
+        color:#B97836;
+    }
+
+    label.navbar-mobileNav{
+        display:block;
+    }
+
+    #checkbox:checked ~ ul{
+        transform: translateX(0%);
+    }
+
+    
+}
+

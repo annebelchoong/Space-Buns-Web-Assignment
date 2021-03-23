@@ -1,8 +1,19 @@
 @charset "utf-8";
 
+@font-face{
+    font-family: Amsterdam Variation_2;
+    src:
+        url('Fonts/Amsterdam\ Variation_2.ttf') format(truetype);
+}
+
+
 html{
     background-color: #252627;
     height:100%;
+}
+
+body{
+    margin:0;
 }
 
 
@@ -13,84 +24,97 @@ header{
     padding: 0;
 }
 
-nav{
+.fixedtop{
+    position: fixed;
+    right:0;
+    left: 0;
+    z-index: 1030;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content:center;
     flex-wrap:wrap;
     align-items: center;
+    background-color: #B97836;
 }
 
 
 div.navbar-collapse {
     padding:0;
-    margin: 0 10% 0 10%;
+    margin: 0 5% 0 5%;
     display:flex;
     flex-direction: row;
+    align-items: center;
 }
 
-ul{
+.navbar-collapse> ul{
     list-style-type:none;
+    padding:0;
 }
 
 
-li{
-    float: left;
+.navbar-collapse li{
+    float:left;
     padding: 10px 20px 10px 20px;
     font-size: 20px;
 }
 
-nav a{
-    width: 100px; 
+.navbar-collapse a,
+.navbar-login a{
+    width: 100%; 
     padding: 20px 5px;
     font-family: Verdana, Cambria, serif;
     text-decoration: none;
-    font-weight: 10px;
     font-size: 13px;
     color: white;
     text-align: center;
     text-shadow: 1px 1px #252627;
 }
 
-.order{
+li#order{
     background-color:#B97836;
     border-radius: 20px;
     padding: 10px 20px 10px 20px;
     vertical-align:middle;
 }
 
-.login{
-    font-size: 14px;
+.navbar-login{
     background-color:#B97836;
     border-radius: 20px;
     padding: 10px 20px 10px 20px ;
     margin-right: 20px;
 }
 
-.logo{
+.navbar-logo{
     display: inline;
     margin-top: 10px;
     vertical-align: middle;
     overflow: hidden;
  }
 
-.fixedtop{
-    position: fixed;
-    right:0;
-    left: 0;
-    z-index: 1030;
-}
 
-.navbar-collapse a:link,
-.navbar-collapse a:visited{
+.navbar-item a:link,
+.navbar-item a:visited{
     color: white;
 }
 
-.navbar-collapse a:hover,
-.navbar-collapse a:active{
-    color:white;
+.navbar-item a:hover,
+.navbar-item a:active{
+    color: white;
     border-bottom: 5px solid white;
+}
+
+#order:hover,
+#order:active,
+.navbar-login:hover,
+.navbar-login:active{
+    background-color: #252627;
+    border-radius: 20px;
+}
+
+#order a:hover,
+#order a:active{
+    border-bottom:0;
 }
 
 div#navbar{
@@ -104,6 +128,32 @@ div#navbar{
 }
 
 
+/* Banner Layout */
+.banner{
+    background-image: url("Pics/BurgerPic.jpg");
+    background-size: cover;
+    position: relative;
+    height: 600px;
+    width:100%;
+    opacity: 0.6;
+}
+
+.caption{
+    font-family: 'Amsterdam Variation_2', serif;
+    color: white;
+    font-size: 18vw; 
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+  }
+
+
 
 /* Footer layout */
 footer{
@@ -112,7 +162,8 @@ footer{
     font-family: Verdana, sans-serif;
 }
 
-footer div.footer{
+footer div.footer-wrapper{
+    margin:auto;
     display:flex;
     flex-direction: row;
 }
@@ -123,16 +174,17 @@ div#footerlogo{
     padding-top:25px;
     vertical-align: middle;
     overflow: hidden;
+    width:33%;
 }
 
 footer div.ourStore{
-    width: 40%;
+    width: 33%;
     margin: 0;
     vertical-align: middle;
 }
 
 footer div.followUs{
-    width:40%;
+    width:33%;
     padding-left:50px;
 }
 
@@ -140,24 +192,29 @@ footer .ourStore h2{
     color:#B97836;
     font-size:18px;
     margin-top:0;
-    margin-left: 90px;
+    margin-left: 70px;
+}
+
+footer .ourStore ul,
+footer .followUs ul{
+    list-style-type: none;
 }
 
 footer .followUs h2{
     color:#B97836;
     font-size:18px;
     margin-top:0;
-    margin-left:47px;
+    margin-left:30px;
 }
 
 
-footer a{
+.footer a{
     color:white;
     text-decoration: none;
     font-size: 13px;
 }
 
-footer li a:hover {
+.footer li a:hover {
     opacity: 0.5;
  }
 
@@ -174,13 +231,22 @@ footer li a:hover {
 }
 
 
-footer li{
+footer .ourStore li{
      flex: 0 0 50%;
      position: relative;
      margin-bottom: 18px;
      padding-right: 10px;
      flex-direction:column;
  }
+
+ footer .followUs li{
+    flex: 0 0 50%;
+    position: relative;
+    margin-bottom: 18px;
+    padding-right: 20px;
+    flex-direction:column;
+    float: left;
+}
 
  footer div.copyright{
      color: white;
@@ -196,30 +262,31 @@ footer li{
 
 
 /* Desktop Display */
-@media only screen and (min-width: 1280px){
-    nav > div#navbar, div.navbar-collapse .loginnav{
-        display: none;
+@media only screen and (max-width: 1100px){
+    .navbar-collapse li{
+        padding:10px 5px 10px 5px;
     }
-
-
-    div.navbar-collapse{
-        display:flex;
+    #navbar-icon{
+        display:none;
     }
+}
 
+@media only screen and (min-width: 1100px){
+    #navbar-icon{
+        display:none;
+    }
 }
 
 
 /* Mobile display */
-@media only screen and (max-width: 1280px){
-    div.navbar-collapse ul{
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: wrap;
-        flex-direction: column;
-        text-align:center;
+@media only screen and (max-width: 766px){
+    #navbar-icon{
+        display:block;
     }
-    div.login{
-        display:none;
+   
+    div.navbar-collapse ul{
+        display: none;
+
     }
 
 
