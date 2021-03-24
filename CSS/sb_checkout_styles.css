@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Amsterdam Variation_2;
+    src: url('Fonts/Amsterdam\ Variation_2.ttf') format(truetype);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #242628;
+    scroll-behavior:smooth;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    color: #ffffff;    
+}
+
+/* ###################### Checkout Navigation Style ###################### */
+
+
+
+.checkout-bar {
+    background-color: #B97836;
+    height: 65px;
+}
+
+nav.checkout-bar h2 { /* nav.checkout-bar h2*/
+    display: inline;
+    font-size: 2.5em;
+    vertical-align: middle;
+}
+
+#nav-logo {
+    display: inline;
+    margin: 8px 10px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.body {
+    min-height: 100vh;
+
+}
+
+
+
