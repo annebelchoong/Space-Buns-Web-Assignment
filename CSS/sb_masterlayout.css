@@ -18,6 +18,8 @@ html{
     font-family:'Segoe UI',Verdana, sans-serif;
 }
 
+
+
 /* #################################### Nav Bar ################################### */
 .navbar-fixedtop{
     display:flex;
@@ -102,9 +104,11 @@ label.navbar-mobileNav{
     color:#252627;
 }
 
+
+
 /* ###################################### Banner ##################################### */
 .banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Space-Buns-Web-Assignment/Pics/burgerbanner.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Space-Buns-Web-Assignment/Media/burgerbanner.png");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -122,6 +126,9 @@ label.navbar-mobileNav{
     color: white;
 }
 
+
+
+
 /* #################################### Content ################################### */
 
 
@@ -130,19 +137,149 @@ label.navbar-mobileNav{
 
 
 
+
+
 /* #################################### Footer ################################### */
+footer.footer{
+    background-color: #1A1A1A;
+    padding:20px 0;
+    font-family:Verdana, sans-serif;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+}
 
+.footer-container{
+    /* background-color: red; */
+    max-width: 1170px;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.ourStore,
+.followUs{
+    margin: 0 70px;
+}
 
+.footer-links{
+    list-style-type: none;
+    font-size:0.9em;
+    column-count: 2;
+    column-gap: 80px;
+}
+
+.footer-links li{
+    padding: 8px 0;
+}
+
+.footer-right{
+    display:flex;
+    width:20%;
+    margin: 40px;
+    justify-content: space-around;
+}
+
+.footer-left{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ourStore a{
+    color:white;
+    text-decoration:none;
+}
+
+.ourStore a:hover,
+.ourStore a:active{
+    color:#B97836;
+}
+
+.footer h4{
+    color:#B97836;
+    padding-bottom:25px;
+    font-weight:bold;
+    font-size:1.2em
+}
+
+.footer-socialLinks a{
+    display: inline-block;
+    height:40px;
+    width:40px;
+    margin: 0 25px 10px 0;
+    font-size:20px;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding:10px;
+    border-radius: 50%;
+}
+
+.footer-socialLinks a:hover,
+.footer-socialLinks a:active{
+    color:#1A1A1A;
+    background-color: rgba(255, 255, 255, 0.7);;
+}
+
+.copyright{
+    margin-top: 20px;
+    color: white;
+    font-size: 0.9em;
+    text-align:center;
+}
+
+.copyright-small{
+    color: white;
+    font-size: 0.9em;
+    text-align:center;
+}
 
 
 
 
 /* #################################### Media Query ################################### */
+@media only screen and (max-width:1170px){
+    .footer-right{
+        display:flex;
+        width:100%;
+        margin: 10px;
+        justify-content: space-around;
+    }
+
+    .footer-left{
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+    }
+
+}
+
 @media only screen and (max-width:940px){
     .navbar-links a{
         font-size:0.75em;
         transition: 0.3s ease-in-out;
+    }
+
+
+    .footer-left{
+        width:100%;
+        display:block;
+   }
+
+   .footer-links{
+    column-gap: 30px;
+    padding-left:50px;
+}
+
+    .followUs{
+        margin-top: 40px;
+    }
+
+    .footer h4,
+    .footer-socialLinks{
+        text-align:center;
     }
 }
 @media only screen and (max-width:768px){
