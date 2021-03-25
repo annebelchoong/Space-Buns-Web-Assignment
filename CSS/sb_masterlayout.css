@@ -266,11 +266,12 @@ footer.footer{
     .footer-left{
         width:100%;
         display:block;
+        align-items: center;
    }
 
    .footer-links{
     column-gap: 30px;
-    padding-left:50px;
+    padding-left:18%;
 }
 
     .followUs{
