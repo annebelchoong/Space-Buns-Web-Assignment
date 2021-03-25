@@ -31,6 +31,15 @@ html{
     position:relative;
 }
 
+.navbar-fixedtop-index{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    font-family: Verdana, sans-serif;
+    position:relative;
+}
+
 .navbar-logo,
 .navbar-login{
     padding: 30px;
@@ -116,6 +125,15 @@ label.navbar-mobileNav{
     position: relative;
 }
 
+.banner-index{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Space-Buns-Web-Assignment/Media/BurgerPic.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .bannerCaption{
     font-family: 'Amsterdam Variation_2', serif;
     text-align: center;
@@ -126,15 +144,15 @@ label.navbar-mobileNav{
     color: white;
 }
 
-
-
-
-/* #################################### Content ################################### */
-
-
-
-
-
+.bannerCaption-index{
+    font-family: 'Amsterdam Variation_2', serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: white;
+}
 
 
 
@@ -145,12 +163,11 @@ footer.footer{
     padding:20px 0;
     font-family:Verdana, sans-serif;
     width:100%;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 }
 
 .footer-container{
-    /* background-color: red; */
     max-width: 1170px;
     margin:auto;
     display:flex;
