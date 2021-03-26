@@ -19,7 +19,6 @@ html{
 }
 
 
-
 /* #################################### Nav Bar ################################### */
 .navbar-fixedtop{
     display:flex;
@@ -269,7 +268,7 @@ footer.footer{
         transition: 0.3s ease-in-out;
     }
 
- /* ################### Footer ######################## */
+/* ################### Footer ######################## */
     .footer-left{
         width:100%;
         display:block;
@@ -312,7 +311,6 @@ footer.footer{
         overflow-y: visible;
     }
 
-
     .navbar-logo,
     .navbar-login{
         padding:0;
@@ -347,7 +345,5 @@ footer.footer{
     #checkbox:checked ~ ul{
         transform: translateX(0%);
     }
-
-    
 }
 
