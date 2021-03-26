@@ -113,19 +113,19 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
 
 /* ###################### Media Queries ###################### */
 
-@media only screen and (max-width:940px) {
+/* @media only screen and (max-width:940px) {
     .navbar-links a {
         font-size: 0.75em;
         transition: 0.3s ease-in-out;
     }
+} */
     /* .menu-item img {
         max-width: 230px;
         max-height: 230px;
     } */
     /*might not need this*/
-}
 
-@media only screen and (max-width:767px) {
+/* @media only screen and (max-width:767px) {
     body {
         overflow-x: hidden;
     }
@@ -166,5 +166,4 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
     }
     #checkbox:checked~ul {
         transform: translateX(0%);
-    }
-}
+    } */
