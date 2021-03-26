@@ -75,7 +75,6 @@ html{
 #order a:hover,
 #order a:active{
     background-color:#252627;
-    color:white;
     border-radius: 20px;
     border-bottom:0;
 }
@@ -340,8 +339,8 @@ footer.footer{
 
     #order a:hover,
     #order a:active{
-        color:#B97836;
-        background-color: black;
+        color:#ffffff;
+        background-color:#B97836;
     }
 
     label.navbar-mobileNav{
