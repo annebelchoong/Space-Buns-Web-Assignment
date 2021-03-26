@@ -248,6 +248,8 @@ footer.footer{
 
 
 /* #################################### Media Query ################################### */
+
+/* ################### Footer ######################## */
 @media only screen and (max-width:1170px){
     .footer-right{
         display:flex;
@@ -265,12 +267,13 @@ footer.footer{
 }
 
 @media only screen and (max-width:940px){
+/* ################### Navbar ######################## */
     .navbar-links a{
         font-size:0.75em;
         transition: 0.3s ease-in-out;
     }
 
-
+ /* ################### Footer ######################## */
     .footer-left{
         width:100%;
         display:block;
@@ -291,7 +294,8 @@ footer.footer{
         text-align:center;
     }
 }
-@media only screen and (max-width:768px){
+
+@media only screen and (max-width:767px){
     body{
         overflow-x: hidden;
     }
@@ -343,8 +347,6 @@ footer.footer{
     label.navbar-mobileNav{
         display:block;
     }
-
-
 
     #checkbox:checked ~ ul{
         transform: translateX(0%);
