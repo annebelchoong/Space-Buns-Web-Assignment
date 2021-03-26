@@ -31,15 +31,6 @@ html{
     position:relative;
 }
 
-.navbar-fixedtop-index{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 65px;
-    font-family: Verdana, sans-serif;
-    position:relative;
-}
-
 .navbar-logo,
 .navbar-login{
     padding: 30px;
