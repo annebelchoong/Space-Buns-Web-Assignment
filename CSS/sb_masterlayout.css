@@ -106,7 +106,7 @@ label.navbar-mobileNav{
 
 /* ###################################### Banner ##################################### */
 .banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Space-Buns-Web-Assignment/Media/burgerbanner.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Space-Buns-Web-Assignment/Media/burgerbanner.png');
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,14 +114,14 @@ label.navbar-mobileNav{
     position: relative;
 }
 
-.banner-index{
+/* .banner-index{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Space-Buns-Web-Assignment/Media/BurgerPic.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+} */
 
 .bannerCaption{
     font-family: 'Amsterdam Variation_2', serif;
