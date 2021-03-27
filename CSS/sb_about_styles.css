@@ -1,0 +1,70 @@
+section.aboutUs-content{
+    font-family:'Segoe UI', Verdana, sans-serif;
+    color:#B97836;
+    padding:60px;
+
+}
+
+.aboutUs-container{
+    max-width: 1100px;
+    margin:auto;
+}
+
+.whoarewe{
+    padding-bottom: 50px;
+    text-align: justify;
+    line-height:1.6em;
+}
+
+.whoarewe h2{
+    color: white;
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+
+.whoarewe a{
+    color:#B97836;
+}
+
+.aboutUs-bottom{
+    width:100%; 
+    display:flex;
+}
+
+.aboutUs-right{
+    display:flex;
+    width:50%;
+    margin:20px;
+    background-color:red;
+}
+
+.aboutUs-left{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:20px;
+}
+
+.aboutUs-left h3{
+    color:white;
+    font-size:24px;
+    padding-bottom:15px;
+}
+
+.aboutUs-left h4{
+    color:white;
+    font-size:17px;
+    padding-bottom:7px;
+}
+
+.aboutUs-left p{
+line-height:1.5em;
+}
+
+.aboutUs-address,
+.aboutUs-businessHour{
+    padding:20px 0;
+}
+
+
