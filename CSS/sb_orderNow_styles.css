@@ -1,3 +1,23 @@
-html {
-    background-color: green;
+@charset "utf-8";
+
+/* #################################### Order Locations Styles ################################### */
+
+.container {
+    /* background-color: rgb(36, 68, 109); */
+    height: 100vh;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
 }
+
+.content-area {
+    margin: 0 auto;
+    /* background-color: aquamarine;     */
+}
+
+#map {
+    height: 500px;
+    width: 1000px;
+}
+
+
