@@ -1,23 +1,41 @@
 @charset "utf-8";
-
 /* #################################### Order Locations Styles ################################### */
 
+html{
+    color: #ffffff;
+}
+
 .container {
-    /* background-color: rgb(36, 68, 109); */
+    background-color: rgb(36, 68, 109);
     height: 100vh;
     max-width: 1200px;
     text-align: center;
     margin: auto;
 }
 
-.content-area {
+.content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
     margin: 0 auto;
-    /* background-color: aquamarine;     */
+    background-color: rgb(3, 128, 86);
+    max-width: 1140px;
+    border-radius: 10px;
+    height: 100vh;
 }
 
-#map {
-    height: 500px;
-    width: 1000px;
+.order-header {
+    background-color: grey;
+    border-radius: 16px;
+    margin: 30px auto;
 }
 
 
+.order-header h2 {
+    font-size: 2.0em;
+    margin: 10px;
+}
+
+.order-header p {
+    font-size: 1.5em;
+    margin: 10px;
+}

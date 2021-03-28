@@ -49,10 +49,22 @@
     </header>
 
     <div class="container">
-        <div class="content-area">
-            <div id="map">
+        <div class="content-wrapper">
+            <section class="order-header"> 
+                <h2> Step 1 Select your go to branch for order</h2>
+                <h2> Step 2 Choose Delivery or Self Pick-up</h2>
+                <h2> Step 3 Select your preferred time slot</h2>
+                <!-- <h2> Step 1 </h2><p> Choose Delivery or Self Pick-up</p>
+                <h2> Step 2 </h2><p> Select your go to branch for order</p>
+                <h2> Step 3 </h2><p> Select your preferred time slot</p> -->
+            </section>
+            <section class="branch-container">
+                <div class="branch-list">
+                    <div class="col item">
 
-            </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -99,17 +111,6 @@
         </div>
     </footer>
 
-    <script>
-        function gMap() {
-            var location = {lat:3.081249, lng:101.734908};
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: location
-            });
-        }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbBdNpIJ6Hp7IRFUgp0aoyf_A_Kbv7Vo&callback=gMap"></script>
 </body>
 
 </html>
