@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+    <script>
+        let map;
+
+        function initMap() {
+            var location = { lat: 3.008870, lng: 101.698529 };
+            map = new google.maps.Map(document.getElementById("googleMap"), {
+                center: location,
+                zoom: 13,
+            });
+
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
 
 </head>
 
@@ -52,7 +68,7 @@
 
     <section class="aboutUs-content">
         <div class="aboutUs-container">
-            <div class="whoarewe">
+            <article class="whoarewe">
                 <div class="aboutUs-top">
                     <h2>Who are we?</h2>
                     <p>
@@ -107,12 +123,11 @@
                         and
                         me. As we continue to grow with your support, we promise to strive harder to give back to the
                         community.
-                    </p>
+                    </p>35
                 </div>
-            </div>
+            </article>
             <div class="aboutUs-bottom">
-                <div class="aboutUs-right">
-
+                <div class="aboutUs-right" id="googleMap">
                 </div>
                 <div class="aboutUs-left">
                     <h3>Find us at</h3>
@@ -183,6 +198,8 @@
 
     </footer>
 
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYu0LMy7fYkaHUFkD9JYpXvjBOFVrVztw&callback=initMap"></script>
 </body>
 
 
