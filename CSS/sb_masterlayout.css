@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@538&display=swap');
+
 @font-face{
     font-family: Amsterdam Variation_2;
     src:
@@ -124,7 +128,9 @@ label.navbar-mobileNav{
 }
 
 .bannerCaption{
-    font-family: 'Amsterdam Variation_2', serif;
+    /* font-family: 'Amsterdam Variation_2', serif; */
+    /* font-family: 'Cookie', cursive; */
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     position: absolute;
     top: 50%;
