@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps</title>
+    <link rel="stylesheet" href="textmap1.css">
+</head>
+
+<body>
+    <h1>GoogleMaps</h1>
+    <div>
+        <h3>Search: </h3>
+        <input type="text">
+    </div>
+    <button>Proceed</button>
+    <button>Cancel</button>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            //Map Options
+
+            var startMap = {
+                zoom: 11,
+                center: { lat: 3.100762, lng: 101.581560 }, // this will have to be their current location
+                disableDefaultUI: true
+            }
+
+            //New map
+            var map = new google.maps.Map(document.getElementById('map'), startMap);
+
+            var markers = [
+                {
+                    coordinates: { lat: 3.119762, lng: 101.581560 },
+                    title: '<h3>Damansara | Space Buns</h3>'
+                },
+                {
+                    coordinates: { lat: 3.086330, lng: 101.741026 },
+                    title: '<h3>Cheras | Space Buns</h3>'
+                },
+                {
+                    coordinates: { lat: 3.209240, lng: 101.570204 },
+                    title: '<h3>Sungai Buloh | Space Buns</h3>'
+                },
+                {
+                    coordinates: { lat: 3.198470, lng: 101.714486 },
+                    title: '<h3>Setapak | Space Buns</h3>'
+                },
+                {
+                    coordinates: { lat: 3.047383, lng: 101.583945 },
+                    title: '<h3>Subang Jaya | Space Buns</h3>'
+                },
+                {
+                    coordinates: { lat: 2.924272, lng: 101.655964 },
+                    title: '<h3>Cyberjaya | Space Buns</h3>'
+                },
+                {
+                    coordinates: { lat: 2.990344, lng: 101.788260 },
+                    title: '<h3>Kajang | Space Buns</h3>'
+                },
+                {
+                    coordinates: { lat: 3.065954, lng: 101.483355 },
+                    title: '<h3>Klang | Space Buns</h3>'
+                }
+            ];
+
+            //Loop through markers
+            for (var i = 0; i < markers.length; i++) {
+                addMarker(markers[i]);
+            }
+
+            var infoWindow = new google.maps.InfoWindow();
+
+            //A Better way to do this
+            function addMarker(branches) {
+                var marker = new google.maps.Marker({
+                    position: branches.coordinates,
+                    map: map,
+                    // icon: "/Media/burgerPic.jpg"
+                });
+
+                if (branches.title) {
+                    marker.addListener('click', function () {
+                        infoWindow.setContent(branches.title + 'Space Buns' + ' Google Maps');
+                        infoWindow.open(map, marker);
+                        map.panTo(branches.coordinates);
+                    });
+                }
+
+                // if (branches.title) {
+                //     var infoWindow = new google.maps.InfoWindow({
+                //         // content: branches.title,
+                //     });
+                //     marker.addListener('click', function () {
+                //         infoWindow.open(map, marker);
+                //         map.panTo(branches.coordinates);
+                //         // setTimeout(() => infoWindow.close(), 3000);
+                //     });
+                // }
+
+            }
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcoj_spVvnhJbKvChuD9JZdgnhfknJYxA&callback=initMap">
+        </script>
+</body>
+
+</html>
+
+<!-- if (branches.title) {
+    var infoWindow = new google.maps.InfoWindow({
+        content: branches.title,
+    });
+    marker.addListener('click', function () {
+        infoWindow.open(map, marker);
+        map.panTo(branches.coordinates);
+        // setTimeout(() => infoWindow.close(), 3000);
+    });
+} -->
