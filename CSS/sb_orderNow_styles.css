@@ -41,3 +41,10 @@ html{
     margin: 10px;
 }
 
+
+#map {
+    height: 600px;
+    width: 100%;
+    color: #000000;
+}
+
