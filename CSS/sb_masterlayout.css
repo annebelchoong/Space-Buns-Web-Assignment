@@ -149,6 +149,20 @@ label.navbar-mobileNav{
     color: white;
 }
 
+/* #################################### Scrollbar ################################### */
+body::-webkit-scrollbar {
+    width: 15px;      
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #1A1A1A;  
+    border-radius: 20px;  
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c;   
+    border-radius: 20px;       
+  } 
 
 
 
