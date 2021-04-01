@@ -11,22 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-    <script>
-        let map;
-
-        function initMap() {
-            var location = { lat: 3.008870, lng: 101.698529 };
-            map = new google.maps.Map(document.getElementById("googleMap"), {
-                center: location,
-                zoom: 13,
-            });
-
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-    </script>
+    <script src="Javascript/map.js"></script>
 
 </head>
 
