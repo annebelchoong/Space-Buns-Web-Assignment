@@ -10,6 +10,7 @@ function initMap() {
     var location = { lat: 3.008870, lng: 101.698529 };
     map = new google.maps.Map(document.getElementById("googleMap"), {
         center: location,
+        // disableDefaultUI: true, // disable the controls
         zoom: 11,
     });
 
