@@ -4,7 +4,7 @@ function initMap() {
     var icon = {
 
         scaledSize: new google.maps.Size(35, 50),
-        url: '../Space-Buns-Web-Assignment/Media/AboutUs/Space Buns Marker.svg'
+        url: '../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg'
     }
 
     var location = { lat: 3.008870, lng: 101.698529 };
