@@ -109,7 +109,7 @@ function initMap() {
     // };
 
     var imageMarker = {
-        url: '../Space-Buns-Web-Assignment/Media/icons/Space Buns Marker.svg',
+        url: '../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
         scaledSize: new google.maps.Size(35, 50),
     };
 
