@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@538&display=swap');
+
 @font-face{
     font-family: Amsterdam Variation_2;
     src:
@@ -124,7 +126,8 @@ label.navbar-mobileNav{
 }
 
 .bannerCaption{
-    font-family: 'Amsterdam Variation_2', serif;
+/*  font-family: 'Amsterdam Variation_2', serif; */
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -134,7 +137,8 @@ label.navbar-mobileNav{
 }
 
 .bannerCaption-index{
-    font-family: 'Amsterdam Variation_2', serif;
+/*  font-family: 'Amsterdam Variation_2', serif; */
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -142,6 +146,24 @@ label.navbar-mobileNav{
     transform: translate(-50%, -70%);
     color: white;
 }
+
+
+
+
+/* #################################### Scrollbar ################################### */
+body::-webkit-scrollbar {
+    width: 15px;      
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #1A1A1A;  
+    border-radius: 20px;  
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c;   
+    border-radius: 20px;       
+  } 
 
 
 
