@@ -280,7 +280,7 @@ body::-webkit-scrollbar {
   }
   
 body::-webkit-scrollbar-track {
-    background: #1A1A1A;  
+    background-color: #252627;  
     border-radius: 20px;  
   }
   
