@@ -152,7 +152,7 @@ label.navbar-mobileNav{
 
 /* #################################### Scrollbar ################################### */
 body::-webkit-scrollbar {
-    width: 15px;      
+    width: 15px;    
   }
   
 body::-webkit-scrollbar-track {
