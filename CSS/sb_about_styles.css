@@ -50,7 +50,7 @@ section.aboutUs-content{
     background-color: rgba(33, 30, 30, 0.6);
     padding-top: 20px;
     padding-left:20px;
-    border-radius:20px;
+    border-radius:20px 0 0 20px;
     scroll-snap-type: y mandatory;
 }
 
