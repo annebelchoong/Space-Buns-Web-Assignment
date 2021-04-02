@@ -162,3 +162,61 @@ function initMap() {
         }
     }
 }
+
+
+// var markers = [
+//     {
+//         coordinates: { lat: 3.119762, lng: 101.581560 },
+//         title:
+//             '<div id="branch-content">' +
+//             '<img width="50px" src="./Media/Space Buns Logo.png" alt="Space Buns Logo">' +
+//             '<h3 class="branch-title">Damansara Branch</h3>' +
+//             "</div>"
+//     },
+//     {
+//         coordinates: { lat: 3.086330, lng: 101.741026 },
+//         title:
+//             '<div class="branch-markers">Damansaraaaa</div>'
+//     },
+//     {
+//         coordinates: { lat: 3.209240, lng: 101.570204 },
+//         title:
+//             '<div class="branch-markers">Damansaraaaa</div>'
+//     },
+//     {
+//         coordinates: { lat: 3.198470, lng: 101.714486 },
+//         title:
+//             '<div class="branch-markers">Damansaraaaa</div>'
+//     },
+//     {
+//         coordinates: { lat: 3.047383, lng: 101.583945 },
+//         title:
+//             '<div class="branch-markers">Damansaraaaa</div>'
+//     },
+//     {
+//         coordinates: { lat: 2.924272, lng: 101.655964 },
+//         title:
+//             '<div class="branch-markers">Damansaraaaa</div>'
+//     },
+//     {
+//         coordinates: { lat: 2.990344, lng: 101.788260 },
+//         title:
+//             '<div class="branch-markers">Damansaraaaa</div>'
+//     },
+//     {
+//         coordinates: { lat: 3.065954, lng: 101.483355 },
+//         title:
+//             '<div class="branch-markers">Damansaraaaa</div>'
+//     }
+// ];
+
+// var markers = [
+//     { coordinates: { lat: 3.119762, lng: 101.581560 }, title: '<h3 class="branch-title">Damansara | Space Buns</h3>' },
+//     { coordinates: { lat: 3.086330, lng: 101.741026 }, title: '<h3 class="branch-title">Cheras | Space Buns</h3>' },
+//     { coordinates: { lat: 3.209240, lng: 101.570204 }, title: '<h3 class="branch-title">Sungai Buloh | Space Buns</h3>' },
+//     { coordinates: { lat: 3.198470, lng: 101.714486 }, title: '<h3 class="branch-title">Setapak | Space Buns</h3>' },
+//     { coordinates: { lat: 3.047383, lng: 101.583945 }, title: '<h3 class="branch-title">Subang Jaya | Space Buns</h3>' },
+//     { coordinates: { lat: 2.924272, lng: 101.655964 }, title: '<h3 class="branch-title">Cyberjaya | Space Buns</h3>' },
+//     { coordinates: { lat: 2.990344, lng: 101.788260 }, title: '<h3 class="branch-title">Kajang | Space Buns</h3>' },
+//     { coordinates: { lat: 3.065954, lng: 101.483355 }, title: '<h3 class="branch-title">Klang | Space Buns</h3>' }
+// ]; 

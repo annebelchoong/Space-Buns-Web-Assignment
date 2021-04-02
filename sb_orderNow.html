@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-        <script src="Javascript/order-map.js"></script>
+    <script src="Javascript/order-map.js"></script>
     <title>Order Now | Space Buns</title>
 </head>
 
@@ -64,11 +64,10 @@
                     <div class="section">
                         <!-- <img width="35px" src="./Media/Space Buns Logo.png" alt="Space Buns Logo"> -->
                         <div id="map"></div>
-                        
-                        <script async defer
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcoj_spVvnhJbKvChuD9JZdgnhfknJYxA&callback=initMap">
-                            </script>
-                        <div class=branch-lists><h1>hello</h1></div>
+
+                        <div class=branch-lists>
+                            <h1>hello</h1>
+                        </div>
                     </div>
                     <div class="info-section">
                         <div class="info-block">test 1</div>
@@ -79,9 +78,11 @@
             </section>
         </div>
     </div>
-
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcoj_spVvnhJbKvChuD9JZdgnhfknJYxA&callback=initMap"></script>
     <!-- <div id="id01">hello</div> -->
-
+    
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-right">
@@ -128,59 +129,3 @@
 
 </html>
 
-<!-- // var markers = [
-//     {
-//         coordinates: { lat: 3.119762, lng: 101.581560 },
-//         title:
-//             '<div id="branch-content">' +
-//             '<img width="50px" src="./Media/Space Buns Logo.png" alt="Space Buns Logo">' +
-//             '<h3 class="branch-title">Damansara Branch</h3>' +
-//             "</div>"
-//     },
-//     {
-//         coordinates: { lat: 3.086330, lng: 101.741026 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 3.209240, lng: 101.570204 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 3.198470, lng: 101.714486 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 3.047383, lng: 101.583945 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 2.924272, lng: 101.655964 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 2.990344, lng: 101.788260 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 3.065954, lng: 101.483355 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     }
-// ];
-
-// var markers = [
-//     { coordinates: { lat: 3.119762, lng: 101.581560 }, title: '<h3 class="branch-title">Damansara | Space Buns</h3>' },
-//     { coordinates: { lat: 3.086330, lng: 101.741026 }, title: '<h3 class="branch-title">Cheras | Space Buns</h3>' },
-//     { coordinates: { lat: 3.209240, lng: 101.570204 }, title: '<h3 class="branch-title">Sungai Buloh | Space Buns</h3>' },
-//     { coordinates: { lat: 3.198470, lng: 101.714486 }, title: '<h3 class="branch-title">Setapak | Space Buns</h3>' },
-//     { coordinates: { lat: 3.047383, lng: 101.583945 }, title: '<h3 class="branch-title">Subang Jaya | Space Buns</h3>' },
-//     { coordinates: { lat: 2.924272, lng: 101.655964 }, title: '<h3 class="branch-title">Cyberjaya | Space Buns</h3>' },
-//     { coordinates: { lat: 2.990344, lng: 101.788260 }, title: '<h3 class="branch-title">Kajang | Space Buns</h3>' },
-//     { coordinates: { lat: 3.065954, lng: 101.483355 }, title: '<h3 class="branch-title">Klang | Space Buns</h3>' }
-// ]; -->
