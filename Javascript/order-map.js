@@ -145,7 +145,7 @@ function initMap() {
                 // infoWindow.setContent(branches.title + 'Space Buns' + ' >Directions');
                 infoWindow.setContent(
                     '<div id="branch-content">' +
-                    '<img width="50px" src="./Media/Space Buns Logo.png" alt="Space Buns Logo">' +
+                    '<img width="50px" src="./Media/SpaceBunsLogo.png" alt="Space Buns Logo">' +
                     '<h3 class="branch-title">' + 
                     branches.title + ' branch</h3>' + 
                     '<a href="https://www.google.com/maps" target="_blank">Directions</a>' +
