@@ -87,8 +87,7 @@ nav.checkout-bar h1 {
 
 .box1 {
     height: 120px;
-    /* width: 75%; */
-    width: 800px;
+    width: 700px;
     margin: 40px auto;
 }
 
@@ -110,7 +109,7 @@ nav.checkout-bar h1 {
 .box2 {
     text-align: center;
     /* width: 35%; */
-    width: 400px;
+    width: 390px;
     padding: 1em;
     margin: 40px auto;
 }
@@ -238,3 +237,12 @@ footer {
     text-align:center;
 }
 
+/* ################## Media Query ##################### */
+
+@media only screen and (max-width:767px){
+    
+    .box1{
+        width: 600px;
+    }
+
+}
