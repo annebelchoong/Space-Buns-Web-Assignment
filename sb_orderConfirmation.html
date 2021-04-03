@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Media/icons/favicon.ico">
+    <link rel="stylesheet" href="CSS/sb_orderConfirmation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Order Confirmation | Space Buns</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="checkout-bar">
+            <div class="container">
+                <li>
+                    <a href="sb_index.html"><img id="nav-logo" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo"
+                            width="70px"></a>
+                    <h1 class="checkout-title">Order Confirmed</h1>
+                </li>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="thankyou-text">Thank You for Ordering!</h1>
+    <h2 class="orderID">Order ID: <p>043CFBM136</p></h2>
+
+
+    <section>
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="box box1">
+                    <div class="order-info-box">
+                        <div id="order-location" class="order-info">
+                            <h3>Store Location:</h3>
+                            <p>Petaling Jaya - Space Buns</p>
+                        </div>
+                        <div id="order-type" class="order-info">
+                            <h3>Order Type:</h3>
+                            <p>Self Pickup</p>
+                        </div>
+                        <div id="order-time" class="order-info">
+                            <h3>Time:</h3>
+                            <p>02 March 2021, 4:30pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <h3>Order Summary</h3>
+
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <!-- <th colspan="2"></th> -->
+                                <th colspan="2">Item</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                            <tr>
+                                <td><img src="Media/menuBurgers/chicken1.jpg" alt="Chicken 1"></td>
+                                <td>
+                                    <h6>Chick Bae</h6>
+                                </td>
+                                <td>2</td>
+                                <td>RM 16.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="Media/menuBurgers/fish1.jpg" alt="Fish 1"></td>
+                                <td>
+                                    <h6>Fish Bae</h6>
+                                </td>
+                                <td>1</td>
+                                <td>RM 14.50</td>
+                            </tr>
+                            <tr>
+                                <td><img src="Media/menuBurgers/beef1.jpg" alt="Beef 1"></td>
+                                <td>
+                                    <h6>Beef Bae</h6>
+                                </td>
+                                <td>3</td>
+                                <td>RM 17.00</td>
+                            </tr>
+                            <tr>
+                                <td><img src="Media/menuBurgers/meatless1.jpg" alt="Meatless 1"></td>
+                                <td>
+                                    <h6>Meatless Bae</h6>
+                                </td>
+                                <td>1</td>
+                                <td>RM 12.00</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="total-container">
+                        <div class=" total-left">
+                            <span class="total">No. of Items:</span>
+                            <span class="total-total">Total: </span>
+                        </div>
+                        <div class="total-right">
+                            <span class="data-num">7</span>
+                            <span class="data-total">RM 59.90</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="box box5">
+                    <a href="sb_index.html'">
+                        <h4>Back to Home</h4>
+                    </a>
+                    <!-- <a href="#">
+                        <h6>Back to Shopping Cart</h6>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright-small">
+            <p>&#169; 2021 by Space Burger Sdn Bhd. All Right Not Reserved</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>
+
+<!-- <div class="box box3">
+                    <h2>Contact Details</h2>
+
+                    <form action="">
+                        <div class="checkout-element">
+                            <label for="payment_method" class="required-field">Full Name</label><br>
+                            <input type="text" placeholder="Tan Ah Beng" required>
+                        </div>
+                        <div class="checkout-element">
+                            <label for="payment_method" class="required-field">Phone No.</label><br>
+                            <input type="tel" name="phone" placeholder="0123456789" id="phone-number" required>
+                        </div>
+                        <div class="checkout-element">
+                            <label for="payment_method" class="required-field">Email</label><br>
+                            <input type="email" name="email" placeholder="spacebuns@gmail.com" required>
+                        </div>
+                        <div class="checkout-element">
+                            <label for="payment_method">Order notes</label><br>
+                            <input type="text" placeholder="Specify your preferences (if any)" id="order-notes">
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="box box4">
+                    <h2>Payment method</h2>
+
+                    <div class="payment-type">
+                        <input type="radio" name="payment" value=”cash” id="cash">
+                        <label for="cash">Cash</label>
+                    </div>
+                    <div class="payment-type">
+                        <input type="radio" name="payment" value=”creditCard” id="creditCard">
+                        <label for="creditCard">Credit Card</label>
+                        <img id="visa-icon" src="Media/icons/visa.svg" alt="visa logo" height="27px">
+                        <img id="mastercard-icon" src="Media/icons/mastercard.svg" alt="mastercard logo" height="30px">
+                    </div>
+                    <div class="payment-type">
+                        <input type="radio" name="payment" value=”E-wallet” id="e-wallet">
+                        <label for="e-wallet">E-Wallet</label>
+                        <img id="touch-n-go-ewallet-icon" src="Media/icons/touch-n-go-ewallet.svg"
+                            alt="touch-n-go-ewallet logo" width="20px">
+                        <img id="fave-pay-icon" src="Media/icons/favepay.svg" alt="fave-pay logo" height="20px">
+                        <img id="grab-pay-icon" src="Media/icons/grabpay.svg" alt="grab-pay logo" height="20px">
+                    </div>
+                    <div class="payment-type">
+                        <input type="radio" name="payment" value=”onlineBanking” id="onlineBanking">
+                        <label for="onlineBanking">Online Banking</label>
+                    </div>
+
+                </div> -->
