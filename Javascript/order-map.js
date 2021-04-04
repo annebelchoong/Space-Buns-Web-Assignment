@@ -220,3 +220,11 @@ function initMap() {
 //     { coordinates: { lat: 2.990344, lng: 101.788260 }, title: '<h3 class="branch-title">Kajang | Space Buns</h3>' },
 //     { coordinates: { lat: 3.065954, lng: 101.483355 }, title: '<h3 class="branch-title">Klang | Space Buns</h3>' }
 // ]; 
+
+
+
+// function searchBar(){
+//     new google.maps.places.Autocomplete(
+//         document.getElementById("auto-complete")
+//     )
+// }
