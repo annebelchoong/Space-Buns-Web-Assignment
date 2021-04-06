@@ -108,6 +108,13 @@ function initMap() {
     //     scaledSize: new google.maps.Size(35, 50)
     // };
 
+
+    //Add marker when clicked on map
+    // google.maps.event.addListener(map, 'click',
+    // function(event) {
+    //     addMarker({coordinates:event.latLng});
+    // });
+
     var imageMarker = {
         url: '../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
         scaledSize: new google.maps.Size(35, 50),
@@ -223,8 +230,3 @@ function initMap() {
 
 
 
-// function searchBar(){
-//     new google.maps.places.Autocomplete(
-//         document.getElementById("auto-complete")
-//     )
-// }
