@@ -241,9 +241,13 @@ footer {
 
 @media only screen and (max-width:767px){
     
-    .box1{
-        width: 600px;
-        font-size: 0.8em;
+    .order-info-box{
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+
+    .order-info {
+        padding: 100px auto;
     }
 
 }
