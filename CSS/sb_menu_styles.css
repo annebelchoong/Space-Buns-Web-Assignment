@@ -88,6 +88,7 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
     max-width: 250px;
     max-height: 250px;
     border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .menu-item-texts {
