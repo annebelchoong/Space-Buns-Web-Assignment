@@ -9,3 +9,7 @@ tests/burgerlab.js
 tests/Ggeo2.html
 tests/Ggeo2.js
 tests/Ggeo2.css
+.gitignore
+tests/branch.js
+tests/branch.css
+tests/branch.html
