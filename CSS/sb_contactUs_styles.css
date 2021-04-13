@@ -1,7 +1,16 @@
 .contactUs-container{
-    max-width: 1100px;
+    max-width: 960px;
     margin:auto;
     margin-top:50px;
+    margin-bottom: 50px;
+    display:flex;
+    /* background-color: yellow; */
+}
+
+.contactUs-left{
+    width:65%;
+    /* background-color: red; */
+    margin: 20px;
 }
 
 h2{
@@ -10,8 +19,103 @@ h2{
     font-size: 35px;
 }
 
-h3{
+.contactUs-left h3{
     color:#B97836;
     font-size: 1.5em;
+    padding-bottom: 20px;
 }
+
+.contactUs-form label{
+    font-size: 1em;
+    font-weight: 600;
+    color:white;
+}
+
+.contactUs-form input[type=text]{
+    border-radius: 6px;
+    border: 1px #B97836 solid;
+    width: 280px;
+    height: 30px;
+    background-color: #1A1A1A;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #ffffff;
+    text-align:unset;
+}
+
+.details::after{
+    content:"*";
+    color: red;
+}
+#subject{
+    min-width: 500px;
+}
+.contactUs-message textarea{
+    border-radius: 6px;
+    border: 1px #B97836 solid;
+    background-color: #1A1A1A;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #ffffff;
+    text-align:unset;
+    resize: none;
+}
+
+
+.submit-contactUs input{
+    border:none;
+    background-color:#B97836;
+    font-size: 1.2em;
+    color:white;
+    padding:10px 20px;
+    border-radius: 20px;
+
+}
+
+.contactUs-form input::placeholder { 
+    color: #8b8888;
+} 
+
+.contactUs-message textarea::placeholder { 
+    color: #8b8888;
+    font-size: 1.2em;
+    font-family:segoe UI, sans-serif;
+} 
+
+.contactUs-form div{
+    padding: 10px 0;
+}
+
+.contactUs-right{
+    width: 40%;
+    /* height: 500px; */
+    background-color: #1A1A1A;
+    padding: 50px;
+    padding-bottom:100px;
+    margin:150px 20px 20px 20px;
+    border-radius: 20px;
+}
+.contactUs-right div{
+    padding: 50px 0;
+}
+
+.contactUs-right h3{
+    color:#B97836;
+    font-size: 1.5em;
+    padding: 30px 0 50px;
+}
+.contactUs-right i{
+    font-size: 1.4em;
+    color: #B97836;
+    text-shadow: 3px 3px 2px black;
+}
+.contactUs-right a,
+.contactUs-right span,
+.contactUs-right p{
+    color: white;
+    text-decoration: none;
+}
+
 
