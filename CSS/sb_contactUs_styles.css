@@ -1,0 +1,17 @@
+.contactUs-container{
+    max-width: 1100px;
+    margin:auto;
+    margin-top:50px;
+}
+
+h2{
+    color: white;
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+
+h3{
+    color:#B97836;
+    font-size: 1.5em;
+}
+
