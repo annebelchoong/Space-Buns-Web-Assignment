@@ -48,9 +48,11 @@ h2{
     content:"*";
     color: red;
 }
+
 #subject{
     min-width: 500px;
 }
+
 .contactUs-message textarea{
     border-radius: 6px;
     border: 1px #B97836 solid;
@@ -71,7 +73,14 @@ h2{
     color:white;
     padding:10px 20px;
     border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+.submit-contactUs input:hover,
+.submit-contactUs input:active{
+    background-color: black;
+    color:#B97836
 }
 
 .contactUs-form input::placeholder { 
