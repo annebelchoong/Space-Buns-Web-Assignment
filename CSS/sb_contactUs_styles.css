@@ -90,12 +90,13 @@ h2{
 
 .contactUs-right{
     width: 40%;
-    /* height: 500px; */
+    height:720px;
     background-color: #1A1A1A;
     padding: 50px;
     padding-bottom:100px;
-    margin:150px 20px 20px 20px;
+    /* margin:150px 20px 20px 20px; */
     border-radius: 20px;
+    box-shadow:0px 0px 20px black ;
 }
 .contactUs-right div{
     padding: 50px 0;
@@ -109,13 +110,17 @@ h2{
 .contactUs-right i{
     font-size: 1.4em;
     color: #B97836;
-    text-shadow: 3px 3px 2px black;
+    text-shadow: 3px 3px 5px black;
 }
 .contactUs-right a,
 .contactUs-right span,
-.contactUs-right p{
+.contactUs-right address{
     color: white;
     text-decoration: none;
 }
 
+.contactUs-right address{
+    padding-left:40px;
+    line-height: 2em;
+}
 
