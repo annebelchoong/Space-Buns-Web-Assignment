@@ -99,7 +99,7 @@ h2{
 
 .contactUs-right{
     width: 40%;
-    height:720px;
+    height:570px;
     background-color: #1A1A1A;
     padding: 50px;
     padding-bottom:100px;
@@ -107,7 +107,7 @@ h2{
     box-shadow:0px 0px 20px black ;
 }
 .contactUs-right div{
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 .contactUs-right h3{
@@ -151,6 +151,7 @@ h2{
         height: 350px;
         display: flex;
         flex-flow: row;
+        margin: auto;
     }
 
     .contactUs-right div{
@@ -179,9 +180,12 @@ h2{
 } */
 
 @media only screen and (max-width:768px){
+   
     .bannercaption h1{
         font-size: 80px;
     }
+
+    
 
     .contactUs-right{
         height: 400px;
@@ -208,6 +212,12 @@ h2{
 }
 
 @media only screen and (max-width:460px){
+    .contactUs-right{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
     .contactUs-right{
         height: 500px;
     }
