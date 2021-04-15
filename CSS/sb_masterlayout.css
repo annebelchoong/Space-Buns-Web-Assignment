@@ -138,6 +138,10 @@ label.navbar-mobileNav{
     color: white;
 }
 
+.bannerCaption h1{
+    font-size:150px;
+}
+
 .bannerCaption-index{
 /*  font-family: 'Amsterdam Variation_2', serif; */
     font-family: 'Dancing Script', cursive;
