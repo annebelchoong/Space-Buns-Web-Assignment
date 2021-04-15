@@ -172,11 +172,11 @@ h2{
     }
 }
 
-@media only screen and (max-width:970px){
+/* @media only screen and (max-width:970px){
     .bannercaption h1{
         font-size: 90px;
     }
-}
+} */
 
 @media only screen and (max-width:767px){
     .bannercaption h1{
@@ -205,5 +205,10 @@ h2{
         align-items: initial;
     }
     
+}
 
+@media only screen and (max-width:460px){
+    .contactUs-right{
+        height: 500px;
+    }
 }
