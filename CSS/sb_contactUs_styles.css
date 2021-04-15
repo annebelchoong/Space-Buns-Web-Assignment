@@ -64,15 +64,17 @@ h2{
     text-align:unset;
     resize: none;
     width: 90%;
+    font-family:'Segoe UI',sans-serif;
 }
 
 
 .submit-contactUs input{
     border:none;
-    background-color:#B97836;
+    background-color:black;
     font-size: 1.2em;
-    color:white;
+    color:#B97836;
     padding:10px 20px;
+    margin-bottom: 30px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -80,8 +82,9 @@ h2{
 
 .submit-contactUs input:hover,
 .submit-contactUs input:active{
-    background-color: black;
-    color:#B97836;
+    background-color: #B97836;
+    color:white;
+    transition: 0.3s ease-in-out;
 
 }
 
@@ -91,8 +94,7 @@ h2{
 
 .contactUs-message textarea::placeholder { 
     color: #8b8888;
-    font-size: 1.1em;
-    font-family:segoe UI, sans-serif;
+    font-family:'Segoe UI',sans-serif;
 } 
 
 .contactUs-form div{
