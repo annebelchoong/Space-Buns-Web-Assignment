@@ -50,7 +50,7 @@ h2{
 }
 
 #subject{
-    width: 80%;
+    width: 90%;
 }
 
 .contactUs-message textarea{
@@ -59,10 +59,11 @@ h2{
     background-color: #1A1A1A;
     margin: 10px 0px;
     padding: 10px;
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #ffffff;
     text-align:unset;
     resize: none;
+    width: 90%;
 }
 
 
@@ -80,7 +81,8 @@ h2{
 .submit-contactUs input:hover,
 .submit-contactUs input:active{
     background-color: black;
-    color:#B97836
+    color:#B97836;
+
 }
 
 .contactUs-form input::placeholder { 
@@ -89,7 +91,7 @@ h2{
 
 .contactUs-message textarea::placeholder { 
     color: #8b8888;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family:segoe UI, sans-serif;
 } 
 
@@ -173,19 +175,17 @@ h2{
     }
 }
 
-/* @media only screen and (max-width:970px){
+@media only screen and (max-width:970px){
     .bannercaption h1{
         font-size: 90px;
     }
-} */
+}
 
 @media only screen and (max-width:768px){
    
     .bannercaption h1{
         font-size: 80px;
     }
-
-    
 
     .contactUs-right{
         height: 400px;
