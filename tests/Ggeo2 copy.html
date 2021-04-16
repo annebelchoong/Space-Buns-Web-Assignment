@@ -17,10 +17,19 @@
         function selection(show, hide) {
             var toShow = document.getElementById(show);
             var toHide = document.getElementById(hide);
-
             // toShow.style.display = (toShow.style.display == 'block') ? 'none' : 'block';
             toShow.style.display = 'block';
             toHide.style.display = 'none';
+        }
+
+        function buttons(selected,notSelected) {
+            var buttonSelected = document.getElementById(selected);
+            var buttonNotSelected = document.getElementById(notSelected);
+
+            buttonSelected.style.backgroundColor = 'var(--gold)';
+            buttonSelected.style.color = 'white';
+            buttonNotSelected.style.backgroundColor = '#000';
+            buttonNotSelected.style.color = 'var(--gold)';
         }
     </script>
 </head>
@@ -64,8 +73,8 @@
         <section class="order-options">
             <div class="options-block">
                 <h1>Start Ordering Now</h1>
-                <button id="delivery" onclick="selection('delivery-section','pickup-section')">Delivery</button>
-                <button id="pickup" onclick="selection('pickup-section','delivery-section')">Pick-up</button>
+                <button id="delivery" onclick="buttons('delivery','pickup'), selection('delivery-section','pickup-section')">Delivery</button>
+                <button id="pickup" onclick="buttons('pickup','delivery'), selection('pickup-section','delivery-section')">Pick-up</button>
             </div>
         </section>
 
