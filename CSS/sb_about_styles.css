@@ -46,11 +46,11 @@ section.aboutUs-content{
 
 .aboutUs-scroll{
     overflow-y:scroll;
-    max-height:250px;
+    height:250px;
     background-color: rgba(33, 30, 30, 0.6);
     padding-top: 20px;
     padding-left:20px;
-    border-radius:20px 0 0 20px;
+    border-radius:20px 5px 5px 20px;
     scroll-snap-type: y mandatory;
 }
 
@@ -112,5 +112,35 @@ line-height:1.5em;
 }
 
 @media only screen and (max-width: 768px){
+    .aboutUs-scroll{
+        height: 275px;
+        scroll-snap-type:none;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .aboutUs-bottom{
+        width:100%; 
+        display:flex;
+        flex-flow:column-reverse;
+        align-items:center;
+    }
+    
+    .aboutUs-left,
+    .aboutUs-right{
+        width: 100%;
+        align-items:center;
+    }
+
+    .aboutUs-scroll>div{
+        margin-bottom: 15px;
+        padding: 10px 0;
+    }
+    
+    #googleMap{
+        align-items: center;
+        margin: 0 0 ;
+        padding: 0;
+    }
 
 }
