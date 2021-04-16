@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../Media/Banner/Backgroundimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+div.loginRow {
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    fieldset {
+        width: 35%;
+        height: 50%;
+        padding: 5px;
+        margin: auto;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        border: #B97836 2px solid;
+        border-radius: 20px;
+    }
+
+    form {
+        text-align: center;
+        color: blanchedalmond;
+    }
+
+    legend {
+        text-align: center;
+        font-family: 'Amsterdam Variation_2', 'Segoe UI', Verdana, sans-serif;
+        color: #B97836;
+        font-size: 6em;
+    }
+
+    input {
+        text-align: center;
+    }
+
+    div.forgotPass a {
+        text-align: center;
+        padding-top: 10px;
+        color: blanchedalmond;
+    }
+
+    div.logPass {
+        float: right;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        color: aliceblue;
+    }
+
+    input[type=submit] {
+        background-color: white;
+        border: 2px solid #B97836;
+        color: #B97836;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    div.logSubmit {
+        clear: both;
+        float: right;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    #loginButton:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        border: #B97836 3px solid;
+    }
+
+    div.loginRow > a {
+        text-decoration: none;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    div.notMember a {
+        clear: both;
+        text-decoration: none;
+        float: right;
+        color: aliceblue;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    div.notMember a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        color: #B97836;
+        background-color: transparent;
+    }
+
+    div.loginRow > a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        color: #B97836;
+        background-color: transparent;
+    }
+
+    @media only screen and (max-width:767px) {
+        div.forgotp,
+        div.logPass,
+        input[type=submit],
+        div.logSubmit,
+        div.notMember a {
+            text-align: center;
+            float: none;
+            margin: 0 auto;
+        }
+     
+    }
+
+    form a:visited {
+        color: slategray;
+    }
