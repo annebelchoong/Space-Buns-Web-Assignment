@@ -114,11 +114,15 @@ line-height:1.5em;
 @media only screen and (max-width: 768px){
     .aboutUs-scroll{
         height: 275px;
-        scroll-snap-type:none;
+        /* scroll-snap-type:none; */
     }
 }
 
 @media only screen and (max-width: 480px){
+    .bannerCaption h1{
+        font-size: 80px;
+    }
+
     .aboutUs-bottom{
         width:100%; 
         display:flex;
