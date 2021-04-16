@@ -1,0 +1,221 @@
+@charset "utf-8";
+:root {
+    --gold: hsl(30, 55%, 47%);
+}
+
+html {
+    color: white;
+}
+
+.container {
+    /* background-color: rgb(36, 68, 109); */
+    /* height: 100vh; */
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    min-height: 80vh;
+}
+
+/* ############### Order Options Styles ############### */
+
+.order-options {
+    /* background-color: green; */
+}
+
+.options-block {
+    background-color: #1A1A1A;
+    margin: 30px auto;
+    /* padding: 100px; */
+    /* width: 575px; */
+    width: clamp(20%, 575px, 90%);
+    border-radius: 12px;
+    border-radius: 18px;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+.options-block h1 {
+    padding-top: 28px;
+}
+
+/* ############### Button Styles ############### */
+
+button {
+    all: unset;
+    cursor: pointer;
+    background-color: #000;
+    /* background-color: #252627; */
+    border: 1px var(--gold) solid;
+    color: var(--gold);
+    font-weight: bold;
+    border-radius: 9px;
+    font-size: 1.7em;
+    /* color: #fff; */
+    /* width: 100px;    */
+    border-radius: 30px;
+}
+
+button:hover, button:active {
+    /* opacity: 0.6; */
+    /* transition: 0.1s; */
+}
+
+button.confirm {
+    margin: 5px auto 50px;
+    background-color: #000;
+    color: var(--gold);
+    /* border: 10px var(--gold) solid; */
+}
+
+button:hover:enabled{
+    background-color: var(--gold);
+    color: white;
+    transition: 0.2s;
+}
+
+button[disabled] {
+    opacity: 0.5;
+}
+
+.options-block button, .confirm {
+    padding: 8px 20px;
+    margin: 35px 70px;
+}
+
+section>h1 {
+    /* color: red; */
+    padding-bottom: 30px;
+}
+
+/* ############### Delivery Section Styles ############### */
+
+#delivery-section {
+    display: none;
+}
+
+#delivery-map, #pickup-map {
+    border-radius: 20px;
+    height: 500px;
+    color: #000000;
+}
+
+#delivery-map {
+    width: 80%;
+    margin: 0 15px;
+    /* aspect-ratio: 5 / 1; */
+}
+
+#pickup-map {
+    width: 65%;
+    margin: 10px auto 40px;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#delivery-map #infowindow-content {
+    display: inline;
+}
+
+#pac-container {
+    display: flex;
+}
+
+.delivery-form {
+    margin: 0 0 0 15px;
+}
+
+button.gm-ui-hover-effect {
+    visibility: hidden;
+}
+
+label {
+    float: left;
+    /* margin: 15px auto 10px; */
+    margin-bottom: 10px;
+}
+
+textarea, input {
+    width: 100%;
+    /* height: 50px; */
+    background-color: #1A1A1A;
+    color: #ffffff;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 0.9em;
+    border: 1px var(--gold) solid;
+    border-radius: 6px;
+    margin: 10px auto 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+textarea:hover {
+    /* background-color: transparent; */
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+}
+
+input::placeholder {
+    color: #8b8888;
+    padding: 10px auto 50px;
+}
+
+/* ############### Pickup Section Styles ############### */
+
+#pickup-section {
+    display: none;
+}
+
+#branch-content img {
+    float: left;
+    /* vertical-align: middle; */
+}
+
+#branch-content h3 {
+    margin-bottom: 3px;
+}
+
+/* #branch-content a:link, #branch-content a:visited {
+    color: var(--gold); 
+    text-decoration: none;
+}  */
+
+#branch-content+button {
+    border: none;
+    color: var(--gold);
+    background-color: #1A1A1A;
+    /* border-radius: 7px; */
+    border-radius: 30px;
+    font-size: 1.2em;
+    margin-top: 6px;
+    padding: 10px 15px;
+}
+
+/* ############### Media Query ############### */
+
+@media only screen and (max-width:905px) {
+    #pac-container {
+        display: block;
+    }
+    #delivery-map {
+        width: 85%;
+        margin: 30px auto;
+    }
+    textarea, input {
+        width: 90%;
+    }
+    /* input{
+        width: 80%;
+    } */
+}
