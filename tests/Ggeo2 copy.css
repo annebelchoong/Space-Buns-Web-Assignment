@@ -68,12 +68,12 @@ button.confirm {
     color: var(--gold);
     /* border: 10px var(--gold) solid; */
 }
-
+/* 
 button:hover:enabled{
     background-color: var(--gold);
     color: white;
     transition: 0.2s;
-}
+} */
 
 button[disabled] {
     opacity: 0.5;
