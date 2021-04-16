@@ -213,7 +213,7 @@ h2{
     
 }
 
-@media only screen and (max-width:460px){
+@media only screen and (max-width:480px){
     .contactUs-right{
         display: flex;
         flex-flow: column;
