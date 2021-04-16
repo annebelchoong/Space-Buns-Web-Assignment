@@ -188,10 +188,6 @@ h2{
     .bannercaption h1{
         font-size: 80px;
     }
-
-    .contactUs-right{
-        height: 400px;
-    }
     
     .contactUs-message textarea{
         width: 95%;
@@ -211,9 +207,6 @@ h2{
         align-items: initial;
     }
     
-}
-
-@media only screen and (max-width:480px){
     .contactUs-right{
         display: flex;
         flex-flow: column;

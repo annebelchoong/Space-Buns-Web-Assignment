@@ -54,7 +54,7 @@ section.aboutUs-content{
     scroll-snap-type: y mandatory;
 }
 
-.aboutUs-scroll>div{
+.aboutUs-scroll-container{
     scroll-snap-align: center;
     margin-bottom: 10px;
     padding: 5px 0;
@@ -116,9 +116,9 @@ line-height:1.5em;
         height: 275px;
         /* scroll-snap-type:none; */
     }
-}
+/* }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 640px){ */
     .bannerCaption h1{
         font-size: 80px;
     }
@@ -145,6 +145,7 @@ line-height:1.5em;
         align-items: center;
         margin: 0 0 ;
         padding: 0;
+        width: 100%
     }
 
 }
