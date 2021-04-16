@@ -104,3 +104,13 @@ line-height:1.5em;
      border-radius: 20px;  
  }
 
+/* #################################### Media Query ################################### */
+@media only screen and (max-width: 1200px){
+    .bannerCaption h1{
+        font-size: 90px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+}
