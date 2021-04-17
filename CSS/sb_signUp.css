@@ -9,6 +9,16 @@ html {
     background-size: cover;
     }
 
+    .navbar-fixedtop{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 65px;
+        background-color: #B97836;
+        font-family: Verdana, sans-serif;
+        position:relative;
+    }
+
     #companylogo {
         transition: transform .5s ease;
     }

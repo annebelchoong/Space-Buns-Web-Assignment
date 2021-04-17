@@ -1,12 +1,21 @@
 @charset "utf-8";
 
-
 html {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../Media/Banner/Backgroundimg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    }
+
+    .navbar-fixedtop{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 65px;
+        background-color: #B97836;
+        font-family: Verdana, sans-serif;
+        position:relative;
     }
 
     #companylogo {
