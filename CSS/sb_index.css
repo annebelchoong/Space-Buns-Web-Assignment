@@ -138,6 +138,7 @@ h2 {
     .eventsBox{
         display: flex;
         flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
     }
     .eventsContents{
         flex: 0 0 calc(50% - 20px);
