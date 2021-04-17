@@ -122,4 +122,7 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
     nav.menu-nav {
         font-size: 0.8em;
     }
+    .menu-nav ul li a {
+        padding: 0 8px;
+    }
 }
