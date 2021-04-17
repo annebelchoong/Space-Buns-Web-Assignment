@@ -4,12 +4,16 @@
     src: url('Fonts/Amsterdam\ Variation_2.ttf') format(truetype);
 }
 
+html {
+    scroll-padding-top: 66px;
+}
+
 /* ##################### Menu Navigation Style ###################### */
 
 nav.menu-nav {
     float: none;
     position: sticky;
-    top: 0%;
+    top: 66px;
     background-color: rgba(26, 26, 26, 0.8);
     padding: 10px;
     width: fit-content;
@@ -26,7 +30,7 @@ nav.menu-nav ul li {
     color: #ffffff;
     padding: 15px;
     font-size: 1.1em;
-    font-weight: bolder;
+    font-weight: bolder
 }
 
 nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
@@ -112,10 +116,8 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
     background-color: #1A1A1A;
 }
 
-@media only screen and (max-width:445px){
-    
+@media only screen and (max-width:445px) {
     nav.menu-nav {
         font-size: 0.8em;
     }
-
 }
