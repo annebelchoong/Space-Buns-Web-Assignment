@@ -9,7 +9,15 @@ html {
     background-size: cover;
     }
 
-div.loginRow {
+    #companylogo {
+        transition: transform .5s ease;
+    }
+    
+    #companylogo:hover {
+        transform: scale(1.2);
+    }
+
+    div.loginRow {
         margin: 0 auto;
         padding: 10px;
         margin-top: 5%;
@@ -23,7 +31,6 @@ div.loginRow {
         margin-bottom: 100px;
         margin-top: 100px;
         border: #B97836 2px solid;
-        border-radius: 20px;
     }
 
     form {
@@ -33,9 +40,10 @@ div.loginRow {
 
     legend {
         text-align: center;
+        font-weight: bold;
         font-family: 'Amsterdam Variation_2', 'Segoe UI', Verdana, sans-serif;
         color: #B97836;
-        font-size: 6em;
+        font-size: 4em;
     }
 
     input {
@@ -58,13 +66,12 @@ div.loginRow {
 
     input[type=submit] {
         background-color: white;
-        border: 2px solid #B97836;
+        border: none;
         color: #B97836;
         padding: 10px 20px;
         text-decoration: none;
         margin: 4px 2px;
         cursor: pointer;
-        border-radius: 10px;
     }
 
     div.logSubmit {
@@ -74,10 +81,14 @@ div.loginRow {
         padding-bottom: 5%;
     }
 
+    #loginButton {
+        transition: transform .5s ease;
+    }
+
     #loginButton:hover {
         text-decoration: underline;
         font-weight: bold;
-        border: #B97836 3px solid;
+        transform: scale(1.2);
     }
 
     div.loginRow > a {
@@ -95,7 +106,8 @@ div.loginRow {
         padding-bottom: 5%;
     }
 
-    div.notMember a:hover {
+    div.notMember a:hover,
+    form a:visited {
         text-decoration: underline;
         font-weight: bold;
         color: #B97836;
@@ -120,8 +132,4 @@ div.loginRow {
             margin: 0 auto;
         }
      
-    }
-
-    form a:visited {
-        color: slategray;
     }
