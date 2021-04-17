@@ -12,7 +12,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
-    <script src="Javascript/membership.js"></script>
+    <script src="Javascript/signUp.js"></script>
 </head>
 
 <body>
@@ -46,63 +46,67 @@
 
     <section class="logintab">
 
-        <fieldset style="text-align: center;background: url(Media/Member/logbackg2.jpg); background-size: contain;">
+    <fieldset style="text-align: center;background: url(Media/Member/logbackg2.jpg); background-size: contain;">
 
-            <legend>Sign Up</legend>
-            <a href="sb_index.html">
-                <img src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" height="100px" width="150px"
-                    style="padding-top: 5%;"> </a>
+    <legend>Sign Up</legend>
+       <a href="sb_index.html"> 
+        <img id="companylogo" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" 
+        height="100px" width="150px" style="padding-top: 5%;"> </a>
+       
+        <form id="SignUpForm" name="SignUpForm" action="sb_login.html" onsubmit="SignUpSuccess()">
 
-            <form id="SignUpForm" name="SignUpForm" action="sb_login.html">
+            <div class="signupRow">
+                <i class='fas fa-user-alt'></i>
+                <label for="custuserName">Username</label></br>
+                <input type="text" id="custuserName" name="custuserName"
+                placeholder="Username (min 6 max 12)"
+                minlength="6" maxlength="12" autofocus required>
+            </div>
+        
+            <div class="signupRow">
+                <i class="fa fa-lock"></i>
+                <label for="NewPwd">Password</label></br>
+                <input type="password" id="NewPwd" name="NewPwd"
+                placeholder="Password (min 8 max 12)" 
+                minlength="8" maxlength="12" required  onblur="checkuserpass()">
+            </div>
+            <span id="Notvalid" style="color:red"> </span>
 
-                <div class="signupRow">
-                    <i class='fas fa-user-alt'></i>
-                    <label for="custuserName">Username</label></br>
-                    <input type="text" id="custuserName" name="custuserName" placeholder="Username (min 6 max 12)"
-                        minlength="6" maxlength="12" autofocus required>
-                </div>
+            <div class="signupRow">
+                <i class="fa fa-lock"></i>
+                <label for="confirmPwd">Password Confirmation</label></br>
+                <input type="password" id="confirmPwd" name="confirmPwd"
+                placeholder="Re-enter Password" onblur="confirmPass()" required></br>
+            </div>
+            <span id="error" style="color:red"> </span>
+            
+            <div class="signupRow">
+                <i class="fa fa-envelope"></i>
+                <label for="custEmail">Email</label></br>
+                <input type="email" id="custEmail" name="custEmail"
+                placeholder="someone@example.123" 
+                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
+                required></br>
+            </div>
 
-                <div class="signupRow">
-                    <i class="fa fa-lock"></i>
-                    <label for="NewPwd">Password</label></br>
-                    <input type="password" id="NewPwd" name="NewPwd" placeholder="Password (min 8 max 12)" minlength="8"
-                        maxlength="12" required onblur="checkuserpass()">
-                </div>
-                <span id="Notvalid" style="color:red"> </span>
+            <div class="signupRow">
+                <i class="fa fa-phone"></i>
+                <label for="custPhoneNo">Phone Number</label></br>
+                <input type="tel" id="custPhoneNo" name="custPhoneNo"
+                placeholder="012-345 6789" pattern="[0-9]{3}-[0-9]{3} [0-9]{4}" required required></br>
+                <input type="checkbox" id="signupPrivacy" required> I have read and accept the 
+                <a href="sb_privacy_policy.html" target="_blank">Privacy Policy</a>
+            </div>
 
-                <div class="signupRow">
-                    <i class="fa fa-lock"></i>
-                    <label for="confirmPwd">Password Confirmation</label></br>
-                    <input type="password" id="confirmPwd" name="confirmPwd" placeholder="Confirm Password"
-                        onblur="confirmPass()" required></br>
-                </div>
-                <span id="error" style="color:red"> </span>
+            <span>Already a member? <a href="sb_login.html">
+            Login</a></span>
 
-                <div class="signupRow">
-                    <i class="fa fa-envelope"></i>
-                    <label for="custEmail">Email</label></br>
-                    <input type="email" id="custEmail" name="custEmail" placeholder="someone@example.123"
-                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></br>
-                </div>
+            <div class="signupRow">
+                <input type="submit" value="SignUp" id="signupButton">
+            </div>
+        </form> 
 
-                <div class="signupRow">
-                    <i class="fa fa-phone"></i>
-                    <label for="custPhoneNo">Phone Number</label></br>
-                    <input type="tel" id="custPhoneNo" name="custPhoneNo" placeholder="012-345 6789"
-                        pattern="[0-9]{3}-[0-9]{3} [0-9]{4}" required required></br>
-                    <input type="checkbox" id="signupPrivacy" required> I have read and accept the
-                    <a href="sb_privacy.html" target="_blank">Privacy Policy</a>
-                </div>
-
-                <span>Already a member? <a href="sb_login.html">
-                        Login</a></span>
-
-                <div class="signupRow">
-                    <input type="submit" value="SignUp" id="signupButton">
-                </div>
-            </form>
-
-        </fieldset>
+    </fieldset>
 
     </section>
 
