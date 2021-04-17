@@ -15,7 +15,7 @@ html {
 nav.menu-nav {
     float: none;
     position: sticky;
-    top: 66px;
+    top: 65px;
     background-color: rgba(26, 26, 26, 0.8);
     padding: 10px;
     width: fit-content;
