@@ -1,59 +1,57 @@
-.contactUs-container{
+.contactUs-container {
     max-width: 960px;
-    margin:auto;
-    margin-top:50px;
+    margin: auto;
+    margin-top: 50px;
     margin-bottom: 50px;
-    display:flex;
-    /* background-color: yellow; */
+    display: flex;
 }
 
-.contactUs-left{
-    width:65%;
-    /* background-color: red; */
+.contactUs-left {
+    width: 65%;
     margin: 20px;
 }
 
-h2{
+h2 {
     color: white;
     padding-bottom: 30px;
     font-size: 35px;
 }
 
-.contactUs-left h3{
-    color:#B97836;
+.contactUs-left h3 {
+    color: #B97836;
     font-size: 1.5em;
     padding-bottom: 20px;
 }
 
-.contactUs-form label{
+.contactUs-form label {
     font-size: 1em;
     font-weight: 600;
-    color:white;
+    color: white;
 }
 
-.contactUs-form input[type=text]{
+.contactUs-form input[type=text] {
     border-radius: 6px;
     border: 1px #B97836 solid;
-    width: 280px;
+    width: 50%;
     height: 30px;
     background-color: #1A1A1A;
     margin: 10px 0px;
     padding: 10px;
     font-size: 0.9em;
     color: #ffffff;
-    text-align:unset;
+    text-align: unset;
 }
 
-.details::after{
-    content:"*";
+.details::after {
+    content: "*";
     color: red;
 }
 
-#subject{
+#subject {
     width: 90%;
 }
 
-.contactUs-message textarea{
+.contactUs-message textarea {
     border-radius: 10px;
     border: 1px #B97836 solid;
     background-color: #1A1A1A;
@@ -61,159 +59,149 @@ h2{
     padding: 10px;
     font-size: 1.1em;
     color: #ffffff;
-    text-align:unset;
+    text-align: unset;
     resize: none;
     width: 90%;
-    font-family:'Segoe UI',sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-
-.submit-contactUs input{
-    border:none;
-    background-color:black;
+.submit-contactUs input {
+    border: none;
+    background-color: black;
     font-size: 1.2em;
-    color:#B97836;
-    padding:10px 20px;
+    color: #B97836;
+    padding: 10px 20px;
     margin-bottom: 30px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.submit-contactUs input:hover,
-.submit-contactUs input:active{
+.submit-contactUs input:hover, .submit-contactUs input:active {
     background-color: #B97836;
-    color:white;
+    color: white;
     transition: 0.3s ease-in-out;
-
 }
 
-.contactUs-form input::placeholder { 
+.contactUs-form input::placeholder {
     color: #8b8888;
-} 
+}
 
-.contactUs-message textarea::placeholder { 
+.contactUs-message textarea::placeholder {
     color: #8b8888;
-    font-family:'Segoe UI',sans-serif;
-} 
+    font-family: 'Segoe UI', sans-serif;
+}
 
-.contactUs-form div{
+.contactUs-form div {
     padding: 10px 0;
 }
 
-.contactUs-right{
+.contactUs-right {
     width: 40%;
-    height:570px;
+    height: 570px;
     background-color: #1A1A1A;
     padding: 50px;
-    padding-bottom:100px;
+    padding-bottom: 100px;
     border-radius: 20px;
-    box-shadow:0px 0px 20px black ;
+    box-shadow: 0px 0px 20px black;
 }
-.contactUs-right div{
+
+.contactUs-right div {
     padding: 25px 0;
 }
 
-.contactUs-right h3{
-    color:#B97836;
+.contactUs-right h3 {
+    color: #B97836;
     font-size: 1.5em;
     padding: 10px 0 20px 0;
 }
-.contactUs-right i{
+
+.contactUs-right i {
     font-size: 1.4em;
     color: #B97836;
     text-shadow: 3px 3px 5px black;
     padding-right: 20px;
     padding-bottom: 20px;
 }
-.contactUs-right a,
-.contactUs-right span,
-.contactUs-right address{
+
+.contactUs-right a, .contactUs-right span, .contactUs-right address {
     color: white;
     text-decoration: none;
 }
 
-.contactUs-right address{
-    padding-left:40px;
+.contactUs-right address {
+    padding-left: 40px;
     line-height: 2em;
 }
 
-
 /* #################################### Media Query ################################### */
-@media only screen and (max-width:1200px){
-    .bannercaption h1{
+
+@media only screen and (max-width:1200px) {
+    .bannercaption h1 {
         font-size: 120px;
     }
-    
-    .contactUs-container{
+    .contactUs-container {
         flex-flow: column;
         align-items: center;
     }
-
-    .contactUs-right{
+    .contactUs-right {
         width: 95%;
         height: 350px;
         display: flex;
         flex-flow: row;
         margin: auto;
     }
-
-    .contactUs-right div{
-        display:flex;
+    .contactUs-right div {
+        display: flex;
         flex-flow: row;
         padding: 0 15px;
     }
-
-    .sb-details div{
-        display:flex;
+    .sb-details div {
+        display: flex;
         flex-flow: column;
         width: 33%;
         align-items: center;
     }
-    
-    .location address{
+    .location address {
         padding-top: 20px;
         padding-left: 5px;
     }
 }
 
-@media only screen and (max-width:970px){
-    .bannercaption h1{
+@media only screen and (max-width:970px) {
+    .bannercaption h1 {
         font-size: 90px;
     }
 }
 
-@media only screen and (max-width:768px){
-   
-    .bannercaption h1{
+@media only screen and (max-width:768px) {
+    .bannercaption h1 {
         font-size: 80px;
     }
-    
-    .contactUs-message textarea{
+    .contactUs-form input[type=text] {
+        width: 90%;
+    }
+    .contactUs-message textarea {
         width: 95%;
     }
-
     .contactUs-right div {
         display: flex;
         flex-flow: column;
         padding: 0 20px;
     }
-
-    .sb-details div{
+    .sb-details div {
         display: flex;
         flex-flow: row;
         width: 100%;
         padding: 20px 0;
         align-items: initial;
     }
-    
-    .contactUs-right{
+    .contactUs-right {
         display: flex;
         flex-flow: column;
         align-items: center;
     }
-
-    .contactUs-right{
+    .contactUs-right {
         height: 550px;
     }
 }
