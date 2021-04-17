@@ -4,6 +4,8 @@
     src: url('Fonts/Amsterdam\ Variation_2.ttf') format(truetype);
 }
 
+/* ##################### HTML style ###################### */
+
 html {
     scroll-padding-top: 66px;
 }
