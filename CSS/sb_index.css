@@ -1,18 +1,30 @@
 @charset "utf-8";
 
+.mainh1 {
+    padding: 10px;
+    font-size: 2.5em;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+main a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+main a:hover,
+main a:visited  {
+    color: #B97836;
+}
+
+/* About Us Starts */
 article.maincontent1 {
     padding: 15px;
     text-align: justify; 
     margin-left: 15%; 
     margin-right: 15%;
-    }
-
-.mainh1 {
-    padding: 10px;
-    font-size: 2em;
-    text-align: center;
-    color:rgb(255, 255, 255);
 }
+/* About Us Ends */
 
 #whowearecontent {
     color: #B97836;
@@ -20,12 +32,15 @@ article.maincontent1 {
     background-color: 	hsl(15, 0%, 0%);
 }
 
+/* Recommendations Image Map Starts */
 article.maincontent2 {
     padding: 15px;
     text-align: center;  
     background-color: 	hsl(15, 0%, 0%);
 }
+/* Recommendaitons Image Map Ends */
 
+/* Promotions Starts */
 article.maincontent3 {
     padding: 15px;
 }
@@ -66,28 +81,72 @@ article.maincontent3 {
     cursor: pointer;
 }
 
+/* Screen size less than 653px slider do not display */
+@media only screen and (max-width: 653px) {
+    article.maincontent3 {
+        display: none;
+    }
+}
+/* Promotions Ends */
+
+/*Events Starts */
 article.maincontent4 {
     margin-left: 15%;
     margin-right: 15%;
     padding: 15px;
+    text-align: center;
 }
 
-main a {
-    color: aliceblue;
-    text-decoration: none;
+.eventsBox {
+    text-align: center;
 }
 
-main a:hover,
-main a:visited  {
+.eventsDesc {
+    height: 140px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: Justify;
     color: #B97836;
+    background-color: black;
+    overflow: auto;
 }
 
-#formoreinfo:hover{
-    text-decoration: underline;
-    font-weight: bold;
+h2 {
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-@media only screen and (max-width:640px) {
+.eventsImg {
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+.eventsImg img{
+    width: 95%;
+    display: block;
+    transition: transform .4s ease-in-out;
+}
+
+.eventsImg:hover img{
+    transform: scale(1.2);
+}
+
+@media only screen and (min-width: 1000px){
+    .eventsBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .eventsContents{
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+/*Events Ends*/
+
+@media only screen and (max-width:653px) {
     div > video {
         width: 100%;
     }

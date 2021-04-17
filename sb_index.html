@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="Media/icons/favicon.ico">
     <link rel="stylesheet" href="CSS/sb_masterlayout.css">
     <link rel="stylesheet" href="CSS/sb_index.css">
-    <link rel="stylesheet" href="CSS/sb_events.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -130,36 +129,39 @@
             <article class="maincontent4">
                     <h1 class="mainh1">Events</h1>
 
-                    <div class = "events-container">
+                    <article class="eventsBox">
 
-                        <article class = "events">
-                            <div class = "events-image">
-                                <img src = "Media/Events/event1.jpg" alt = "events image">
+                        <article class="eventsContents">
+                            <div class= "eventsImg">
+                                <img src="Media/Home/event1.jpg" alt ="Corporate Events Image">
                             </div>
-                            <div class = "events-text">
-                                <h3>CORPORATE EVENTS</h3>
-                                <p> Some are cheesy, others can be a little dry, </p>
-                                <p> and the rare few are a disaster. </p>
-                                <p> There are so many burgers out there it can be hard to commit to just one favorite.</p>
-                                <p> That being said, when you know, you just know.</p>
+
+                            <h2>CORPORATE EVENTS</h2>
+
+                            <div class="eventsDesc">
+                                <p> Working in an office do not have to be boring. Host
+                                    office parties with us NOW! We provide the best burgers.
+                                    Burgers and Parties, what are you waiting for? </br> </br>
+                                    <a href="sb_events.html" id="formoreinfo"><b>Click Me!</b></a> to find out more!
+                                </p>
                             </div>
                         </article>
         
-                         <article class = "events">
-                            <div class = "events-image">
-                                <img src = "Media/Events/event4.jpg" alt = "events image">
+                         <article class="eventsContents">
+                            <div class = "eventsImg">
+                                <img src = "Media/Home/event4.jpg" alt ="Weddings Event Image">
                             </div>
-                            <div class = "events-text">
-                                <h3>WEDDINGS</h3>
-                                <p> Whether you're a ketchup and mustard loyalist or you prefer house sauce to no sauce,</p>
-                                <P> you can agree that every burger has it's own special flair.</P>
-                                <P> Top tip: house sauce begs to be ordered on the side for fry-dipping purpose.</p>
+                                <h2>WEDDINGS</h2>
+                            <div class="eventsDesc" >
+                                <p> Life is an event. Make it memorable. We provide you with fresh ideas for
+                                    your wedding. A stylish and fun wedding begins with US! 
+                                    Sit back while we create the experience of a lifetime </br>
+                                    <a href="sb_events.html" id="formoreinfo"><b>Click Me!</b></a> to find out more!
+                                </p>
                             </div>
                         </article>
-
-                    </div>
-
-                    <p style="font-size: 20px;color: aliceblue;"> <i>For more informations,</i> <a href="sb_events.html" id="formoreinfo"> CLICK ME! </a></p>
+                        
+                    </article>
             </article>
             <!-- Events End -->
 
@@ -171,7 +173,7 @@
             </article>
             <!--Reviews End-->
 
-            <audio id="WelcomeAudio" src="Media/Home/WelAudio.mp3" autoplay></audio>
+            <audio style="display: none;" id="WelcomeAudio" src="Media/Home/WelAudio.mp3" autoplay></audio>
 
             <script>
                 window.onload = function() {
