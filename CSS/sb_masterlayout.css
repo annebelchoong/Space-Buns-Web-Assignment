@@ -262,10 +262,10 @@ footer.footer {
 
 @media only screen and (max-width:1200px) {
     /* ################### Banner ######################## */
-    .bannercaption h1 {
+    .bannerCaption h1 {
         font-size: 120px;
     }
-    .bannercaption-index h1 {
+    .bannerCaption-index h1 {
         font-size: 120px;
     }
     /* ################### Footer ######################## */
@@ -310,14 +310,11 @@ footer.footer {
     body {
         overflow-x: hidden;
     }
-    /* .navbar-fixedtop {
-        width: 100%;
-    } */
     /* ################### Banner ######################## */
-    .bannercaption h1 {
+    .bannerCaption h1 {
         font-size: 80px;
     }
-    .bannercaption-index h1 {
+    .bannerCaption-index h1 {
         font-size: 100px;
     }
     /* ################### Nav bar ######################## */
