@@ -27,13 +27,13 @@ html {
     margin: 30px auto;
     /* padding: 100px; */
     /* width: 575px; */
-    width: clamp(20%, 575px, 90%);
-    border-radius: 12px;
+    width: clamp(20%, 530px, 80%);
     border-radius: 18px;
 }
 
 h1 {
     font-size: 2em;
+    /* margin-bottom: 10px; */
 }
 
 .options-block h1 {
@@ -86,7 +86,7 @@ button[disabled] {
 
 section>h1 {
     /* color: red; */
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 /* ############### Delivery Section Styles ############### */
