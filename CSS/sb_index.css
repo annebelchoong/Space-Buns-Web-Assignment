@@ -63,7 +63,7 @@ article.maincontent3 {
     width: 600px;
     height: 300px;
     margin: auto;
-    border: 1px solid #B97836;
+    border: 0.5px solid #B97836;
     overflow: hidden;
     position: relative;
     min-width: 600px;
@@ -122,13 +122,27 @@ article.maincontent4 {
     text-align: center;
 }
 
+.eventsHeader {
+    background-color:  #B97836;
+    animation-name: eventsHeaderAni;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes eventsHeaderAni {
+    0%   {background-color:hsl(15, 0%, 0%);text-shadow: 2px 2px #B97836;}
+    25%  {background-color:#B97836; text-shadow: 2px 2px hsl(15, 0%, 0%);}
+    50%  {background-color:hsl(15, 0%, 0%);text-shadow: 2px 2px #B97836;}
+    75%  {background-color:#B97836; text-shadow: 2px 2px hsl(15, 0%, 0%);}
+    100% {background-color:hsl(15, 0%, 0%);text-shadow: 2px 2px #B97836;}
+  }
+
 .eventsBox {
     text-align: center;
-
 }
 
 .eventsDesc {
-    height: 140px;
+    height: 160px;
     padding: 15px;
     margin-bottom: 10px;
     text-align: Justify;
@@ -168,6 +182,7 @@ h2 {
     }
     .eventsContents{
         flex: 0 0 calc(50% - 20px);
+        -webkit-flex: 0 0 calc(50% - 20px);
         margin: 10px;
     }
 }
