@@ -230,7 +230,7 @@ footer.footer {
     display: inline-block;
     height: 40px;
     width: 40px;
-    margin: 0 25px 10px 0;
+    margin: 0 12px 10px 12px;
     font-size: 20px;
     color: white;
     background-color: rgba(255, 255, 255, 0.2);
@@ -291,12 +291,15 @@ footer.footer {
     /* ################### Footer ######################## */
     .footer-left {
         width: 100%;
-        display: block;
+        display: flex;
         align-items: center;
     }
     .footer-links {
-        column-gap: 30px;
-        padding-left: 18%;
+        /* column-gap: 30px;
+        text-align: center; */
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
     .followUs {
         margin-top: 40px;
