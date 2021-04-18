@@ -137,10 +137,14 @@ label.navbar-mobileNav {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -70%);
     color: white;
+}
+
+.bannerCaption-index h1 {
+    font-size: 150px;
 }
 
 /* #################################### Scrollbar ################################### */
@@ -256,9 +260,15 @@ footer.footer {
 
 /* #################################### Media Query ################################### */
 
-/* ################### Footer ######################## */
-
 @media only screen and (max-width:1200px) {
+    /* ################### Banner ######################## */
+    .bannercaption h1 {
+        font-size: 120px;
+    }
+    .bannercaption-index h1 {
+        font-size: 120px;
+    }
+    /* ################### Footer ######################## */
     .footer-right {
         display: flex;
         width: 100%;
@@ -296,13 +306,21 @@ footer.footer {
     }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
     body {
         overflow-x: hidden;
     }
     /* .navbar-fixedtop {
         width: 100%;
     } */
+    /* ################### Banner ######################## */
+    .bannercaption h1 {
+        font-size: 80px;
+    }
+    .bannercaption-index h1 {
+        font-size: 100px;
+    }
+    /* ################### Nav bar ######################## */
     .navbar-links {
         position: fixed;
         height: 100vh;

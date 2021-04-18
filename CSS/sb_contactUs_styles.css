@@ -137,9 +137,6 @@ h2 {
 /* #################################### Media Query ################################### */
 
 @media only screen and (max-width:1200px) {
-    .bannercaption h1 {
-        font-size: 120px;
-    }
     .contactUs-container {
         flex-flow: column;
         align-items: center;
@@ -175,9 +172,6 @@ h2 {
 }
 
 @media only screen and (max-width:768px) {
-    .bannercaption h1 {
-        font-size: 80px;
-    }
     .contactUs-form input[type=text] {
         width: 90%;
     }
