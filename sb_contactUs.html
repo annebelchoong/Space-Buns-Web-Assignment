@@ -58,30 +58,27 @@
                 <form action="" class="contactUs-form">
                     <div class="contactUs-name">
                         <label for="name" class="details">Full Name</label><br>
-                        <input type="text" name="contactUs-details" id="name" placeholder="Tan Ah Beng" required>
+                        <input type="text" id="name" placeholder="Tan Ah Beng" required>
                     </div>
                     <div class="contactUs-email">
                         <label for="email" class="details">Email</label><br>
-                        <input type="text" name="contactUs-details" id="email" placeholder="spacebuns@gmail.com"
-                            required>
+                        <input type="text" id="email" placeholder="spacebuns@gmail.com" required>
                     </div>
                     <div class="contactUs-phoneNumber">
                         <label for="phoneNumber" class="details">Phone Number</label><br>
-                        <input type="text" name="contactUs-details" id="phoneNumber" placeholder="0123456789" required>
+                        <input type="text" id="phoneNumber" placeholder="012-3456789" required>
                     </div>
                     <div class="contactUs-subject">
                         <label for="subject" class="details">Subject</label><br>
-                        <input type="text" name="contactUs-details" id="subject" placeholder="Eg. Feedbacks on Burgers"
-                            required>
+                        <input type="text" id="subject" placeholder="Eg. Feedbacks on Burgers" required>
                     </div>
                     <div class="contactUs-message">
                         <label for="message" class="details">Message</label><br>
-                        <textarea name="contactUs-details" id="message" rows="10" cols="80"
-                            placeholder="Your message to us" required></textarea>
+                        <textarea id="message" rows="10" cols="80" placeholder="Your message to us" required></textarea>
                     </div>
                     <div class="submit-contactUs">
                         <label for="submit"></label><br>
-                        <input type="submit" name="contactUs-details" id="submit" required>
+                        <input type="submit" id="submit" onclick="submitButton()">
                     </div>
                 </form>
             </div>
@@ -158,7 +155,7 @@
 
 
     </footer>
-
+    <script src="Javascript/contactUs-form.js"></script>
 </body>
 
 
