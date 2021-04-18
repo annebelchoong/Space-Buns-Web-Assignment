@@ -50,28 +50,27 @@
     </header>
 
     <section>
-        <!-- put ur main content here -->
         
     <main>
             <!-- Intro Video Starts -->
-            <div class="video_1" style="text-align: center; padding: 20px; background-color: hsl(15, 0%, 0%);">
+            <div class="introVideo">
                 <video width = 60% margin = 0 controls loop style="border: 1.5px solid #B97836;">
                     <source src="Media/Home/home_video.mov" type="video/mp4">
                     Your browser does not support HTML video.
                 </video>
                 
                 <p style="font-size: 10px; color: rgb(255, 255, 255);"> 
-                    Music: In Dreams by Scott Buckley | <a href="www.scottbuckley.com.au" 
-                    style="color: blue; text-decoration: underline;"> www.scottbuckley.com.au </a> 
+                    Music: In Dreams by Scott Buckley | <a href="https://www.scottbuckley.com.au" 
+                    style="text-decoration: underline;"> www.scottbuckley.com.au </a> 
                 </p>
             </div>
             <!-- Intro Video Ends -->
 
             <!-- About Us starts -->
-            <article class=maincontent1>
+            <article class=maincontent1 id="whoarewe">
                 <h1 class="mainh1">Who Are We?</h1>
                 <a href="sb_about.html">
-                    <p id="whowearecontent">
+                    <p id="whoarewecontent">
                         <b>Space Buns</b> is a <i>consumer-centric burger business</i> that focuses on making the best handmade burgers in the world.
                         Inspired by the infamous “Burger Ramly '' which is loved by every true Malaysian, we decided to make a classy 
                         version of it. So, we started with a simple concept of selling affordable and delicious burgers paired with the best 
@@ -155,15 +154,16 @@
                             </div>
                                 <h2>WEDDINGS</h2>
                             <div class="eventsDesc" >
-                                <p> Life is an event. Make it memorable. We provide you with fresh ideas for
+                                <p> Life is like an event. Make it memorable. We provide you with fresh ideas for
                                     your wedding. A stylish and fun wedding begins with US! 
-                                    Sit back while we create the experience of a lifetime </br>
+                                    Sit back while we bring you the experience of a lifetime </br>
                                     <a href="sb_events.html" id="formoreinfo"><b>Click Me!</b></a> to find out more!
                                 </p>
                             </div>
                         </article>
                         
                     </article>
+
             </article>
             <!-- Events End -->
 
@@ -175,7 +175,9 @@
             </article>
             <!--Reviews End-->
 
-            <audio style="display: none;" id="WelcomeAudio" src="Media/Home/WelAudio.mp3" autoplay></audio>
+            <audio style="display: none;" id="WelcomeAudio" src="Media/Home/WelAudio.mp3" autoplay>
+                Your browser does not support the audio tag.
+            </audio>
 
             <script>
                 window.onload = function() {

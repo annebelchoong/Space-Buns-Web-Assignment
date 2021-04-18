@@ -17,6 +17,20 @@ main a:visited  {
     color: #B97836;
 }
 
+/* Intro Video */
+.introVideo {
+    text-align: center; 
+    padding: 20px; 
+    background-color: hsl(15, 0%, 0%);
+}
+
+@media only screen and (max-width:653px) {
+    div > video {
+        width: 100%;
+    }
+}
+/* Intro Video Ends */
+
 /* About Us Starts */
 article.maincontent1 {
     padding: 15px;
@@ -26,7 +40,7 @@ article.maincontent1 {
 }
 /* About Us Ends */
 
-#whowearecontent {
+#whoarewecontent {
     color: #B97836;
     padding: 20px;
     background-color: 	hsl(15, 0%, 0%);
@@ -101,6 +115,7 @@ article.maincontent4 {
 
 .eventsBox {
     text-align: center;
+
 }
 
 .eventsDesc {
@@ -109,7 +124,7 @@ article.maincontent4 {
     margin-bottom: 10px;
     text-align: Justify;
     color: #B97836;
-    background-color: black;
+    background-color: hsl(15, 0%, 0%);
     overflow: auto;
 }
 
@@ -127,7 +142,7 @@ h2 {
 }
 
 .eventsImg img{
-    width: 95%;
+    width: 100%;
     display: block;
     transition: transform .4s ease-in-out;
 }
@@ -148,9 +163,3 @@ h2 {
     }
 }
 /*Events Ends*/
-
-@media only screen and (max-width:653px) {
-    div > video {
-        width: 100%;
-    }
-}
