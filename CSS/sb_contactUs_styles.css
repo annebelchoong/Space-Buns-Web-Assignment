@@ -124,12 +124,12 @@ h2 {
     padding-bottom: 20px;
 }
 
-.contactUs-right a, .contactUs-right span, .contactUs-right address {
+.contactUs-right a, .contactUs-right span, .contactUs-right p {
     color: white;
     text-decoration: none;
 }
 
-.contactUs-right address {
+.contactUs-right p {
     padding-left: 40px;
     line-height: 2em;
 }
@@ -165,7 +165,7 @@ h2 {
         width: 33%;
         align-items: center;
     }
-    .location address {
+    .location p {
         padding-top: 20px;
         padding-left: 5px;
     }
