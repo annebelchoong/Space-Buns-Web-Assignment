@@ -27,6 +27,7 @@ html {
     background-color: #B97836;
     font-family: Verdana, sans-serif;
     position: fixed;
+    top: 0;
     z-index: 1;
     width: 100%;
 }
