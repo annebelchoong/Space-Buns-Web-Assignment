@@ -97,7 +97,7 @@ article.maincontent3 {
 
 .carousel-container #prevBtn, 
 .carousel-container #nextBtn {
-  opacity: 0;
+  opacity: 0.2;
   transition: opacity .3s;
 }
 
