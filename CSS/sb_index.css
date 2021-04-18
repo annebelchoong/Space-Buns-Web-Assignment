@@ -67,6 +67,7 @@ article.maincontent3 {
     z-index: 10;
     left: 5%;
     font-size: 30px;
+    opacity: 0.8;
     color: aliceblue;
     cursor: pointer;
 }
@@ -77,6 +78,7 @@ article.maincontent3 {
     z-index: 10;
     right: 5%;
     font-size: 30px;
+    opacity: 0.8;
     color: aliceblue;
     cursor: pointer;
 }
