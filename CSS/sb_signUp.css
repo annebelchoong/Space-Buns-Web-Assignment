@@ -78,11 +78,11 @@ html {
     }
 
     #signupButton {
-        transition: transform .5s ease;
+        transition: transform .1s ease;
     }
 
     #signupButton:hover {
         text-decoration: underline;
         font-weight: bold;
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
