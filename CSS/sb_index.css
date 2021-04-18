@@ -81,7 +81,6 @@ article.maincontent3 {
     z-index: 10;
     left: 5%;
     font-size: 30px;
-    opacity: 0.8;
     color: aliceblue;
     cursor: pointer;
 }
@@ -92,9 +91,19 @@ article.maincontent3 {
     z-index: 10;
     right: 5%;
     font-size: 30px;
-    opacity: 0.8;
     color: aliceblue;
     cursor: pointer;
+}
+
+.carousel-container #prevBtn, 
+.carousel-container #nextBtn {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.carousel-container:hover #prevBtn,
+.carousel-container:hover #nextBtn {
+  opacity: 1;
 }
 
 /* Screen size less than 653px slider do not display */
