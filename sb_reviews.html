@@ -1,13 +1,15 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Contact Us | Space Buns</title>
+    <title>Reviews | Space Buns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Media/icons/favicon.ico">
     <link rel="stylesheet" href="CSS/sb_masterlayout.css">
-    <link rel="stylesheet" href="CSS/sb_contactUs_styles.css">
+    <link rel="stylesheet" href="CSS/sb_reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -44,7 +46,7 @@
 
         <div class="banner">
             <div class="bannerCaption">
-                <h1>Contact Us</h1>
+                <h1>Reviews</h1>
             </div>
         </div>
 
@@ -123,6 +125,18 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script type="text/javascript">
+        $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        });
+    </script>
 </body>
 
 </html>

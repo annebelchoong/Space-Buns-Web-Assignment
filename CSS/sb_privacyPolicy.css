@@ -1,49 +1,26 @@
-section {
+section.privacy_content {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    color: #B97836;
+    padding: 30px;
+}
+
+.privacy_container {
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
-}
-
-.slider {
-    width: 70%;
-    margin: auto;
-}
-
-.slick-slide {
-    margin: 20px 10px;
-}
-
-.slick-slide img {
-    width: 100%;
-    height: auto;
-}
-
-.slick-slide {
-    transition: all ease-in-out;
-    opacity: 0.05;
-}
-
-.slick-active {
-    opacity: 0.2;
-}
-
-.slick-current {
-    opacity: 1;
 }
 
 h2 {
     color: white;
-    text-align: center;
-    font-size: 20px;
+    padding-bottom: 25px;
+    font-size: 30px;
 }
 
-.featured {
-    text-align: center;
-    margin: 5px;
+h3 {
+    color: grey;
+    padding-bottom: 5px;
+    font-size: 25px;
 }
 
-.featured img {
-    width: 80%;
-    margin: auto;
-    height: auto;
+ul li::marker {
+    color: grey;
 }
