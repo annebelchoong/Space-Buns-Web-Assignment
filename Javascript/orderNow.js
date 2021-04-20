@@ -1,171 +1,140 @@
 function initMap() {
 
-    //Map Options
-    var startMap = {
-        zoom: 11,
-        center: { lat: 3.090762, lng: 101.591560 }, // this will have to be their current location
+    const deliveryMap = new google.maps.Map(document.getElementById("delivery-map"), {
+        // center: { lat: 3.081249, lng: 101.634908 },
+        center: { lat: 3.041249, lng: 101.634908 },
+        zoom: 10,
         disableDefaultUI: true,
-        // styles: [
-        //     { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-        //     { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
-        //     { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-        //     {
-        //         featureType: "administrative.locality",
-        //         elementType: "labels.text.fill",
-        //         stylers: [{ color: "#d59563" }],
-        //     },
-        //     {
-        //         featureType: "poi",
-        //         elementType: "labels.text.fill",
-        //         stylers: [{ color: "#d59563" }],
-        //     },
-        //     {
-        //         featureType: "poi.park",
-        //         elementType: "geometry",
-        //         stylers: [{ color: "#263c3f" }],
-        //     },
-        //     {
-        //         featureType: "poi.park",
-        //         elementType: "labels.text.fill",
-        //         stylers: [{ color: "#6b9a76" }],
-        //     },
-        //     {
-        //         featureType: "road",
-        //         elementType: "geometry",
-        //         stylers: [{ color: "#38414e" }],
-        //     },
-        //     {
-        //         featureType: "road",
-        //         elementType: "geometry.stroke",
-        //         stylers: [{ color: "#212a37" }],
-        //     },
-        //     {
-        //         featureType: "road",
-        //         elementType: "labels.text.fill",
-        //         stylers: [{ color: "#9ca5b3" }],
-        //     },
-        //     {
-        //         featureType: "road.highway",
-        //         elementType: "geometry",
-        //         stylers: [{ color: "#746855" }],
-        //     },
-        //     {
-        //         featureType: "road.highway",
-        //         elementType: "geometry.stroke",
-        //         stylers: [{ color: "#1f2835" }],
-        //     },
-        //     {
-        //         featureType: "road.highway",
-        //         elementType: "labels.text.fill",
-        //         stylers: [{ color: "#f3d19c" }],
-        //     },
-        //     {
-        //         featureType: "transit",
-        //         elementType: "geometry",
-        //         stylers: [{ color: "#2f3948" }],
-        //     },
-        //     {
-        //         featureType: "transit.station",
-        //         elementType: "labels.text.fill",
-        //         stylers: [{ color: "#d59563" }],
-        //     },
-        //     {
-        //         featureType: "water",
-        //         elementType: "geometry",
-        //         stylers: [{ color: "#17263c" }],
-        //     },
-        //     {
-        //         featureType: "water",
-        //         elementType: "labels.text.fill",
-        //         stylers: [{ color: "#515c6d" }],
-        //     },
-        //     {
-        //         featureType: "water",
-        //         elementType: "labels.text.stroke",
-        //         stylers: [{ color: "#17263c" }],
-        //     },
-        // ],
-
-        // gestureHandling: "greedy",
-    }
-
-    //New map
-    var map = new google.maps.Map(document.getElementById('map'), startMap);
-    var map1 = new google.maps.Map(document.getElementById('map1'), startMap);
-
-
-
-
-
+        // gestureHandling: "none",
+    });
     const card = document.getElementById("pac-card");
     const input = document.getElementById("pac-input");
-    
+
     const options = {
         componentRestrictions: { country: "my" },
         fields: ["geometry", "name", "formatted_address"],
-        origin: map1.getCenter(),
+        origin: deliveryMap.getCenter(),
         strictBounds: false,
-        // types: ["geocode", "establishment"], //search type restrictions 
+        types: ["geocode", "establishment"], //search type restrictions 
     };
-    map1.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
+    deliveryMap.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
     const autocomplete = new google.maps.places.Autocomplete(input, options);
+    // marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
 
-    const infowindow1 = new google.maps.InfoWindow();
+    autocomplete.bindTo("bounds", deliveryMap);
+    const infowindow = new google.maps.InfoWindow();
     const infowindowContent = document.getElementById("infowindow-content");
-    infowindow1.setContent(infowindowContent);
-    const marker1 = new google.maps.Marker({ map1, anchorPoint: new google.maps.Point(0, -29), });
+    infowindow.setContent(infowindowContent);
+    const marker = new google.maps.Marker({ map: deliveryMap, anchorPoint: new google.maps.Point(0, -29), });
 
     autocomplete.addListener("place_changed", () => {
-        infowindow1.close();
-        marker1.setVisible(false);
+        infowindow.close();
+        marker.setVisible(false);
         const place = autocomplete.getPlace();
 
+
+        // if (!place.geometry || !place.geometry.location) {
+        //     do {
+        //         // User entered the name of a Place that was not suggested and
+        //         // pressed the Enter key, or the Place Details request failed.
+        //         window.alert("No details available for input: '" + place.name + "'");
+        //         return;
+        //     } while (!place.geometry || !place.geometry.location)
+        // }
+
+        // if (place !== (place.geometry || place.geometry.location)) {
+        //     window.alert("test");
+        //     return;
+        // }
+
+        // do {
+        //     document.getElementById("confirm").disabled = true;
+        // }while(place.name !== place.geometry)
+        //     document.getElementById("confirm").disabled = false;
+
+
+        // function disableBtn() {
+        //     document.getElementById("myBtn").disabled = true;
+        // }
+
+        // function enableBtn() {
+        //     document.getElementById("myBtn").disabled = false;
+        // }
+
+
+
+        // if (!place.geometry || !place.geometry.location) {
+        //     // User entered the name of a Place that was not suggested and
+        //     // pressed the Enter key, or the Place Details request failed.
+        //     window.alert("No details available for input: " + place.name + "");
+        //     return;
+        // }
+
+
+
+        // const result = (google.maps.geometry.poly.containsLocation(deliveryRadius.radius)) ? "yes" : "no";
+
+        // console.log(result);
+
+
+
+
         if (place.geometry.viewport) {
-            map1.fitBounds(place.geometry.viewport);
-            // map.setCenter(place.geometry.location);
+            deliveryMap.fitBounds(place.geometry.viewport);
+            // document.getElementById("confirm").disabled = false;
+            //deliveryMap.setCenter(place.geometry.location);
         } else {
-            map1.setCenter(place.geometry.location);
-            map1.setZoom(17);
+            deliveryMap.setCenter(place.geometry.location);
+            deliveryMap.setZoom(17);
         }
-        marker1.setPosition(place.geometry.location);
-        marker1.setVisible(true);
+
+        marker.setPosition(place.geometry.location);
+        marker.setVisible(true);
         infowindowContent.children["place-name"].textContent = place.name;
         infowindowContent.children["place-address"].textContent = place.formatted_address;
-        // infowindowContent.children["geometry"].textContent = place.geometry;
-        infowindow1.open(map1, marker1);
-        // infowindow.open(map, marker);
+        infowindow.open(deliveryMap, marker);
+    });
+
+
+    const deliveryRadius = new google.maps.Circle({
+        strokeColor: "#FF0000",
+        // strokeColor: "#63cf63",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#FFDD21",
+        // fillColor: "#63cf63",
+        fillOpacity: 0.35,
+        map: deliveryMap,
+        center: deliveryMap.center,
+        radius: 33000,
     });
 
 
 
+    /* ############### Pickup Map ############### */
 
 
 
-    // const svgMarker = {
-    //     path:
-    //         "M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406zM12 2.016q2.906 0 4.945 2.039t2.039 4.945q0 1.453-0.727 3.328t-1.758 3.516-2.039 3.070-1.711 2.273l-0.75 0.797q-0.281-0.328-0.75-0.867t-1.688-2.156-2.133-3.141-1.664-3.445-0.75-3.375q0-2.906 2.039-4.945t4.945-2.039z",
-    //     fillColor: "red",
-    //     fillOpacity: 0.75,
-    //     strokeWeight: 0,
-    //     rotation: 0,
-    //     scale: 1.9,
-    //     anchor: new google.maps.Point(15, 30),
-    // };
+    // //Map Options
+    // var startMap = {
+    //     zoom: 11,
+    //     center: { lat: 3.090762, lng: 101.611560 }, // this will have to be their current location
+    //     disableDefaultUI: true,
+    // }
 
-    // var imageMarker = {
-    //     url: '../Space-Buns-Web-Assignment/Media/Space Buns Logo.png',
-    //     scaledSize: new google.maps.Size(35, 50)
-    // };
+    // //New map
+    // var pickupMap = new google.maps.Map(document.getElementById('pickup-map'), startMap);
 
 
-    //Add marker when clicked on map
-    // google.maps.event.addListener(map, 'click',
-    // function(event) {
-    //     addMarker({coordinates:event.latLng});
-    // });
+    const pickupMap = new google.maps.Map(document.getElementById("pickup-map"), {
+        zoom: 11,
+        center: { lat: 3.090762, lng: 101.611560 },
+        disableDefaultUI: true,
+        // gestureHandling: "none",
+    });
 
     var imageMarker = {
-        url: '../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
+        url: '../../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
         scaledSize: new google.maps.Size(35, 50),
     };
 
@@ -185,96 +154,215 @@ function initMap() {
         addMarker(markers[i]);
     }
 
-    var infoWindow = new google.maps.InfoWindow();
+    var infoWindow1 = new google.maps.InfoWindow();
 
     //add Marker
     function addMarker(branches) {
-        var marker = new google.maps.Marker({
+        var branchMarker = new google.maps.Marker({
             position: branches.coordinates,
-            map: map,
+            map: pickupMap,
+            // map: deliveryMap,
             icon: imageMarker
-            // icon: svgMarker
         });
 
         if (branches.title) {
-            marker.addListener('click', function () {
-                // infoWindow.setContent(branches.title + 'Space Buns' + ' >Directions');
-                infoWindow.setContent(
+            branchMarker.addListener('click', function () {
+                infoWindow1.setContent(
                     '<div id="branch-content">' +
-                    '<img width="50px" src="./Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo">' +
+                    '<img width="50px" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo">' +
                     '<h3 class="branch-title">' +
                     branches.title + ' branch</h3>' +
                     '<a href="https://www.google.com/maps" target="_blank">Directions</a>' +
                     "</div>" +
-                    '<button onclick="document.getElementById("id01").style.display="block""><h4>Select</h4></button>'
+                    '<button id="pickup-button" onclick="pickupText()"><h4>Select</h4></button>'
                 );
-                infoWindow.open(map, marker);
-                map.panTo(branches.coordinates);
+                infoWindow1.open(pickupMap, branchMarker);
+                pickupMap.panTo(branches.coordinates);
                 // addMarker(google.maps.Marker({ icon: svgMarkerY }));
                 // icon: svgMarker.scale(3), svgMarker.fillColor(blue);
                 // icon: svgMarker.fillColor("blue");
             });
         }
     }
+
+    // const pickupRadius = new google.maps.Circle({
+    //     strokeColor: "#FF0000",
+    //     // strokeColor: "#63cf63",
+    //     strokeOpacity: 0.8,
+    //     strokeWeight: 2,
+    //     fillColor: "#FFDD21",
+    //     // fillColor: "#63cf63",
+    //     fillOpacity: 0.35,
+    //     map: pickupMap,
+    //     center: pickupMap.center,
+    //     radius: 33000,
+    // });  s[]
+}
+
+function selection(show, hide) {
+    var toShow = document.getElementById(show);
+    var toHide = document.getElementById(hide);
+    // toShow.style.display = (toShow.style.display == 'block') ? 'none' : 'block';
+    toShow.style.display = 'block';
+    toHide.style.display = 'none';
+}
+
+function buttons(selected, notSelected) {
+    var buttonSelected = document.getElementById(selected);
+    var buttonNotSelected = document.getElementById(notSelected);
+
+    buttonSelected.style.backgroundColor = 'var(--gold)';
+    buttonSelected.style.color = '#fff';
+    buttonNotSelected.style.backgroundColor = '#000';
+    buttonNotSelected.style.color = 'var(--gold)';
+}
+
+function togglePopup() {
+    document.getElementById("popup1").classList.toggle("active");
 }
 
 
-// var markers = [
-//     {
-//         coordinates: { lat: 3.119762, lng: 101.581560 },
-//         title:
-//             '<div id="branch-content">' +
-//             '<img width="50px" src="./Media/Space Buns Logo.png" alt="Space Buns Logo">' +
-//             '<h3 class="branch-title">Damansara Branch</h3>' +
-//             "</div>"
-//     },
-//     {
-//         coordinates: { lat: 3.086330, lng: 101.741026 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 3.209240, lng: 101.570204 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 3.198470, lng: 101.714486 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 3.047383, lng: 101.583945 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 2.924272, lng: 101.655964 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 2.990344, lng: 101.788260 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     },
-//     {
-//         coordinates: { lat: 3.065954, lng: 101.483355 },
-//         title:
-//             '<div class="branch-markers">Damansaraaaa</div>'
-//     }
-// ];
+// function validateAddress() {
 
-// var markers = [
-//     { coordinates: { lat: 3.119762, lng: 101.581560 }, title: '<h3 class="branch-title">Damansara | Space Buns</h3>' },
-//     { coordinates: { lat: 3.086330, lng: 101.741026 }, title: '<h3 class="branch-title">Cheras | Space Buns</h3>' },
-//     { coordinates: { lat: 3.209240, lng: 101.570204 }, title: '<h3 class="branch-title">Sungai Buloh | Space Buns</h3>' },
-//     { coordinates: { lat: 3.198470, lng: 101.714486 }, title: '<h3 class="branch-title">Setapak | Space Buns</h3>' },
-//     { coordinates: { lat: 3.047383, lng: 101.583945 }, title: '<h3 class="branch-title">Subang Jaya | Space Buns</h3>' },
-//     { coordinates: { lat: 2.924272, lng: 101.655964 }, title: '<h3 class="branch-title">Cyberjaya | Space Buns</h3>' },
-//     { coordinates: { lat: 2.990344, lng: 101.788260 }, title: '<h3 class="branch-title">Kajang | Space Buns</h3>' },
-//     { coordinates: { lat: 3.065954, lng: 101.483355 }, title: '<h3 class="branch-title">Klang | Space Buns</h3>' }
-// ]; 
+//     var x = document.forms["deliveryForm"]["deliveryAddress"].value;
+//     if (x == "") {
+//         // alert("HELLO");
+//         return false;
+//     }
+
+//     const address = document.getElementById("confirm");
+//     if (address.value == "") {
+//         // return false;
+//     } else {
+//         togglePopup();
+//         // alert('tes');
+//     }
+// }
+
+
+
+function deliveryText() {
+    document.getElementById("selection-text").innerHTML = "Delivery";
+
+    const address1 = document.getElementById("pac-input");
+    const address2 = document.getElementById("address=input");
+
+    togglePopup();
+
+    // if (address1.value == "" || address2.value == "") {
+    //     // alert("no");
+    //     return false; 
+    // } else {
+    //     togglePopup();
+    // }
+}
+
+function pickupText() {
+    document.getElementById("selection-text").innerHTML = "Self-Pickup";
+    togglePopup();
+}
+
+
+// document.getElementById("pickup-button").addEventListener("click", displayText);
+// document.getElementById("delivery-button").addEventListener("click", displayText);
+
+// function displayText() {
+//     const a = "delivery";
+//     document.getElementById("selection-text").innerHTML = a ;
+// }
+
+function validateSelection() {
+
+}
+
+
+// var today = new Date();
+// var tomorrow = new Date();
+// var nextDay = new Date();
+// tomorrow.setDate(new Date().getDate()+1);
+// nextDay.setDate(new Date().getDate()+2);
+
+function formatDate(today) {
+    var dayNames = [
+        "Sun",
+        "Mon",
+        "Tues",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+    ];
+
+    var monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ];
+
+    var dd = today.getDate();
+    var mm = today.getMonth();
+    var day = today.getDay();
+
+    var stringDate = dayNames[day] + ", " + dd + " " + monthNames[mm];
+
+    return stringDate;
+}
+
+var today = new Date();
+var tomorrow = new Date();
+var dayAfterTomorrow = new Date();
+tomorrow.setDate(new Date().getDate() + 1);
+dayAfterTomorrow.setDate(new Date().getDate() + 2);
+
+// var today = new Date("May 30, 2021");
+// var tomorrow = new Date("May 30, 2021");
+// var dayAfterTomorrow = new Date("May 30, 2021");
+// tomorrow.setDate(new Date("May 30, 2021").getDate() + 1);
+// dayAfterTomorrow.setDate(new Date("May 30, 2021").getDate() + 2);
+
+function getDate() {
+    var formatToday = formatDate(today);
+    var formatTomorrow = formatDate(tomorrow);
+    var formatDayAfterTomorrow = formatDate(dayAfterTomorrow);
+
+    return [formatToday, formatTomorrow, formatDayAfterTomorrow];
+}
+
+
+
+var hour = today.getHours();
+var min = today.getMinutes();
+hour
+min
+
+
+
+
+function getTime() {
+
+
+}
+
+
+// var thisDay = Date();
+
+// var hh = thisDay.getHours();
+// var ms = thisDay.getMinutes();
+// var ss = thisDay.getSeconds();
+
+// hh
+// ms
+// ss
+
 
 
 
