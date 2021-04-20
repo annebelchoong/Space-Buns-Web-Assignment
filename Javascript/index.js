@@ -1,3 +1,5 @@
+
+//Promotions Carousel JS
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 
@@ -38,3 +40,22 @@ carouselSlide.addEventListener('transitionend', ()=> {
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
+
+
+//Go top button JS
+ var topBtn = document.getElementById("goTopBtn");
+
+ window.onscroll = function() {scrollingFunction()};
+
+function scrollingFunction() {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+}
+
+function ReturnTopFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

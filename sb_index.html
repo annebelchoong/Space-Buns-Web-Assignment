@@ -52,6 +52,9 @@
     <section>
         
     <main>
+        <!-- Return to top of Page Button-->
+        <button  onclick="ReturnTopFunction()" id="goTopBtn" title="Return to the top">&#8673</button>
+
             <!-- Intro Video Starts -->
             <div class="introVideo">
                 <video width = 60% margin = 0 controls loop style="border: 1.5px solid #B97836;">
@@ -61,7 +64,7 @@
                 
                 <p style="font-size: 10px; color: rgb(255, 255, 255);"> 
                     Music: In Dreams by Scott Buckley | <a href="https://www.scottbuckley.com.au" 
-                    style="text-decoration: underline;"> www.scottbuckley.com.au </a> 
+                    style="text-decoration: underline;" title="Visit the Artist"> www.scottbuckley.com.au </a> 
                 </p>
             </div>
             <!-- Intro Video Ends -->
@@ -90,7 +93,7 @@
                 width="95%" height="95%" usemap="#recommend-map" alt="Recommendations Image"> 
 
                 <map name="recommend-map">
-                    <area href="sb_menu.html" shape="default">
+                    <area href="sb_menu.html" shape="default" title="Go to Menu">
                     <area href="sb_menu.html#beef" coords="40,55,345,390" shape="rect" alt="Beef Menu">
                     <area href="sb_menu.html#chicken" coords="455,55,760,390" shape="rect" alt="Chicken Menu">
                     <area href="sb_menu.html#meatless" coords="845,50,1160,390" shape="rect" alt="Meatless Menu">
@@ -119,8 +122,6 @@
                     </div>
                 </div>
 
-                <script src="Javascript/index.js"></script>
-
             </article>
             <!-- Promotions image slider ends-->
 
@@ -142,7 +143,7 @@
                                 <p> Working in an office do not have to be boring. Host
                                     office parties with us NOW! We provide the best burgers.
                                     Burgers and Parties, what are you waiting for? </br> </br> </br>
-                                    <a href="sb_events.html" id="formoreinfo"><b>Click Me!</b></a> to find out more!
+                                    <a href="sb_events.html" id="formoreinfo" title="More info"><b>Click Me!</b></a> to find out more!
                                 </p>
                             </div>
                         </article>
@@ -156,7 +157,7 @@
                                 <p> Life is like an event. Make it memorable. We provide you with fresh ideas for
                                     your wedding. A stylish and fun wedding begins with US! 
                                     Sit back while we bring you the experience of a lifetime </br> </br>
-                                    <a href="sb_events.html" id="formoreinfo"><b>Click Me!</b></a> to find out more!
+                                    <a href="sb_events.html" id="formoreinfo" title="More info"><b>Click Me!</b></a> to find out more!
                                 </p>
                             </div>
                         </article>
@@ -175,6 +176,8 @@
             <!--Reviews End-->
     
         </main>
+
+        <script src="Javascript/index.js"></script>
 
     </section>
     <footer class="footer">
@@ -222,6 +225,5 @@
 
     </footer>
 </body>
-
 
 </html>

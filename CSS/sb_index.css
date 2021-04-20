@@ -17,6 +17,30 @@ main a:visited  {
     color: #B97836;
 }
 
+#goTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 25px;
+    font-weight: normal;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: #B97836;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+#goTopBtn:hover {
+    background-color: aliceblue;
+    color: #B97836;
+    border-radius: 50%;
+}
+
 /* Intro Video */
 .introVideo {
     text-align: center; 
@@ -187,3 +211,12 @@ h2 {
     }
 }
 /*Events Ends*/
+
+/* Reviews Starts */
+
+.maincontent5 {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 15px;
+    text-align: center;
+}
