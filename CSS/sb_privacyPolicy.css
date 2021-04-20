@@ -1,0 +1,49 @@
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider {
+    width: 70%;
+    margin: auto;
+}
+
+.slick-slide {
+    margin: 20px 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-slide {
+    transition: all ease-in-out;
+    opacity: 0.05;
+}
+
+.slick-active {
+    opacity: 0.2;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.featured {
+    text-align: center;
+    margin: 5px;
+}
+
+.featured img {
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
