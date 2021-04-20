@@ -241,17 +241,18 @@ div.payment-type:nth-child(3) {
     align-self: center;
 }
 
-.box5 h4 {
+.box5 input {
+    font-size: 1em;
+    /* font-family: 'Segoe UI', sans-serif; */
     color: #B97836;
     background-color: #1A1A1A;
     border-radius: 5px;
     border: 1px #B97836 solid;
-    width: fit-content;
-    padding: 2px 14px 5px;
+    padding: 8px 14px;
     margin: 10px auto;
 }
 
-.box5 h4:hover {
+.box5 input:hover {
     opacity: 0.75;
 }
 
