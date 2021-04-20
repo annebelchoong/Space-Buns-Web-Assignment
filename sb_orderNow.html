@@ -21,19 +21,22 @@
         $(document).ready(function () {
             $('#time').timepicker({
                 timeFormat: 'h:mm p',
-                interval: 30,
+                interval: 15,
                 minTime: '11:00am',
                 maxTime: '9:00pm',
-                startTime: '09:00',
-                dynamic: false,
+                startTime: '11:00',
+                dynamic: true,
                 dropdown: true,
                 scrollbar: true
             });
         });
+
+
     </script>
 </head>
 
 <body>
+
     <header>
         <nav id="navbar" class="navbar-fixedtop">
             <input type="checkbox" id="checkbox">
@@ -42,8 +45,7 @@
             </label>
 
             <div class="navbar-logo">
-                <a href="sb_index.html"><img src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo"
-                        width="70px"></a>
+                <a href="sb_index.html"><img src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" width="70px"></a>
             </div>
 
             <ul class="navbar-links">
@@ -72,8 +74,10 @@
         <section class="order-options">
             <div class="options-block">
                 <h1>Start Ordering Now</h1>
-                <button id="delivery" class="button" onclick="buttons('delivery','pickup'), selection('delivery-section','pickup-section')">Delivery</button>
-                <button id="pickup" class="button" onclick="buttons('pickup','delivery'), selection('pickup-section','delivery-section')">Pick-up</button>
+                <button id="delivery" class="button"
+                    onclick="buttons('delivery','pickup'), selection('delivery-section','pickup-section')">Delivery</button>
+                <button id="pickup" class="button"
+                    onclick="buttons('pickup','delivery'), selection('pickup-section','delivery-section')">Pick-up</button>
             </div>
         </section>
 
@@ -82,18 +86,19 @@
             <div id="pac-container">
                 <div id="delivery-map"></div>
                 <!-- <div id="error"></div> -->
-                <form name="deliveryForm" class="delivery-form" onsubmit="deliveryText()">
+                <form name="deliveryForm" class="delivery-form" onsubmit="return deliveryText();">
+                    <!-- onsubmit="return deliveryText();" -->
                     <div>
                         <label for="pac-input" class="required-field">Delivery Address </label>
                         <input id="pac-input" type="text" name="deliveryAddress"
-                            placeholder="E.g. PV15 Platinum Lake Condominium, Danau Kota" required />
+                            placeholder="E.g. PV15 Platinum Lake Condominium, Danau Kota" required minlength="10" />
                         <!-- <textarea name="" id="pac-input" cols="60" rows="5" placeholder="E.g. PV15 Platinum Lake Condominium, Danau Kota"></textarea> -->
                     </div>
                     <div>
                         <label for="address-input" class="required-field">Address Details (unit number, floor, building
                             name)</label>
                         <!-- <input id="address-input" type="text" placeholder="E.g. unit number, floor, building name " /> -->
-                        <textarea name="" id="address-input" cols="60" rows="2" maxlength="120"
+                        <textarea name="" id="address-input" cols="60" rows="2" minlength="5" maxlength="120"
                             placeholder="E.g. unit number, floor, building name" required></textarea>
                     </div>
                     <div>
@@ -107,8 +112,10 @@
                         <span id="place-address"></span>
                     </div>
                     <!-- <div><button id="delivery-button" class="confirm" onclick="deliveryText()">Confirm</button></div> -->
-                    <div><input type="submit" id="delivery-button" class="confirm" value="Confirm" /></div>
-
+                    <!-- <div><input type="submit" id="delivery-button" class="confirm" value="Confirm" /></div> -->
+                    
+                    <div><button id="delivery-button" class="confirm" onclick="deliveryText()">Confirm</button></div>
+                    <!-- <input type="submit" id="delivery-button" class="confirm" value="Confirm" /> -->
                 </form>
             </div>
         </section>
@@ -126,7 +133,7 @@
             <div class="overlay"></div>
             <div class="content">
                 <div class="close-btn" onclick="togglePopup()">&times;</div>
-                <form action="">
+                <form name="popupForm" class="popup-form" onsubmit="">
                     <fieldset>
                         <legend id="selection-text"></legend>
 
@@ -155,17 +162,16 @@
                                 <option value="">in 1 hour</option>
                                 <option value="">in wtf</option>
                             </select> -->
-                                <input type="text" id="time" name="time" class="timepicker" placeholder="Now" required
-                                    autocomplete="off">
+                                <input type="text" id="time" name="time" class="timepicker" placeholder="Pick a time"
+                                    required autocomplete="off">
                             </div>
                         </div>
 
                         <div class="delay-text">
-                            <p>*Note : There may be a variance of 10-15 mins from your selected pickup time during peak
-                                hours.
-                                But we will do our best to have your order ready as close to your selected time as
-                                possible
-                                🙂
+                            <p>Note : There may be a variance of 10-15 mins from
+                                your selected pickup/delivery time during peak hours.
+                                But we will do our best to have your order ready as
+                                close to your selected time as possible 🙂
                             </p>
                         </div>
                         <!-- <button id="order-now" class="order-now">Order Now</button> -->
@@ -216,10 +222,6 @@
                     <div class="copyright">
                         <p>&#169; 2021 by Space Burger Sdn Bhd. <br>All Right Not Reserved</p>
                     </div>
-                    <!-- 
-                            <div class="copyright-small">
-                                <p>&#169; 2021 by Space Burger Sdn Bhd. All Right Not Reserved</p>
-                            </div> -->
                 </div>
             </div>
         </div>
