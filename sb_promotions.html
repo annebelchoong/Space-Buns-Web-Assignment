@@ -1,0 +1,195 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us | Space Buns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Media/icons/favicon.ico">
+    <link rel="stylesheet" href="CSS/sb_masterlayout.css">
+    <link rel="stylesheet" href="CSS/sb_contactUs_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar-fixedtop">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="navbar-mobileNav">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <div class="navbar-logo">
+                <a href="sb_index.html"><img src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" width="70px"></a>
+            </div>
+
+            <ul class="navbar-links">
+                <li class="navbar-item" id="menu"><a href="sb_menu.html"> Menu</a></li>
+                <li class="navbar-item" id="promotions"><a href="sb_promotions.html"> Promotions</a></li>
+                <li class="navbar-item" id="events"><a href="sb_events.html"> Events</a></li>
+                <li class="navbar-item" id="reviews"><a href="sb_reviews.html"> Reviews</a></li>
+                <li class="navbar-item" id="aboutUs"><a href="sb_aboutUs.html"> About Us</a></li>
+                <li class="navbar-item" id="contactUs"><a href="sb_contactUs.html"> Contact Us</a></li>
+                <li class="navbar-item" id="order"><a href="sb_orderNow.html"> Order Now</a></li>
+            </ul>
+
+            <div class="navbar-login">
+                <a href="sb_login.html"><i class="far fa-user-circle"></i></a>
+            </div>
+
+        </nav>
+
+        <div class="banner">
+            <div class="bannerCaption">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <!--image slider starts-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio button starts-->
+                <input type="radio" name="radio-btn" id="promo1">
+                <input type="radio" name="radio-btn" id="promo2">
+                <input type="radio" name="radio-btn" id="promo3">
+                <!--radio button ends-->
+
+                <!--image slides starts-->
+                <div class="slide first">
+                    <img src="Media/Promotions/Alien Day.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="Media/Promotions/Promotion Poster 2-02.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="Media/Promotions/Promotion Poster 3-03.png" alt="">
+                </div>
+                <!--image slides ends-->
+
+                <!--automatic navigation starts-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation ends-->
+            </div>
+
+            <!--manual navigation starts-->
+            <div class="navigation-manual">
+                <label for="promo1" class="manual-btn"></label>
+                <label for="promo2" class="manual-btn"></label>
+                <label for="promo3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation ends-->
+
+        </div>
+        <!--image slider ends-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('promo' + counter).checked = true;
+                counter++;
+                if (counter > 3) {
+                    counter = 1;
+                }
+            }, 3000);
+        </script>
+
+        <div>
+            <h2>Weekly Specials</h2>
+        </div>
+
+        <div class="weekly_container">
+            <div id="Item1" class="weekly_items">
+                <img class="zoom" src="Media/Promotions/Big Blast.jpg" alt="">
+                <h3>Big Blast</h3>
+                <div class="description">
+                    <p>Served with fried patties with 3 different secret sauces, topped with the
+                        famous toasted bun.
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="Item1" class="weekly_items">
+                <img class="zoom" src="Media/Promotions/Meat Mania.jpeg" alt="">
+                <h3>Meat Mania</h3>
+                <div class="description">
+                    <p>As requested, 4x the patties for you meat lovers! With Cheese!
+                        Yes, FOUR PATTIES!
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="Item1" class="weekly_items">
+                <img class="zoom" src="Media/Promotions/Fiery Fiesta.jpg" alt="">
+                <h3>Fiery Fiesta</h3>
+                <div class="description">
+                    <p>Literal flaming burger with cheese, our signature secret sauce that
+                        will for sure tackle your taste buds.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-right">
+                <div class="footer-logo">
+                    <a href="sb_index.html"><img src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo"
+                            width="150px"></a>
+                </div>
+            </div>
+            <div class="footer-left">
+                <div class="ourStore">
+                    <h4>Our Store</h4>
+                    <ul class="footer-links">
+                        <li class="footer-item-menu"><a href="sb_menu.html"> Menu</a></li>
+                        <li class="footer-item-promotions"><a href="sb_promotions.html"> Promotions</a></li>
+                        <li class="footer-item-events"><a href="sb_events.html"> Events</a></li>
+                        <li class="footer-item-reviews"><a href="sb_reviews.html"> Reviews</a></li>
+                        <li class="footer-item-aboutUs"><a href="sb_aboutUs.html"> About Us</a></li>
+                        <li class="footer-item-contactUs"><a href="sb_contactUs.html"> Contact Us</a></li>
+                        <li class="footer-item-order"><a href="sb_orderNow.html"> Order Now</a></li>
+                        <li class="footer-item-privacyPolicy"><a href="sb_privacyPolicy.html"> Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="followUs">
+                    <h4>Follow Us</h4>
+                    <div class="footer-socialLinks">
+                        <a href="https://www.facebook.com/" target="_blank"><i class='fab fa-facebook-f'></i></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class='fab fa-instagram'></i></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class='fab fa-twitter'></i></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p>&#169; 2021 by Space Burger Sdn Bhd. <br>All Right Not Reserved</p>
+                    </div>
+                    <!-- 
+                    <div class="copyright-small">
+                        <p>&#169; 2021 by Space Burger Sdn Bhd. All Right Not Reserved</p>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
