@@ -91,6 +91,55 @@ function initMap() {
 
     //New map
     var map = new google.maps.Map(document.getElementById('map'), startMap);
+    var map1 = new google.maps.Map(document.getElementById('map1'), startMap);
+
+
+
+
+
+    const card = document.getElementById("pac-card");
+    const input = document.getElementById("pac-input");
+    
+    const options = {
+        componentRestrictions: { country: "my" },
+        fields: ["geometry", "name", "formatted_address"],
+        origin: map1.getCenter(),
+        strictBounds: false,
+        // types: ["geocode", "establishment"], //search type restrictions 
+    };
+    map1.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
+    const autocomplete = new google.maps.places.Autocomplete(input, options);
+
+    const infowindow1 = new google.maps.InfoWindow();
+    const infowindowContent = document.getElementById("infowindow-content");
+    infowindow1.setContent(infowindowContent);
+    const marker1 = new google.maps.Marker({ map1, anchorPoint: new google.maps.Point(0, -29), });
+
+    autocomplete.addListener("place_changed", () => {
+        infowindow1.close();
+        marker1.setVisible(false);
+        const place = autocomplete.getPlace();
+
+        if (place.geometry.viewport) {
+            map1.fitBounds(place.geometry.viewport);
+            // map.setCenter(place.geometry.location);
+        } else {
+            map1.setCenter(place.geometry.location);
+            map1.setZoom(17);
+        }
+        marker1.setPosition(place.geometry.location);
+        marker1.setVisible(true);
+        infowindowContent.children["place-name"].textContent = place.name;
+        infowindowContent.children["place-address"].textContent = place.formatted_address;
+        // infowindowContent.children["geometry"].textContent = place.geometry;
+        infowindow1.open(map1, marker1);
+        // infowindow.open(map, marker);
+    });
+
+
+
+
+
 
     // const svgMarker = {
     //     path:
@@ -153,16 +202,15 @@ function initMap() {
                 infoWindow.setContent(
                     '<div id="branch-content">' +
                     '<img width="50px" src="./Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo">' +
-                    '<h3 class="branch-title">' + 
-                    branches.title + ' branch</h3>' + 
+                    '<h3 class="branch-title">' +
+                    branches.title + ' branch</h3>' +
                     '<a href="https://www.google.com/maps" target="_blank">Directions</a>' +
-                    "</div>" + 
+                    "</div>" +
                     '<button onclick="document.getElementById("id01").style.display="block""><h4>Select</h4></button>'
                 );
                 infoWindow.open(map, marker);
                 map.panTo(branches.coordinates);
                 // addMarker(google.maps.Marker({ icon: svgMarkerY }));
-
                 // icon: svgMarker.scale(3), svgMarker.fillColor(blue);
                 // icon: svgMarker.fillColor("blue");
             });

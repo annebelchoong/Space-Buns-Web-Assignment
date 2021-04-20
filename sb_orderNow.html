@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="Media/icons/favicon.ico">
     <link rel="stylesheet" href="CSS/sb_masterlayout.css">
     <link rel="stylesheet" href="CSS/sb_orderNow_styles.css">
+    <!-- <link rel="stylesheet" href="tests/Ggeo1.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -51,48 +52,62 @@
 
     <div class="container">
         <div class="content-wrapper">
+
             <section class="order-header">
                 <h2> Step 1 Choose Delivery or Self Pick-up</h2>
-
                 <h2> Step 2 Select your go to branch for order</h2>
                 <h2> Step 3 Select your preferred time slot</h2>
-
-
-                <!-- <h2> Step 1 </h2><p> Choose Delivery or Self Pick-up</p>
-                <h2> Step 2 </h2><p> Select your go to branch for order</p>
-                <h2> Step 3 </h2><p> Select your preferred time slot</p> -->
             </section>
+
             <section class="branch-container">
-                <div class="branch-list">
-
-
-                    <!-- <div id="auto-complete">
+                <!-- <div id="auto-complete">
                         <input type="text">
                     </div> -->
+                <div class="move">
 
-
-
-                    <div class="section">
+                    <div class="slide-section">
                         <!-- <img width="35px" src="./Media/Space Buns Logo.png" alt="Space Buns Logo"> -->
                         <div id="map"></div>
                         <div class=branch-lists>
                             <h1>hello</h1>
                         </div>
                     </div>
-                    <div class="info-section">
-                        <div class="info-block">test 1</div>
-                        <div class="info-block">test 1</div>
-                        <div class="info-block">test 1</div>
+
+
+
+                    <div class="slide-section">
+                        <div id="map1"></div>
+
+                        <div id="pac-container">
+                            <input id="pac-input" type="text" placeholder="Enter a location" />
+                        </div>
+                        <div id="infowindow-content">
+                            <span id="place-name" class="title"></span><br />
+                            <span id="place-address"></span>
+                        </div>
                     </div>
+
                 </div>
+
+                <!-- <div class="info-section">
+                    <div class="info-block">test 1</div>
+                    <div class="info-block">test 1</div>
+                    <div class="info-block">test 1</div>
+                </div> -->
+
             </section>
+
         </div>
     </div>
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcoj_spVvnhJbKvChuD9JZdgnhfknJYxA&callback=initMap"></script>
+    <!-- <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcoj_spVvnhJbKvChuD9JZdgnhfknJYxA&callback=initMap"></script> -->
 
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcoj_spVvnhJbKvChuD9JZdgnhfknJYxA&callback=initMap&libraries=places&v=weekly"
+        async defer></script>
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- <div id="id01">hello</div> -->
 

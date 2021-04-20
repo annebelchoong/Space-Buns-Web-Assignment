@@ -1,7 +1,32 @@
 @charset "utf-8";
+@keyframes showDelivery {
+    from {
+        left: -1200px;
+    }
+    to {
+        left: 90px;
+    }
+}
+
+@keyframes showPickup {
+    from {
+        right: -1200px;
+    }
+    to {
+        right: 20px;
+    }
+}
+
+/* 0% {background-color: lawngreen; top: 30px; left: 10px;}
+    20% {background-color: yellow; top: 30px; left: 10px;} 
+    40% {background-color: navy; top: 720px; left: 10px;;} 
+    60% {background-color: seagreen; top: 720px; left: 10px;} 
+    80% {background-color: khaki; top: 100px; left: 10px;} 
+    100% {background-color: aqua; top: 20px; left: 10px;}  */
+
 /* #################################### Order Locations Styles ################################### */
 
-html{
+html {
     color: #ffffff;
 }
 
@@ -30,7 +55,6 @@ html{
     width: 60%;
 }
 
-
 .order-header h2 {
     font-size: 2.0em;
     float: left;
@@ -42,12 +66,23 @@ html{
     margin: 10px;
 }
 
-.section {
+.move {
+    position: absolute;
+    background-color: #B97836;
+    margin: 10px auto;
+    padding: 40px;
+    animation: showPickup 1s 1;
+    /* animation: showDelivery 1s 1; */
+    width: 1200px;
+}
+
+.slide-section {
     display: flex;
+    margin: 10px auto;
     /* flex-wrap: wrap; */
 }
 
-#map {
+#map,#map1 {
     border-radius: 20px;
     height: 500px;
     width: 66.6%;
@@ -69,14 +104,12 @@ html{
     margin-bottom: 3px;
 }
 
- /* #branch-content a:link, #branch-content a:visited {
+/* #branch-content a:link, #branch-content a:visited {
     color: #B97836; 
     text-decoration: none;
 }  */
 
-
-
-#branch-content + button {
+#branch-content+button {
     border: none;
     color: #B97836;
     background-color: #1A1A1A;
@@ -86,7 +119,7 @@ html{
     padding: 10px 15px;
 }
 
-.branch-lists{
+.branch-lists {
     width: 370px;
     margin: 0px 20px;
     background-color: blueviolet;
