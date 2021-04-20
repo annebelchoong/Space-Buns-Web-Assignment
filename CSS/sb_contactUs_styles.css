@@ -29,7 +29,7 @@ h2 {
     color: white;
 }
 
-.contactUs-form input[type=text] {
+.contactUs-form input[type=text], .contactUs-form input[type=email], .contactUs-form input[type=tel] {
     border-radius: 6px;
     border: 1px #B97836 solid;
     width: 50%;
@@ -180,7 +180,7 @@ h2 {
 }
 
 @media only screen and (max-width:768px) {
-    .contactUs-form input[type=text] {
+    .contactUs-form input[type=text], .contactUs-form input[type=email], .contactUs-form input[type=tel] {
         width: 90%;
     }
     .contactUs-message textarea {

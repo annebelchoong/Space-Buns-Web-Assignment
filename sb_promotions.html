@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sign Up | Space Buns</title>
+    <title>Promotions | Space Buns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Media/icons/favicon.ico">
     <link rel="stylesheet" href="CSS/sb_masterlayout.css">
-    <link rel="stylesheet" href="CSS/sb_signUp.css">
+    <link rel="stylesheet" href="CSS/sb_promotions.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
-    <script src="Javascript/membership.js"></script>
 </head>
 
 <body>
@@ -32,8 +31,8 @@
                 <li class="navbar-item" id="promotions"><a href="sb_promotions.html"> Promotions</a></li>
                 <li class="navbar-item" id="events"><a href="sb_events.html"> Events</a></li>
                 <li class="navbar-item" id="reviews"><a href="sb_reviews.html"> Reviews</a></li>
-                <li class="navbar-item" id="aboutUs"><a href="sb_about.html"> About Us</a></li>
-                <li class="navbar-item" id="contactUs"><a href="sb_contact.html"> Contact Us</a></li>
+                <li class="navbar-item" id="aboutUs"><a href="sb_aboutUs.html"> About Us</a></li>
+                <li class="navbar-item" id="contactUs"><a href="sb_contactUs.html"> Contact Us</a></li>
                 <li class="navbar-item" id="order"><a href="sb_orderNow.html"> Order Now</a></li>
             </ul>
 
@@ -42,70 +41,112 @@
             </div>
 
         </nav>
+
+        <div class="banner">
+            <div class="bannerCaption">
+                <h1>Promotions</h1>
+            </div>
+        </div>
+
     </header>
 
-    <section class="logintab">
+    <section>
+        <!--image slider starts-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio button starts-->
+                <input type="radio" name="radio-btn" id="promo1">
+                <input type="radio" name="radio-btn" id="promo2">
+                <input type="radio" name="radio-btn" id="promo3">
+                <!--radio button ends-->
 
-        <fieldset
-            style="text-align: center;background: url('Media/Login&Signup/logbackg2.jpg'); background-size: contain;">
-
-            <legend>Sign Up</legend>
-            <a href="sb_index.html">
-                <img src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" height="100px" width="150px"
-                    style="padding-top: 5%;"> </a>
-
-            <form id="SignUpForm" name="SignUpForm" action="sb_login.html">
-
-                <div class="signupRow">
-                    <i class='fas fa-user-alt'></i>
-                    <label for="custuserName">Username</label></br>
-                    <input type="text" id="custuserName" name="custuserName" placeholder="Username (min 6 max 12)"
-                        minlength="6" maxlength="12" autofocus required>
+                <!--image slides starts-->
+                <div class="slide first">
+                    <img src="Media/Promotions/Alien Day.png" alt="">
                 </div>
 
-                <div class="signupRow">
-                    <i class="fa fa-lock"></i>
-                    <label for="NewPwd">Password</label></br>
-                    <input type="password" id="NewPwd" name="NewPwd" placeholder="Password (min 8 max 12)" minlength="8"
-                        maxlength="12" required onblur="checkuserpass()">
-                </div>
-                <span id="Notvalid" style="color:red"> </span>
-
-                <div class="signupRow">
-                    <i class="fa fa-lock"></i>
-                    <label for="confirmPwd">Password Confirmation</label></br>
-                    <input type="password" id="confirmPwd" name="confirmPwd" placeholder="Confirm Password"
-                        onblur="confirmPass()" required></br>
-                </div>
-                <span id="error" style="color:red"> </span>
-
-                <div class="signupRow">
-                    <i class="fa fa-envelope"></i>
-                    <label for="custEmail">Email</label></br>
-                    <input type="email" id="custEmail" name="custEmail" placeholder="someone@example.123"
-                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></br>
+                <div class="slide">
+                    <img src="Media/Promotions/HariRayaPoster.png" alt="">
                 </div>
 
-                <div class="signupRow">
-                    <i class="fa fa-phone"></i>
-                    <label for="custPhoneNo">Phone Number</label></br>
-                    <input type="tel" id="custPhoneNo" name="custPhoneNo" placeholder="012-345 6789"
-                        pattern="[0-9]{3}-[0-9]{3} [0-9]{4}" required required></br>
-                    <input type="checkbox" id="signupPrivacy" required> I have read and accept the
-                    <a href="sb_privacy.html" target="_blank">Privacy Policy</a>
+                <div class="slide">
+                    <img src="Media/Promotions/Buy1Free1.png" alt="">
+                </div>
+                <!--image slides ends-->
+
+                <!--automatic navigation starts-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation ends-->
+            </div>
+
+            <!--manual navigation starts-->
+            <div class="navigation-manual">
+                <label for="promo1" class="manual-btn"></label>
+                <label for="promo2" class="manual-btn"></label>
+                <label for="promo3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation ends-->
+
+        </div>
+        <!--image slider ends-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('promo' + counter).checked = true;
+                counter++;
+                if (counter > 3) {
+                    counter = 1;
+                }
+            }, 3000);
+        </script>
+
+        <div>
+            <h2>Weekly Specials</h2>
+        </div>
+
+        <div class="weekly_container">
+            <div id="Item1" class="weekly_items">
+                <img class="zoom" src="Media/Promotions/Big Blast.jpg" alt="">
+                <h3>Big Blast</h3>
+                <div class="description">
+                    <p>Served with fried patties with 3 different secret sauces, topped with the
+                        famous toasted bun.
+                    </p>
                 </div>
 
-                <span>Already a member? <a href="sb_login.html">
-                        Login</a></span>
+            </div>
 
-                <div class="signupRow">
-                    <input type="submit" value="SignUp" id="signupButton">
+            <div id="Item1" class="weekly_items">
+                <img class="zoom" src="Media/Promotions/Meat Mania.jpeg" alt="">
+                <h3>Meat Mania</h3>
+                <div class="description">
+                    <p>As requested, 4x the patties for you meat lovers! With Cheese!
+                        Yes, FOUR PATTIES!
+                    </p>
                 </div>
-            </form>
 
-        </fieldset>
+            </div>
+
+            <div id="Item1" class="weekly_items">
+                <img class="zoom" src="Media/Promotions/Fiery Fiesta.jpg" alt="">
+                <h3>Fiery Fiesta</h3>
+                <div class="description">
+                    <p>Literal flaming burger with cheese, our signature secret sauce that
+                        will for sure tackle your taste buds.
+                    </p>
+                </div>
+
+            </div>
+        </div>
 
     </section>
+
+
 
     <footer class="footer">
         <div class="footer-container">
@@ -148,11 +189,7 @@
                 </div>
             </div>
         </div>
-
-
     </footer>
-
 </body>
-
 
 </html>

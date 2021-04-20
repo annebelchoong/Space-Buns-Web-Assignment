@@ -1,0 +1,32 @@
+section.privacy_content {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    color: #B97836;
+    padding: 30px;
+}
+
+.privacy_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+
+h3 {
+    color: grey;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+ul li::marker {
+    color: grey;
+}
+
+@media only screen and (max-width:1520px) {
+    .bannerCaption h1 {
+        font-size: 90px;
+    }
+}

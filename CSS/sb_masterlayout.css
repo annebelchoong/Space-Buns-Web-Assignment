@@ -295,11 +295,11 @@ footer.footer {
         align-items: center;
     }
     .footer-links {
-        /* column-gap: 30px;
-        text-align: center; */
-        display: flex;
+        column-gap: 30px;
+        text-align: left;
+        /* display: flex;
         flex-flow: column;
-        align-items: center;
+        align-items: center; */
     }
     .followUs {
         margin-top: 40px;

@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sign Up | Space Buns</title>
+    <title>Privacy Policy | Space Buns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Media/icons/favicon.ico">
     <link rel="stylesheet" href="CSS/sb_masterlayout.css">
-    <link rel="stylesheet" href="CSS/sb_signUp.css">
+    <link rel="stylesheet" href="CSS/sb_privacyPolicy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
-    <script src="Javascript/membership.js"></script>
 </head>
 
 <body>
@@ -32,8 +31,8 @@
                 <li class="navbar-item" id="promotions"><a href="sb_promotions.html"> Promotions</a></li>
                 <li class="navbar-item" id="events"><a href="sb_events.html"> Events</a></li>
                 <li class="navbar-item" id="reviews"><a href="sb_reviews.html"> Reviews</a></li>
-                <li class="navbar-item" id="aboutUs"><a href="sb_about.html"> About Us</a></li>
-                <li class="navbar-item" id="contactUs"><a href="sb_contact.html"> Contact Us</a></li>
+                <li class="navbar-item" id="aboutUs"><a href="sb_aboutUs.html"> About Us</a></li>
+                <li class="navbar-item" id="contactUs"><a href="sb_contactUs.html"> Contact Us</a></li>
                 <li class="navbar-item" id="order"><a href="sb_orderNow.html"> Order Now</a></li>
             </ul>
 
@@ -42,70 +41,79 @@
             </div>
 
         </nav>
+
+        <div class="banner">
+            <div class="bannerCaption">
+                <h1>Privacy Policy</h1>
+            </div>
+        </div>
+
     </header>
 
-    <section class="logintab">
+    <section class="privacy_content">
+        <div class="privacy_container">
+            <article>
+                <h2>Highlights</h2>
+                <p>
+                    The privacy policy of Space Buns describes the information that we collect and how it is used and
+                    shared.
+                    Since technology and privacy laws are constantly changing, the privacy policies are prone to changes
+                    in the future.
+                </p>
+                <br>
+                <p>
+                    By signing up on our website, you agree to the practices and policies set forth in this Privacy
+                    Policy.
+                    You hereby acknowledge and consent to our collection, use, and sharing of your information as
+                    described in this policy.
+                    If we add any new features or tools to our Services, they will also be subject to this policy.
+                </p>
+                <br>
+                <p>
+                    We reserve the right to replace or modify any part of this policy as time progresses and you are
+                    bound
+                    any changes to the Privacy Policy when you use the Service after such changes have been first
+                    posted.
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        <h3>Information We Collect</h3>
+                    </li>
+                    <p>We collect information about our users which includes:</p>
+                    <p>1. Information that you provide us </p>
+                    <p>2. Information about your use of our Services </p>
+                    <p>3. Information we obtain from third-party sources</p>
 
-        <fieldset
-            style="text-align: center;background: url('Media/Login&Signup/logbackg2.jpg'); background-size: contain;">
+                </ul>
+                <br>
+                <ul>
+                    <li>
+                        <h3>How We Use The Information</h3>
+                    </li>
+                    <p>We use the information collected to:</p>
+                    <p>1. Register and create your account </p>
+                    <p>2. Provide the services you request</p>
+                    <p>3. Send product offers, services, and promotions </p>
+                    <p>4. Improve our customer service, products and Services</p>
 
-            <legend>Sign Up</legend>
-            <a href="sb_index.html">
-                <img src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" height="100px" width="150px"
-                    style="padding-top: 5%;"> </a>
-
-            <form id="SignUpForm" name="SignUpForm" action="sb_login.html">
-
-                <div class="signupRow">
-                    <i class='fas fa-user-alt'></i>
-                    <label for="custuserName">Username</label></br>
-                    <input type="text" id="custuserName" name="custuserName" placeholder="Username (min 6 max 12)"
-                        minlength="6" maxlength="12" autofocus required>
-                </div>
-
-                <div class="signupRow">
-                    <i class="fa fa-lock"></i>
-                    <label for="NewPwd">Password</label></br>
-                    <input type="password" id="NewPwd" name="NewPwd" placeholder="Password (min 8 max 12)" minlength="8"
-                        maxlength="12" required onblur="checkuserpass()">
-                </div>
-                <span id="Notvalid" style="color:red"> </span>
-
-                <div class="signupRow">
-                    <i class="fa fa-lock"></i>
-                    <label for="confirmPwd">Password Confirmation</label></br>
-                    <input type="password" id="confirmPwd" name="confirmPwd" placeholder="Confirm Password"
-                        onblur="confirmPass()" required></br>
-                </div>
-                <span id="error" style="color:red"> </span>
-
-                <div class="signupRow">
-                    <i class="fa fa-envelope"></i>
-                    <label for="custEmail">Email</label></br>
-                    <input type="email" id="custEmail" name="custEmail" placeholder="someone@example.123"
-                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></br>
-                </div>
-
-                <div class="signupRow">
-                    <i class="fa fa-phone"></i>
-                    <label for="custPhoneNo">Phone Number</label></br>
-                    <input type="tel" id="custPhoneNo" name="custPhoneNo" placeholder="012-345 6789"
-                        pattern="[0-9]{3}-[0-9]{3} [0-9]{4}" required required></br>
-                    <input type="checkbox" id="signupPrivacy" required> I have read and accept the
-                    <a href="sb_privacy.html" target="_blank">Privacy Policy</a>
-                </div>
-
-                <span>Already a member? <a href="sb_login.html">
-                        Login</a></span>
-
-                <div class="signupRow">
-                    <input type="submit" value="SignUp" id="signupButton">
-                </div>
-            </form>
-
-        </fieldset>
-
+                </ul>
+                <br>
+                <ul>
+                    <li>
+                        <h3>Sharing Of Information</h3>
+                    </li>
+                    <p>We share your information with:</p>
+                    <p>1. Affliates </p>
+                    <p>2. Franchisees</p>
+                    <p>3. Business partners, service providers and social media services</p>
+                    <p>4. Third-party companies that provide content, advertising, or functionality</p>
+                </ul>
+            </article>
+        </div>
     </section>
+
+
 
     <footer class="footer">
         <div class="footer-container">
@@ -148,11 +156,7 @@
                 </div>
             </div>
         </div>
-
-
     </footer>
-
 </body>
-
 
 </html>
