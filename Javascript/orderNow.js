@@ -71,12 +71,9 @@ function initMap() {
         // }
 
 
-
         // const result = (google.maps.geometry.poly.containsLocation(deliveryRadius.radius)) ? "yes" : "no";
 
         // console.log(result);
-
-
 
 
         if (place.geometry.viewport) {
@@ -134,7 +131,7 @@ function initMap() {
     });
 
     var imageMarker = {
-        url: '../Media/icons/SpaceBunsMarker.svg',
+        url: '../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
         scaledSize: new google.maps.Size(35, 50),
     };
 
@@ -219,6 +216,25 @@ function buttons(selected, notSelected) {
 
 function togglePopup() {
     document.getElementById("popup1").classList.toggle("active");
+    var scrollLock = document.getElementsByTagName("body")[0];
+    scrollLock.classList.toggle("scroll-lock");
+
+
+
+
+
+    // if (scrollLock == "hidden") {
+    //     scrollLock = "scroll";
+    // } 
+    // if (scrollLock == "scroll") {
+    //     scrollLock = "hidden";
+    // }
+
+
+
+
+    // var lockScroll = document.getElementById("yes");
+    // lockScroll.style.overflowY = "hidden";
 }
 
 
@@ -247,7 +263,7 @@ function deliveryText() {
     const address1 = document.getElementById("pac-input");
     const address2 = document.getElementById("address=input");
 
-    togglePopup();
+
 
     // if (address1.value == "" || address2.value == "") {
     //     // alert("no");
@@ -255,6 +271,7 @@ function deliveryText() {
     // } else {
     //     togglePopup();
     // }
+    return togglePopup();
 }
 
 function pickupText() {

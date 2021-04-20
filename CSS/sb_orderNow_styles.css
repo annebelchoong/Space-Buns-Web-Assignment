@@ -7,6 +7,10 @@ html {
     color: white;
 }
 
+.scroll-lock {
+    overflow-y: hidden;
+}
+
 .container {
     /* background-color: rgb(36, 68, 109); */
     /* height: 100vh; */
@@ -46,7 +50,7 @@ h1 {
 
 /* ############### Button Styles ############### */
 
-.button, #delivery-button{
+.button, #delivery-button {
     all: unset;
     cursor: pointer;
     background-color: #000;
@@ -71,13 +75,14 @@ button:hover, button:active {
     background-color: #000;
     color: var(--gold);
     cursor: pointer;
+    padding: 8px 20px;
+    margin: 20px auto 50px;
     /* width: 150px; */
     /* border: 10px var(--gold) solid; */
 }
 
 input[type=submit] {
     /* width: 200px; */
-    
 }
 
 /* input[type=time] {
@@ -92,7 +97,7 @@ button[disabled] {
     opacity: 0.5;
 }
 
-.options-block button, .confirm {
+.options-block button {
     padding: 8px 20px;
     margin: 35px 70px;
 }
@@ -100,6 +105,14 @@ button[disabled] {
 section>h1 {
     /* color: red; */
     padding-bottom: 25px;
+}
+
+#pickup-button:hover {
+    cursor: pointer;
+}
+
+#pickup-button:active, #pickup-button:visited {
+
 }
 
 /* ############### Delivery Section Styles ############### */
@@ -138,6 +151,7 @@ section>h1 {
 
 #pac-container {
     display: flex;
+    /* margin: 0 0 40px 0; */
 }
 
 .delivery-form {
@@ -274,6 +288,11 @@ input::placeholder {
     transform: translate(-50%, -50%) scale(1);
 }
 
+body.popup.open {
+    overflow-y: hidden;
+
+}
+
 /* body.popup {
     overflow-y: hidden;
 } */
@@ -292,7 +311,7 @@ input::placeholder {
 
 .order-now:hover {
     /* background-color: #fff; */
-    background-color: #000;
+    background-color: #252627;
     transition: 250ms;
 }
 
@@ -349,11 +368,11 @@ select, input#time {
 input#time::placeholder {
     /* float: left; */
     padding-top: 5px;
-    color: #000;
+    /* color: #000; */
 }
 
 select:hover, select:active {
-    border: 1px #000 solid;
+    border: 1px #1A1A1A solid;
 }
 
 option {
@@ -365,7 +384,7 @@ option {
     opacity: 0.8;
     border-radius: 10px;
     padding: 15px;
-    margin: 25px 10px;
+    margin: 25px 10px 0;
 }
 
 /* ############### Media Query ############### */

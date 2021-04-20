@@ -103,44 +103,48 @@
 
                 </div>
                 <div class="box box3">
-                    <h2>Contact Details</h2>
+                    <form action="" id="checkout-form">
+                        <h2>Contact Details</h2>
 
-                    <form action="">
                         <div class="checkout-element">
                             <label for="full-name" class="required-field">Full Name</label><br>
                             <input id="full-name" type="text" placeholder="Tan Ah Beng" required>
                         </div>
                         <div class="checkout-element">
                             <label for="phone-no" class="required-field">Phone No.</label><br>
-                            <input id="phone-no" type="tel" name="phone" placeholder="0123456789" id="phone-number" required>
+                            <input id="phone-no" type="tel" name="phone" placeholder="0123456789"
+                                pattern="^(01)[0-9][0-9]{7,8}$" id="phone-number" required>
                         </div>
                         <div class="checkout-element">
                             <label for="email" class="required-field">Email</label><br>
-                            <input id="email" type="email" name="email" placeholder="spacebuns@gmail.com" required>
+                            <input id="email" type="email" name="email" placeholder="spacebuns@gmail.com"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                         </div>
                         <div class="checkout-element">
                             <label for="order-notes">Order notes</label><br>
-                            <input id="order-notes" type="text" placeholder="Specify your preferences (if any)" id="order-notes">
+                            <input id="order-notes" type="text" placeholder="Specify your preferences (if any)"
+                                id="order-notes">
                         </div>
-                    </form>
+
                 </div>
 
 
                 <div class="box box4">
                     <h2>Payment method</h2>
 
+
                     <div class="payment-type">
-                        <input type="radio" name="payment" value=”cash” id="cash">
+                        <input type="radio" name="payment" value=”cash” id="cash" required>
                         <label for="cash">Cash</label>
                     </div>
                     <div class="payment-type">
-                        <input type="radio" name="payment" value=”creditCard” id="creditCard">
+                        <input type="radio" name="payment" value=”creditCard” id="creditCard" required>
                         <label for="creditCard">Credit Card</label>
                         <img id="visa-icon" src="Media/icons/visa.svg" alt="visa logo" height="27px">
                         <img id="mastercard-icon" src="Media/icons/mastercard.svg" alt="mastercard logo" height="30px">
                     </div>
                     <div class="payment-type">
-                        <input type="radio" name="payment" value=”E-wallet” id="e-wallet">
+                        <input type="radio" name="payment" value=”E-wallet” id="e-wallet" required>
                         <label for="e-wallet">E-Wallet</label>
                         <img id="touch-n-go-ewallet-icon" src="Media/icons/touch-n-go-ewallet.svg"
                             alt="touch-n-go-ewallet logo" width="20px">
@@ -148,19 +152,21 @@
                         <img id="grab-pay-icon" src="Media/icons/grabpay.svg" alt="grab-pay logo" height="20px">
                     </div>
                     <div class="payment-type">
-                        <input type="radio" name="payment" value=”onlineBanking” id="onlineBanking">
+                        <input type="radio" name="payment" value=”onlineBanking” id="onlineBanking" required>
                         <label for="onlineBanking">Online Banking</label>
                     </div>
-
                 </div>
                 <div class="box box5">
                     <a href="sb_orderConfirmation.html">
-                        <h4>Pay now</h4>
+                        <input type="submit" value="Pay Now" id="checkout-form">
                     </a>
+                    </form>
                     <a href="#">
                         <h6>Back to Shopping Cart</h6>
                     </a>
                 </div>
+
+
             </div>
         </div>
     </section>
