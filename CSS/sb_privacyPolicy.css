@@ -21,8 +21,17 @@ h3 {
     font-size: 25px;
 }
 
-ul li::marker {
+p {
+    color: #B97836;
+}
+
+ul {
     color: grey;
+}
+
+ol {
+    padding-left: 20px;
+    color: #B97836;
 }
 
 @media only screen and (max-width:1520px) {
