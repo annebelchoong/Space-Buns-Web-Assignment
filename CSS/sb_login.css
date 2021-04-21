@@ -22,6 +22,14 @@ html {
         margin-top: 5%;
     }
 
+    .logInput {
+        border-radius: 6px;
+        border: 1px #B97836 solid;
+        background-color: #1A1A1A;
+        margin: 10px 0px;
+        padding: 10px;
+    }
+
     fieldset {
         width: 35%;
         height: 50%;
@@ -47,6 +55,7 @@ html {
 
     input {
         text-align: center;
+        outline: none;
     }
 
     div.forgotPass a {
@@ -64,13 +73,18 @@ html {
     }
 
     input[type=submit] {
-        background-color: white;
-        border: none;
-        color: #B97836;
         padding: 10px 20px;
         text-decoration: none;
         margin: 4px 2px;
         cursor: pointer;
+        color: #B97836;
+        background-color: #1A1A1A;
+        border: 1px #B97836 solid;
+        border-radius: 6px;
+    }
+
+    input:focus {
+        border: 2px solid #B97836;
     }
 
     div.logSubmit {
@@ -81,13 +95,17 @@ html {
     }
 
     #loginButton {
-        transition: transform .1s ease;
+        transition: transform .2s ease;
+        width: 80px;
+        height: 35px;
     }
 
     #loginButton:hover {
-        text-decoration: underline;
+        text-decoration: none;
+        color: #B97836;
         font-weight: bold;
         transform: scale(1.1);
+        opacity: 0.75;
     }
 
     div.loginRow > a {
