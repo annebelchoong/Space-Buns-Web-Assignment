@@ -242,14 +242,15 @@ div.payment-type:nth-child(3) {
 }
 
 .box5 input {
-    font-size: 1em;
-    /* font-family: 'Segoe UI', sans-serif; */
+    font-size: 1.1em;
+    font-family: 'Segoe UI', sans-serif;
     color: #B97836;
     background-color: #1A1A1A;
     border-radius: 5px;
     border: 1px #B97836 solid;
     padding: 8px 14px;
     margin: 10px auto;
+    cursor: pointer;
 }
 
 .box5 input:hover {
