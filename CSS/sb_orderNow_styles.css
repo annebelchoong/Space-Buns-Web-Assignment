@@ -409,6 +409,14 @@ option {
     } */
 }
 
+@media only screen and (max-width:676px) {
+    #delivery, #pickup {
+        margin: 25px 20px;
+        /* background-color: red; */
+    }
+}
+
+
 @media only screen and (max-width:495px) {
     #pickup-map {
         width: 90%;
