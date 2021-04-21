@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 * {
     padding: 0;
     margin: 0;
@@ -35,7 +34,7 @@ nav.checkout-bar li {
 
 nav.checkout-bar h1 {
     display: inline;
-    font-size: 2.5em;
+    font-size: 2em;
     vertical-align: middle;
     font-family: Verdana, sans-serif;
 }
@@ -63,7 +62,6 @@ nav.checkout-bar h1 {
     color: #B97836;
 }
 
-
 /* ###################### Layout ###################### */
 
 .container {
@@ -80,14 +78,15 @@ nav.checkout-bar h1 {
 
 .box1, .box2 {
     text-align: center;
-    background-color: #1A1A1A; 
+    background-color: #1A1A1A;
     border: 2px #B97836 solid;
     border-radius: 10px;
 }
 
 .box1 {
     height: 120px;
-    width: 700px;
+    /* width: 700px; */
+    width: 80%;
     margin: 40px auto;
 }
 
@@ -95,7 +94,8 @@ nav.checkout-bar h1 {
     column-count: 3;
     column-gap: 40px;
     column-rule: 2px solid #8b8888;
-    padding:1.8em;
+    padding: 1.8em;
+    /* display: inline-block; */
 }
 
 .box1 p {
@@ -141,16 +141,15 @@ nav.checkout-bar h1 {
     font-size: 1.5em;
 }
 
-
 .payment-amount {
     background-color: #242628;
     border-radius: 5px;
     padding: 10px;
 }
 
-.payment-amount p{
-    display:block;
-    text-align:left;
+.payment-amount p {
+    display: block;
+    text-align: left;
     padding: 5px;
 }
 
@@ -158,41 +157,37 @@ nav.checkout-bar h1 {
     float: right;
 }
 
-.total-container{
-    display:flex;
+.total-container {
+    display: flex;
     padding: 10px 0;
     border-top: 1px solid white;
 }
 
-.total-left{
-    width:70%;
+.total-left {
+    width: 70%;
     font-size: 1em;
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: left;
-
 }
 
-.total-right{
-    width:70%;
+.total-right {
+    width: 70%;
     font-size: 1em;
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: right;
 }
 
-.total,
-.data-num,
-.total-total{
-    padding:10px;
+.total, .data-num, .total-total {
+    padding: 10px;
 }
 
-.data-total,
-.total-total{
-    font-size:1.5em;
+.data-total, .total-total {
+    font-size: 1.5em;
     font-weight: bold;
-    padding-top:5px;
-    padding-bottom:0;
+    padding-top: 5px;
+    padding-bottom: 0;
 }
 
 .box5 h4 {
@@ -210,22 +205,23 @@ nav.checkout-bar h1 {
 }
 
 /* #################################### Scrollbar ################################### */
-body::-webkit-scrollbar {
-    width: 15px;      
-  }
-  
-body::-webkit-scrollbar-track {
-    background-color: #252627;  
-    border-radius: 20px;  
-  }
-  
-body::-webkit-scrollbar-thumb {
-    background-color: #3c3c3c;   
-    border-radius: 20px;       
-  } 
 
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #252627;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c;
+    border-radius: 20px;
+}
 
 /* ##################footer##################### */
+
 footer {
     height: 30px;
     background-color: #1A1A1A;
@@ -234,20 +230,49 @@ footer {
 
 .copyright-small {
     font-size: 0.9em;
-    text-align:center;
+    text-align: center;
 }
 
 /* ################## Media Query ##################### */
 
-@media only screen and (max-width:767px){
-    
+@media only screen and (max-width:767px) {
+    nav.checkout-bar h1 {
+        font-size: 1.5em;
+    }
+    .thankyou-text {
+        font-size: 2em;
+    }
+
+    .order-info-box {
+        padding: 15px;
+    }
+}
+
+/* @media only screen and (max-width:640px) {
     .order-info-box{
+        height: 113px;
+    }
+
+    .order-info-box h3{
+        font-size: 0.8em;
+    }
+
+    .order-info-box p{
+        padding: 8px;
+    }
+} */
+
+@media only screen and (max-width:512px) {
+    .order-info-box {
         display: grid;
         grid-template-rows: auto auto auto;
+        padding: 1.3em auto;
     }
-
-    .order-info {
-        padding: 100px auto;
+    .order-info p, .order-info h3 {
+        padding: 0.6em;
     }
-
+    .box1 {
+        width: fit-content;
+        height: fit-content;
+    }
 }
