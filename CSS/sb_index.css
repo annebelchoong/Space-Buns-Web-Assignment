@@ -96,7 +96,12 @@ article.maincontent3 {
 .carousel-slide {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 300px;
+}
+
+.carousel-slide img{
+    width: 600px;
+    height: 300px;
 }
 
 #prevBtn {
@@ -149,7 +154,7 @@ article.maincontent4 {
 .eventsHeader {
     background-color:  #B97836;
     animation-name: eventsHeaderAni;
-    animation-duration: 8s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
@@ -219,4 +224,47 @@ h2 {
     margin-right: 15%;
     padding: 15px;
     text-align: center;
+}
+
+.maincontent5 div {
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.maincontent5 img {
+    border-radius: 50%;
+    height: 80px;
+    padding: 5px;
+    position: relative;
+    animation-name: reviewAni;
+    animation-duration: 0.5s;
+    right: 100px;
+    top: 30%;
+}
+
+.maincontent5 p {
+    right: -50%;
+    height: 160px;
+    width: 160px;
+    position: relative;
+    top: -10%;
+    
+}
+
+@keyframes reviewAni {
+    0% { right: -70%; top: 30%;}
+    10% { right: -60%; top: 30%;}
+    20% { right: -50%; top: 30%;}
+    30% { right: -40%; top: 30%;}
+    40% { right: -30%; top: 30%;}
+    50% { right: -20%; top: 30%;}
+    60% { right: -10%; top: 30%;}
+    70% { right: 0%; top: 30%;}
+    80% { right: 10%; top: 30%;}
+    90% { right: 20%; top: 30%;}
+    100% { right: 30%; top: 30%;}
 }
