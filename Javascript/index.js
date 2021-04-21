@@ -9,20 +9,20 @@ const nextBtn = document.querySelector('#nextBtn');
 
 //Counter
 let counter = 1;
-const size = 600;
+const size = 700;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 //Button Listeners
-nextBtn.addEventListener('click',()=> {
+nextBtn.addEventListener('click',function() {
     if(counter >= carouselImages.length - 1) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    carouselSlide.style.transition = "transform 0.5s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
-prevBtn.addEventListener('click',()=> {
+prevBtn.addEventListener('click',function() {
     if(counter <=0) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    carouselSlide.style.transition = "transform 0.5s ease-in-out";
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';  
 });
