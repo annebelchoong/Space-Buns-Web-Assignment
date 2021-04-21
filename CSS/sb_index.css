@@ -106,20 +106,20 @@ article.maincontent3 {
 
 #prevBtn {
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 10;
     left: 5%;
-    font-size: 30px;
+    font-size: 35px;
     color: aliceblue;
     cursor: pointer;
 }
 
 #nextBtn {
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 10;
     right: 5%;
-    font-size: 30px;
+    font-size: 35px;
     color: aliceblue;
     cursor: pointer;
 }
