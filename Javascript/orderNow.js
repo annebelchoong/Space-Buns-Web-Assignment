@@ -29,51 +29,61 @@ function initMap() {
 
     autocomplete.addListener("place_changed", () => {
         infowindow.close();
+        // deliveryMap.strictBounds = false;
         marker.setVisible(false);
         const place = autocomplete.getPlace();
 
-
         // if (!place.geometry || !place.geometry.location) {
-        //     do {
-        //         // User entered the name of a Place that was not suggested and
-        //         // pressed the Enter key, or the Place Details request failed.
-        //         window.alert("No details available for input: '" + place.name + "'");
-        //         return;
-        //     } while (!place.geometry || !place.geometry.location)
-        // }
-
-        // if (place !== (place.geometry || place.geometry.location)) {
-        //     window.alert("test");
-        //     return;
-        // }
-
-        // do {
-        //     document.getElementById("confirm").disabled = true;
-        // }while(place.name !== place.geometry)
-        //     document.getElementById("confirm").disabled = false;
-
-
-        // function disableBtn() {
-        //     document.getElementById("myBtn").disabled = true;
-        // }
-
-        // function enableBtn() {
-        //     document.getElementById("myBtn").disabled = false;
-        // }
-
-
-
-        // if (!place.geometry || !place.geometry.location) {
-        //     // User entered the name of a Place that was not suggested and
-        //     // pressed the Enter key, or the Place Details request failed.
-        //     window.alert("No details available for input: " + place.name + "");
+        //     window.alert("No details available for input: '" + place.name + "'");
+        //     // input.focus();
+        //     event.preventDefault();
         //     return;
         // }
 
 
-        // const result = (google.maps.geometry.poly.containsLocation(deliveryRadius.radius)) ? "yes" : "no";
 
-        // console.log(result);
+//         // if (!place.geometry || !place.geometry.location) {
+//         //     do {
+//         //         // User entered the name of a Place that was not suggested and
+//         //         // pressed the Enter key, or the Place Details request failed.
+//         //         window.alert("No details available for input: '" + place.name + "'");
+//         //         return;
+//         //     } while (!place.geometry || !place.geometry.location)
+//         // }
+
+// asdfasdf
+//         // if (place !== (place.geometry || place.geometry.location)) {
+//         //     window.alert("test");
+//         //     return;
+//         // }
+
+//         // do {
+//         //     document.getElementById("confirm").disabled = true;
+//         // }while(place.name !== place.geometry)
+//         //     document.getElementById("confirm").disabled = false;
+
+
+//         // function disableBtn() {
+//         //     document.getElementById("myBtn").disabled = true;
+//         // }
+
+//         // function enableBtn() {
+//         //     document.getElementById("myBtn").disabled = false;
+//         // }
+
+
+
+//         // if (!place.geometry || !place.geometry.location) {
+//         //     // User entered the name of a Place that was not suggested and
+//         //     // pressed the Enter key, or the Place Details request failed.
+//         //     window.alert("No details available for input: " + place.name + "");
+//         //     return;
+//         // }
+
+
+//         // const result = (google.maps.geometry.poly.containsLocation(deliveryRadius.radius)) ? "yes" : "no";
+
+//         // console.log(result);
 
 
         if (place.geometry.viewport) {
@@ -271,7 +281,7 @@ function deliveryText() {
     // } else {
     //     togglePopup();
     // }
-    return togglePopup();
+    togglePopup();
 }
 
 function pickupText() {
@@ -279,6 +289,9 @@ function pickupText() {
     togglePopup();
 }
 
+function toOrder() {
+    window.location.href = "sb_checkout.html";
+}
 
 // document.getElementById("pickup-button").addEventListener("click", displayText);
 // document.getElementById("delivery-button").addEventListener("click", displayText);
