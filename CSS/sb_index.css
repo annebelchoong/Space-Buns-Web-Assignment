@@ -36,7 +36,7 @@ main a:visited  {
 }
 
 #goTopBtn:hover {
-    background-color: #252627;
+    background-color: aliceblue;
     color: #B97836;
     border-radius: 50%;
 }
