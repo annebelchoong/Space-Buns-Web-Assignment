@@ -275,13 +275,18 @@ h2 {
     opacity: 0.8;
 }
 
+#featuredIn {
+    width: 70%;
+}
+
 @media (max-width: 767px) {
     .custReview {
       flex-direction: column;
     }
+
+    #featuredIn {
+        width: 90%;
+    }
 }
 
-#featuredIn {
-    width: 365px;
-}
 /*Review Ends*/
