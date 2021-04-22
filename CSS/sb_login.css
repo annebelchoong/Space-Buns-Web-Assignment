@@ -42,7 +42,7 @@ html {
 
     form {
         text-align: center;
-        color: blanchedalmond;
+        color: aliceblue;
     }
 
     legend {
@@ -61,7 +61,7 @@ html {
     div.forgotPass a {
         text-align: center;
         padding-top: 10px;
-        color: blanchedalmond;
+        color: aliceblue;
     }
 
     div.logPass {
