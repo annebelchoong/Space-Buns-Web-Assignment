@@ -233,51 +233,41 @@ h2 {
     background-size: cover;
 }
 
-#homeReview {
-    width: 60%;
-    height: 300px;
-    margin: auto;
-    position: relative;
+.custReview {
+    display: flex;
+    flex-direction: row;
     font-size: 15px;
-    color: aliceblue;
-}
+    text-align: center;
+  }
 
-#FelixK {
-    position: relative;
+#felixK {
     height: 80px;
-    width: 80px;
-    padding: 5px;
-    right: 100px;
-    top: 35%;
+    width: 80px; 
     border-radius: 50%;
-    animation: reviewAni 3.5s;
-    animation-timing-function: linear;
-    transition: transform .4s ease-in-out;
-
 }
 
-#FelixK:hover {
-    transform: scale(1.2);
+.custReview-left {
+    background-color: black;
+    padding: 10px;
+    flex: 50%;
+    border: 0.2px #B97836 solid;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.maincontent5 span {
-    position: relative;
-    right: 100px;
-    top: 35%;
-    padding: 5px;
-    animation: reviewAni 3.5s;
-    animation-timing-function: linear;
+#iswaryaM {
+    height: 80px;
+    width: 80px; 
+    border-radius: 50%;
 }
 
-#FelixComment {
-    height: 160px;
-    position: relative;
-    width: 160px;
-    right: -50%;
-    top: -10%;
-    animation: reviewAni2 3.5s;
-    animation-timing-function: linear;
-    z-index: 1;
+.custReview-right{
+    background-color: black;
+    padding: 10px;
+    flex: 50%;
+    border: 0.2px #B97836 solid;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .maincontent5 a:hover {
@@ -286,47 +276,10 @@ h2 {
     opacity: 0.8;
 }
 
-#FelixComment {
-    background-color: black;
-    height: 190px;
-    position: relative;
-    width: 170px;
-    padding: 10px;
-    top: -10%;
-    right: -50%;
-    border: 0.2px #B97836 solid;
-    border-radius: 15px;
-    animation: reviewAni2 3.5s;
-    animation-timing-function: linear;
-    z-index: 0;
-}
-
-@keyframes  reviewAni {
-    0%  { right: -70%; top: 35%; opacity: 0.1;}
-    10% { right: -60%; top: 35%;opacity: 0.2;}
-    20% { right: -50%; top: 35%;opacity: 0.3;}
-    30% { right: -40%; top: 35%;opacity: 0.4;}
-    40% { right: -30%; top: 35%;opacity: 0.5;}
-    50% { right: -20%; top: 35%;opacity: 0.6;}
-    60% { right: -10%; top: 35%;opacity: 0.7;}
-    70% { right: 0%; top: 35%;opacity: 0.8;}
-    80% { right: 80px; top: 35%;opacity: 0.9;}
-    90% { right: 100px; top: 35%;opacity: 1;}
-    100% { right: 100px; top: 35%;opacity: 1;}
-}
-
-@keyframes reviewAni2 {
-    0% { right: 30%; top: -10%; opacity: 0.1;}
-    10% { right: 20%; top: -10%;opacity: 0.2;}
-    20% { right: 10%; top: -10%;opacity: 0.3;}
-    30% { right: 0%; top: -10%;opacity: 0.4;}
-    40% { right: -10%; top: -10%;opacity: 0.5;}
-    50% { right: -20%; top: -10%;opacity: 0.6;}
-    60% { right: -30%; top: -10%;opacity: 0.7;}
-    70% { right: -40%; top: -10%;opacity: 0.8;}
-    80% { right: -45%; top: -10%;opacity: 0.9;}
-    90% { right: -50%; top: -10%;opacity: 1;}
-    100% { right: -50%; top: -10%;opacity: 1;}
+@media (max-width: 767px) {
+    .custReview {
+      flex-direction: column;
+    }
 }
 
 #featuredIn {
