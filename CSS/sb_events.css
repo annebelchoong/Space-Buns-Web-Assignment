@@ -1,0 +1,257 @@
+@charset "utf-8";
+#button a {
+    background-color: #1A1A1A;
+    color: #B97836;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: #B97836;
+    padding: 10px 20px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#button a:hover, #button a:active {
+    background-color: #B97836;
+    color: white;
+    transition: 250ms;
+}
+
+#button {
+    padding: 10px;
+    width: 150px;
+    margin: 15px auto;
+    /* transition: var(--transition); */
+}
+
+.title h2 {
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+}
+
+.events-container p {
+    font-style: italic;
+    font-weight: 150px;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 500px) {
+    body {
+        font-size: 30px;
+    }
+}
+
+/* Events */
+
+.eventsTitle {
+    text-align: center;
+    padding-bottom: 25px;
+    /* background: var(--dark); */
+    color: #fff;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: silver;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.events-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.events {
+    margin: 45px 0;
+    padding-bottom: 25px;
+    background: var(--dark);
+    color: #fff;
+}
+
+.events-text {
+    padding: 10px 20px;
+}
+
+.events-text h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.events-image {
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.events-image img {
+    width: 100%;
+    display: block;
+    transition: var(--transition);
+}
+
+.events-image:hover img {
+    transform: scale(1.1);
+}
+
+@media (min-width: 900px) {
+    .events-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .events {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .events-container {
+        flex-direction: column;
+    }
+    .events {
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+    .events-image {
+        flex: 1;
+    }
+    .events-image img {
+        height: 100%;
+    }
+    .events-text {
+        flex: 1;
+    }
+    .events:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+section {
+    display: block;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.btn-1 {
+    padding: 10px 20px;
+    color: #B97836;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #B97836;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #1A1A1A;
+}
+
+.btn-1:focus {
+    outline: none;
+}
+
+.btn-1:hover {
+    background-color: #B97836;
+    color: white;
+    transition: 250ms;
+}
+
+/* rsvp section */
+
+.rsvp-section {
+    padding: 80px 0 80px;
+}
+
+.rsvp-section .section-title h2, .rsvp-section .section-title p {
+    color: #fff;
+}
+
+.rsvp-section .section-title p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.rsvp-section .rsvp-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.rsvp-section .form {
+    max-width: 1000px;
+    border: 1px solid #B97836;
+    border-radius: 20px;
+    background-color: black;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.rsvp-section .form .input-group {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.rsvp-section .form .input-group.w50 {
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+
+.rsvp-section .form .input-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 30px;
+    color: #8b8888;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: 2px solid #B97836;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(0.6);
+}
+
+.rsvp-section .form textarea.input-control {
+    height: 120px;
+    padding-top: 12px;
+    resize: none;
+    border-radius: 12px;
+}
+
+.rsvp-section .form .input-control:focus {
+    outline: none;
+}
