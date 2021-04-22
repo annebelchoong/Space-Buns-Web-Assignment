@@ -1,36 +1,27 @@
 @charset "utf-8";
 #button a {
-    background-color: black;
+    background-color: #1A1A1A;
     color: #B97836;
     font-weight: bold;
-    border: 2px solid;
-    border-radius: 10px;
+    border: 1px solid;
+    border-radius: 20px;
     border-color: #B97836;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     vertical-align: middle;
     text-decoration: none;
 }
 
 #button a:hover, #button a:active {
-    background-color: #252627;
-    border-radius: 10px;
+    background-color: #B97836;
+    color: white;
+    transition: 250ms;
 }
 
-.btn {
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
+#button {
     padding: 10px;
     width: 150px;
-    display: block;
     margin: 15px auto;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.btn:hover {
-    opacity: 0.85;
+    /* transition: var(--transition); */
 }
 
 .title h2 {
@@ -40,7 +31,7 @@
     margin: 10px;
 }
 
-p {
+.events-container p {
     font-style: italic;
     font-weight: 150px;
     text-align: center;
@@ -59,7 +50,7 @@ p {
 .eventsTitle {
     text-align: center;
     padding-bottom: 25px;
-    background: var(--dark);
+    /* background: var(--dark); */
     color: #fff;
     border-style: ridge;
     border-width: 10px;
@@ -174,17 +165,16 @@ section {
 }
 
 .btn-1 {
-    padding: 10px 35px;
+    padding: 10px 20px;
     color: #B97836;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
-    border: 2px solid #B97836;
-    border-radius: 15px;
+    border: 1px solid #B97836;
+    border-radius: 20px;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.5s ease;
-    font-weight: 500;
-    background-color: black;
+    font-weight: bold;
+    background-color: #1A1A1A;
 }
 
 .btn-1:focus {
@@ -192,7 +182,9 @@ section {
 }
 
 .btn-1:hover {
-    background-color: rgb(97, 96, 96);
+    background-color: #B97836;
+    color: white;
+    transition: 250ms;
 }
 
 /* rsvp section */
@@ -218,7 +210,7 @@ section {
 
 .rsvp-section .form {
     max-width: 1000px;
-    border: 2px solid #B97836;
+    border: 1px solid #B97836;
     border-radius: 20px;
     background-color: black;
     margin: auto;
@@ -241,18 +233,23 @@ section {
     width: 100%;
     height: 45px;
     margin-bottom: 30px;
+    color: #8b8888;
     font-size: 16px;
-    color: #000000;
     padding: 6px 12px;
     border: 2px solid #B97836;
     border-radius: 10px;
+    background-color: #1A1A1A;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(0.6);
 }
 
 .rsvp-section .form textarea.input-control {
     height: 120px;
     padding-top: 12px;
     resize: none;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .rsvp-section .form .input-control:focus {
