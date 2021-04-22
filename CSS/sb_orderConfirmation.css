@@ -84,7 +84,7 @@ nav.checkout-bar h1 {
 }
 
 .box1 {
-    height: 120px;
+    height: fit-content;
     /* width: 700px; */
     width: 80%;
     margin: 40px auto;
@@ -115,7 +115,7 @@ nav.checkout-bar h1 {
 }
 
 .table-container table {
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .table-container th {
@@ -262,7 +262,7 @@ footer {
     }
 } */
 
-@media only screen and (max-width:512px) {
+@media only screen and (max-width:640px) {
     .order-info-box {
         display: grid;
         grid-template-rows: auto auto auto;
