@@ -233,7 +233,7 @@ h2 {
     background-size: cover;
 }
 
-.maincontent5 div {
+#homeReview {
     width: 60%;
     height: 300px;
     margin: auto;
@@ -242,7 +242,7 @@ h2 {
     color: aliceblue;
 }
 
-.maincontent5 img {
+#FelixK {
     position: relative;
     height: 80px;
     width: 80px;
@@ -256,7 +256,7 @@ h2 {
 
 }
 
-.maincontent5 img:hover {
+#FelixK:hover {
     transform: scale(1.2);
 }
 
@@ -269,7 +269,7 @@ h2 {
     animation-timing-function: linear;
 }
 
-.maincontent5 p {
+#FelixComment {
     height: 160px;
     position: relative;
     width: 160px;
@@ -327,4 +327,8 @@ h2 {
     80% { right: -45%; top: -10%;opacity: 0.9;}
     90% { right: -50%; top: -10%;opacity: 1;}
     100% { right: -50%; top: -10%;opacity: 1;}
+}
+
+#featuredIn {
+    width: 60%;
 }
