@@ -53,7 +53,7 @@
     <div class="events-container">
         <section class="eventsTitle sec-width" id="eventsTitle">
             <div class="title">
-                <h2>Organize Your Events in our Restaurent</h2>
+                <h2>Organize Your Events in our Restaurant</h2>
                 <p>The saying goes that "even the best-laid plans go astray," </p>
                 <p>but that doesn't have to be the case for planning events at our restaurant. </p>
                 <p>Whether you're hosting a promotional event for your own business, </p>
@@ -142,24 +142,27 @@
                     <form class="form">
                         <div class="row">
                             <div class="input-group w50">
-                                <input type="text" placeholder="Name" class="input-control">
+                                <input type="text" placeholder="Name" class="input-control" required>
                             </div>
                             <div class="input-group w50">
-                                <input type="email" placeholder="Email" class="input-control">
+                                <input type="email" placeholder="Email" class="input-control"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                             </div>
                             <div class="input-group w50">
-                                <input type="text" placeholder="Phone No." class="input-control">
+                                <input type="text" placeholder="Phone No. eg. 01233456789" class="input-control"
+                                    pattern="^(01)[0-9][0-9]*[0-9]{7,8}$" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-group w50">
-                                <input type="date" placeholder="Date" class="input-control">
+                                <input type="date" placeholder="Date" class="input-control" required>
                             </div>
                             <div class="input-group w50">
-                                <input type="time" placeholder="Time" class="input-control">
+                                <input type="time" placeholder="Time" class="input-control" required>
                             </div>
                             <div class="input-group w50">
-                                <input type="number" placeholder="Number of People" min="1" class="input-control">
+                                <input type="number" placeholder="Number of People" min="1" class="input-control"
+                                    required>
                             </div>
                         </div>
                         <div class="row">
