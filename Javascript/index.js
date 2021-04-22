@@ -1,18 +1,18 @@
 
-//Promotions Carousel JS
+//***********************Home Promotions Carousel Side js Starts**********************************
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 
-//Buttons
+//Carousel Slide Buttons
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
-//Counter
+//Carousel Slide Counter
 let counter = 1;
 const size = 700;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-//Button Listeners
+//Carousel Slide Event Listeners
 nextBtn.addEventListener('click',function() {
     if(counter >= carouselImages.length - 1) return;
     carouselSlide.style.transition = "transform 0.5s ease-in-out";
@@ -40,9 +40,9 @@ carouselSlide.addEventListener('transitionend', ()=> {
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
+//*******************Home Promotions Carousel Slide ENDS********************************
 
-
-//Go top button JS
+//Go top button js
  var topBtn = document.getElementById("goTopBtn");
 
  window.onscroll = function() {scrollingFunction()};

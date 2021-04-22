@@ -21,7 +21,7 @@ main a:visited  {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 60px;
     z-index: 99;
     font-size: 25px;
     font-weight: normal;
@@ -223,21 +223,12 @@ h2 {
     margin: auto;
     padding: 15px;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../Media/Banner/Backgroundimg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.hide {
-    opacity: 0;
-    left: -100%;
-  }
-  .show {
-    opacity: 1;
-    left: 0;
-  }
 
 .maincontent5 div {
     width: 60%;
@@ -249,36 +240,39 @@ h2 {
 }
 
 .maincontent5 img {
-    border-radius: 50%;
+    position: relative;
     height: 80px;
     padding: 5px;
-    position: relative;
-    animation-name: reviewAni;
-    animation-duration: 3.5s;
     right: 100px;
-    top: 30%;
+    top: 35%;
+    border-radius: 50%;
+    animation: reviewAni 3.5s;
+    animation-timing-function: linear;
     transition: transform .4s ease-in-out;
 }
 
 .maincontent5 img:hover {
     transform: scale(1.2);
 }
+
 .maincontent5 span {
-    padding: 5px;
     position: relative;
-    animation-name: reviewAni;
-    animation-duration: 3.5s;
     right: 100px;
-    top: 30%;
+    top: 35%;
+    padding: 5px;
+    animation: reviewAni 3.5s;
+    animation-timing-function: linear;
 }
+
 .maincontent5 p {
-    right: -50%;
     height: 160px;
-    width: 160px;
     position: relative;
-    animation-name: reviewAni2;
-    animation-duration: 3.5s;
+    width: 160px;
+    right: -50%;
     top: -10%;  
+    animation: reviewAni2 3.5s;
+    animation-timing-function: linear;
+    z-index: 1;
 }
 
 .maincontent5 a:hover {
@@ -287,18 +281,32 @@ h2 {
     opacity: 0.8;
 }
 
+#FelixComment {
+    background-color: #252627;
+    height: 160px;
+    position: relative;
+    width: 160px;
+    top: -10%;
+    right: -50%;
+    border: 1px #B97836 solid;
+    border-radius: 15px;
+    animation: reviewAni2 3.5s;
+    animation-timing-function: linear;
+    z-index: 0;
+}
+
 @keyframes  reviewAni {
-    0%  { right: -70%; top: 30%; opacity: 0.1;}
-    10% { right: -60%; top: 30%;opacity: 0.2;}
-    20% { right: -50%; top: 30%;opacity: 0.3;}
-    30% { right: -40%; top: 30%;opacity: 0.4;}
-    40% { right: -30%; top: 30%;opacity: 0.5;}
-    50% { right: -20%; top: 30%;opacity: 0.6;}
-    60% { right: -10%; top: 30%;opacity: 0.7;}
-    70% { right: 0%; top: 30%;opacity: 0.8;}
-    80% { right: 80px; top: 30%;opacity: 0.9;}
-    90% { right: 100px; top: 30%;opacity: 1;}
-    100% { right: 100px; top: 30%;opacity: 1;}
+    0%  { right: -70%; top: 35%; opacity: 0.1;}
+    10% { right: -60%; top: 35%;opacity: 0.2;}
+    20% { right: -50%; top: 35%;opacity: 0.3;}
+    30% { right: -40%; top: 35%;opacity: 0.4;}
+    40% { right: -30%; top: 35%;opacity: 0.5;}
+    50% { right: -20%; top: 35%;opacity: 0.6;}
+    60% { right: -10%; top: 35%;opacity: 0.7;}
+    70% { right: 0%; top: 35%;opacity: 0.8;}
+    80% { right: 80px; top: 35%;opacity: 0.9;}
+    90% { right: 100px; top: 35%;opacity: 1;}
+    100% { right: 100px; top: 35%;opacity: 1;}
 }
 
 @keyframes reviewAni2 {
