@@ -119,3 +119,17 @@ html {
         color: #B97836;
         opacity: 0.75;
     }
+
+    @media (max-width: 1000px) {
+        fieldset {
+            width: 350px
+        }
+    }
+
+    @media (max-width: 375px) {
+        fieldset {
+            width: 90%;
+        }
+    }
+
+   

@@ -151,3 +151,15 @@ html {
         }
      
     }
+
+    @media (max-width: 1000px) {
+        fieldset {
+            width: 350px
+        }
+    }
+
+    @media (max-width: 375px) {
+        fieldset {
+            width: 90%;
+        }
+    }
