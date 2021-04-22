@@ -17,6 +17,7 @@ main a:visited  {
     color: #B97836;
 }
 
+/*Return to top button*/
 #goTopBtn {
     display: none;
     position: fixed;
@@ -40,6 +41,7 @@ main a:visited  {
     color: #B97836;
     border-radius: 50%;
 }
+/*Go top Button Ends*/
 
 /* Intro Video */
 .introVideo {
@@ -48,9 +50,9 @@ main a:visited  {
     background-color: hsl(15, 0%, 0%);
 }
 
-@media only screen and (max-width:653px) {
+@media only screen and (max-width:767px) {
     div > video {
-        width: 100%;
+        width: 95%;
     }
 }
 /* Intro Video Ends */
@@ -63,13 +65,13 @@ article.maincontent1 {
     margin-right: 15%;
     margin-top: 20px;
 }
-/* About Us Ends */
 
 #whoarewecontent {
     color: #B97836;
     padding: 20px;
     background-color: 	hsl(15, 0%, 0%);
 }
+/* About Us Ends */
 
 /* Recommendations Image Map Starts */
 article.maincontent2 {
