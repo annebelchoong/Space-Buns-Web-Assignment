@@ -5,7 +5,7 @@ section.aboutUs-content {
 }
 
 .aboutUs-container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -77,7 +77,6 @@ section.aboutUs-content {
     color: white;
     font-size: 24px;
     margin-bottom: 30px;
-    /* border-bottom: 1px solid white; */
 }
 
 .aboutUs-left h4 {
@@ -112,15 +111,11 @@ section.aboutUs-content {
 }
 
 @media only screen and (max-width: 768px) {
+    .whoarewe {
+        text-align: left;
+    }
     .aboutUs-scroll {
         height: 275px;
-        /* scroll-snap-type:none; */
-    }
-    /* }
-
-@media only screen and (max-width: 640px) { */
-    .bannerCaption h1 {
-        font-size: 80px;
     }
     .aboutUs-bottom {
         width: 100%;
