@@ -52,10 +52,10 @@
     padding-bottom: 25px;
     background: #1A1A1A;
     color: #fff;
-    /* border-style: ridge; */
-    /* border-width: 10px; */
-    /* border-color: silver; */
-    margin: auto;
+    border: 10px ridge silver;
+    border-radius: 20px;
+    width: 80%;
+    margin: 50px auto;
     flex-wrap: wrap;
 }
 
@@ -67,7 +67,6 @@
 .events {
     margin: 45px 0;
     padding-bottom: 25px;
-    background: var(--dark);
     color: #fff;
 }
 
@@ -85,12 +84,12 @@
     overflow: hidden;
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 20px;
 }
 
 .events-image img {
     width: 100%;
     display: block;
-    transition: var(--transition);
 }
 
 .events-image:hover img {
@@ -231,12 +230,12 @@ section {
 .rsvp-section .form .input-control {
     display: block;
     width: 100%;
-    height: 45px;
+    height: 35px;
     margin-bottom: 30px;
     color: #8b8888;
-    font-size: 16px;
+    font-size: 14px;
     padding: 6px 12px;
-    border: 2px solid #B97836;
+    border: 1px solid #B97836;
     border-radius: 10px;
     background-color: #1A1A1A;
 }
