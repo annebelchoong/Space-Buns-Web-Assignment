@@ -50,11 +50,11 @@
 .eventsTitle {
     text-align: center;
     padding-bottom: 25px;
-    /* background: var(--dark); */
+    background: #1A1A1A;
     color: #fff;
-    border-style: ridge;
-    border-width: 10px;
-    border-color: silver;
+    /* border-style: ridge; */
+    /* border-width: 10px; */
+    /* border-color: silver; */
     margin: auto;
     flex-wrap: wrap;
 }
