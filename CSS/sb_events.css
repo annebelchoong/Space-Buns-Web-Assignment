@@ -54,7 +54,6 @@
     color: #fff;
     border: 10px ridge silver;
     border-radius: 20px;
-    width: 80%;
     margin: 50px auto;
     flex-wrap: wrap;
 }
@@ -192,14 +191,16 @@ section {
     padding: 80px 0 80px;
 }
 
-.rsvp-section .section-title h2, .rsvp-section .section-title p {
+.rsvp-section .section-title h2 {
     color: #fff;
+    padding-bottom: 10px;
 }
 
 .rsvp-section .section-title p {
     margin: 10px 0 0;
     font-size: 16px;
     line-height: 26px;
+    color: #fff
 }
 
 .rsvp-section .rsvp-form {
