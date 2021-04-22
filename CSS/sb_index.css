@@ -242,6 +242,7 @@ h2 {
 .maincontent5 img {
     position: relative;
     height: 80px;
+    width: 80px;
     padding: 5px;
     right: 100px;
     top: 35%;
@@ -249,6 +250,7 @@ h2 {
     animation: reviewAni 3.5s;
     animation-timing-function: linear;
     transition: transform .4s ease-in-out;
+
 }
 
 .maincontent5 img:hover {
@@ -283,9 +285,10 @@ h2 {
 
 #FelixComment {
     background-color: black;
-    height: 160px;
+    height: 170px;
     position: relative;
     width: 160px;
+    padding: 5px;
     top: -10%;
     right: -50%;
     border: 0.2px #B97836 solid;
