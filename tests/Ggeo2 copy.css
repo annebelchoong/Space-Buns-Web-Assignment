@@ -18,6 +18,10 @@ html {
 
 /* ############### Order Options Styles ############### */
 
+/* #order {
+    display: none;
+} */
+
 .order-options {
     /* background-color: green; */
 }
@@ -42,7 +46,7 @@ h1 {
 
 /* ############### Button Styles ############### */
 
-button {
+button, #delivery-button, .order-now {
     all: unset;
     cursor: pointer;
     background-color: #000;
@@ -62,17 +66,26 @@ button:hover, button:active {
     /* transition: 0.1s; */
 }
 
-button.confirm {
-    margin: 5px auto 50px;
+#delivery-button {
+    /* margin: 5px auto 50px; */
     background-color: #000;
     color: var(--gold);
+    /* width: unset; */
+    cursor: pointer;
+    /* width: 150px; */
     /* border: 10px var(--gold) solid; */
 }
-/* 
-button:hover:enabled{
-    background-color: var(--gold);
-    color: white;
-    transition: 0.2s;
+
+input[type=submit] {
+    /* width: 200px; */
+}
+
+/* input[type=time] {
+    border: none;
+    color: #2a2c2d;
+    font-size: 1em;
+    font-family: helvetica;
+    width: 180px;
 } */
 
 button[disabled] {
@@ -86,7 +99,7 @@ button[disabled] {
 
 section>h1 {
     /* color: red; */
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 /* ############### Delivery Section Styles ############### */
@@ -104,7 +117,6 @@ section>h1 {
 #delivery-map {
     width: 80%;
     margin: 0 15px;
-    /* aspect-ratio: 5 / 1; */
 }
 
 #pickup-map {
@@ -142,7 +154,7 @@ label {
     margin-bottom: 10px;
 }
 
-textarea, input {
+.delivery-form textarea, .delivery-form input {
     width: 100%;
     /* height: 50px; */
     background-color: #1A1A1A;
@@ -200,6 +212,160 @@ input::placeholder {
     font-size: 1.2em;
     margin-top: 6px;
     padding: 10px 15px;
+}
+
+/* ############### Popup Styles ############### */
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+    overflow-y: hidden;
+}
+
+.popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: var(--gold);
+    /* background-color: #1A1A1A; */
+    opacity: 0.95;
+    width: 450px;
+    height: 420px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* border: 2px var(--gold) solid; */
+    /* border: 1px #fff solid; */
+    overflow: hidden;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    /* height: 30px; */
+    /* background:#222; */
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    /* line-height: 30px; */
+    text-align: center;
+    /* border-radius: 50%; */
+}
+
+.popup.active .overlay {
+    display: block;
+    overflow-y: hidden;
+}
+
+.popup.active .content {
+    transition: all 250ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* body.popup {
+    overflow-y: hidden;
+} */
+
+/* .close-btn {
+    transition: all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(0);
+} */
+
+.order-now {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    /* all:unset; */
+}
+
+.order-now:hover {
+    /* background-color: #fff; */
+    background-color: #000;
+    transition: 250ms;
+}
+
+fieldset {
+    /* all: unset; */
+    /* display: inline-block; */
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.select-field {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.selection {}
+
+.selection label {
+    /* display: grid; */
+    /* align-items: center; */
+    /* margin: auto 55px; */
+    /* margin: 10px 70px 0px 30px; */
+    /* text-align: center; */
+    margin: 0 0 0 20px;
+}
+
+#select-time {
+    /* width: 100px; */
+}
+
+#select-date {}
+
+select, input#time {
+    display: inline-block;
+    width: 170px;
+    height: 2.8em;
+    font-size: 1em;
+    /* background-color: #252627; */
+    /* color: #fff; */
+    margin: 8px 15px;
+    padding: 10px;
+    text-align: center;
+    border: 0.5px #fff solid;
+    border-radius: 5px;
+}
+
+input#time::placeholder {
+    /* float: left; */
+    padding-top: 5px;
+    color: #000;
+}
+
+select:hover, select:active {
+    border: 1px #000 solid;
+}
+
+option {
+    font-weight: bold;
+}
+
+.delay-text {
+    background-color: #1A1A1A;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
 }
 
 /* ############### Media Query ############### */

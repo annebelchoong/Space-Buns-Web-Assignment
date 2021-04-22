@@ -86,7 +86,7 @@
             <div id="pac-container">
                 <div id="delivery-map"></div>
                 <!-- <div id="error"></div> -->
-                <form name="deliveryForm" class="delivery-form" onsubmit="return deliveryText();">
+                <form name="deliveryForm" class="delivery-form" action="javascript:deliveryText();">
                     <!-- onsubmit="return deliveryText();" -->
                     <div>
                         <label for="pac-input" class="required-field">Delivery Address </label>
@@ -113,9 +113,9 @@
                     </div>
                     <!-- <div><button id="delivery-button" class="confirm" onclick="deliveryText()">Confirm</button></div> -->
                     <!-- <div><input type="submit" id="delivery-button" class="confirm" value="Confirm" /></div> -->
-                    
-                    <div><button id="delivery-button" class="confirm" onclick="deliveryText()">Confirm</button></div>
-                    <!-- <input type="submit" id="delivery-button" class="confirm" value="Confirm" /> -->
+
+                    <!-- <div><button id="delivery-button" class="confirm" onclick="deliveryText()">Confirm</button></div> -->
+                    <input type="submit" id="delivery-button" class="confirm" value="Confirm" />
                 </form>
             </div>
         </section>
@@ -133,12 +133,12 @@
             <div class="overlay"></div>
             <div class="content">
                 <div class="close-btn" onclick="togglePopup()">&times;</div>
-                <form name="popupForm" class="popup-form" onsubmit="">
+                <form id="popup-form" name="popupForm" class="popup-form" action="javascript:toOrder();">
                     <fieldset>
                         <legend id="selection-text"></legend>
 
                         <div class="select-field">
-                            <div class="selection">
+                            <div>
                                 <label>Date</label>
                                 <select name="select-date" id="select-date">
                                     <option id="today" value=""></option>
@@ -152,7 +152,7 @@
                             </select> -->
                             </div>
 
-                            <div class="selection">
+                            <div>
                                 <label>Time</label>
                                 <!-- <select name="sdfasdf" id="select-time">
                                 <option value="">Now</option>
@@ -176,6 +176,7 @@
                         </div>
                         <!-- <button id="order-now" class="order-now">Order Now</button> -->
                         <div><input type="submit" id="order-now" class="order-now button" value="Order Now" /></div>
+
                     </fieldset>
                 </form>
             </div>
@@ -242,6 +243,13 @@
         nextDay1.innerHTML = d[2];
         // }, 1000);
 
+        $("#pac-input,textarea").keydown(function (e) {
+            // Enter was pressed without shift key
+            if (e.keyCode == 13 && !e.shiftKey) {
+                // prevent default behavior
+                e.preventDefault();
+            }
+        });
 
 
     </script>

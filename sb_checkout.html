@@ -97,18 +97,18 @@
                         </div>
                         <div class="total-right">
                             <span class="data-num">7</span>
-                            <span class="data-total">RM 59.90</span>
+                            <span class="data-total">RM109.50</span>
                         </div>
                     </div>
 
                 </div>
                 <div class="box box3">
-                    <form action="" id="checkout-form">
+                    <form action="sb_orderConfirmation.html" id="checkout-form">
                         <h2>Contact Details</h2>
 
                         <div class="checkout-element">
                             <label for="full-name" class="required-field">Full Name</label><br>
-                            <input id="full-name" type="text" placeholder="Tan Ah Beng" required>
+                            <input id="full-name" type="text" placeholder="Tan Ah Beng" required minlength="3">
                         </div>
                         <div class="checkout-element">
                             <label for="phone-no" class="required-field">Phone No.</label><br>
@@ -118,7 +118,7 @@
                         <div class="checkout-element">
                             <label for="email" class="required-field">Email</label><br>
                             <input id="email" type="email" name="email" placeholder="spacebuns@gmail.com"
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                                pattern="[a-z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$" required>
                         </div>
                         <div class="checkout-element">
                             <label for="order-notes">Order notes</label><br>
