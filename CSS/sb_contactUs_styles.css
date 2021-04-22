@@ -67,7 +67,7 @@ h2 {
 
 .submit-contactUs input {
     border: none;
-    background-color: black;
+    background-color: #1A1A1A;
     font-size: 1.2em;
     color: #B97836;
     padding: 10px 20px;
@@ -75,12 +75,13 @@ h2 {
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
+    border: 1px solid #B97836;
 }
 
 .submit-contactUs input:hover, .submit-contactUs input:active {
     background-color: #B97836;
     color: white;
-    transition: 0.3s ease-in-out;
+    transition: 250ms;
 }
 
 .contactUs-form input::placeholder {
