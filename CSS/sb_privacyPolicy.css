@@ -1,12 +1,16 @@
 section.privacy_content {
     font-family: 'Segoe UI', Verdana, sans-serif;
     color: #B97836;
-    padding: 30px;
+    padding: 30px 60px;
 }
 
 .privacy_container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
+}
+
+article {
+    text-align: justify;
 }
 
 h2 {
@@ -21,7 +25,7 @@ h3 {
     font-size: 25px;
 }
 
-p {
+.privacy_container p {
     color: #B97836;
 }
 
