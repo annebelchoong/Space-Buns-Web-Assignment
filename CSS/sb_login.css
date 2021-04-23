@@ -56,6 +56,7 @@ legend {
 input {
     text-align: center;
     outline: none;
+    color: white;
 }
 
 div.forgotPass a {
@@ -70,6 +71,10 @@ div.logPass {
     padding-bottom: 5%;
     padding-top: 5%;
     color: aliceblue;
+}
+
+input[type=checkbox] {
+    margin: 0 5px;
 }
 
 input[type=submit] {
