@@ -39,7 +39,7 @@ nav.checkout-bar h1 {
     overflow: hidden;
 }
 
-/* ###################### Grid ###################### */
+/* ###################### Grid Layout ###################### */
 
 .container {
     max-width: 1140px;
@@ -52,7 +52,7 @@ nav.checkout-bar h1 {
     align-self: center;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    grid-gap: 2em;
+    gap: 2em;
     margin: 3em 1em;
 }
 
@@ -60,7 +60,7 @@ nav.checkout-bar h1 {
     width: fit-content;
 }
 
-.box1, .box2 {
+.box {
     text-align: center;
     background-color: #1A1A1A;
     border: 2px #B97836 solid;
@@ -73,15 +73,13 @@ nav.checkout-bar h1 {
     column-gap: 40px;
     column-rule: 2px solid #8b8888;
     padding: 1.8em;
-    /* height: fit-content; */
 }
 
-.box1 {
+.order-info-container {
     grid-column: 1/5;
-    /* width: fit-content; */
 }
 
-.box1 p {
+.order-info-container p {
     font-weight: bold;
     font-size: 0.8em;
     color: #8b8888;
@@ -89,11 +87,9 @@ nav.checkout-bar h1 {
     vertical-align: middle;
 }
 
-.box2 {
+.order-summary-container {
     grid-column: 5/7;
     grid-row: 1/4;
-    /* width: 100%; */
-    /* width: fit-content; */
     padding: 1em;
 }
 
@@ -107,14 +103,14 @@ nav.checkout-bar h1 {
     padding: 0px 20px 10px;
 }
 
-.box2 table td img {
+.order-summary-container table td img {
     width: 35px;
     float: left;
     padding: 10px 0px;
     border-radius: 25%;
 }
 
-.box2 table td h6 {
+.order-summary-container table td h6 {
     font-size: 0.8em;
     float: left;
     padding-left: 15px;
@@ -173,7 +169,7 @@ nav.checkout-bar h1 {
     padding-bottom: 0;
 }
 
-.box3 {
+.contact-details-container {
     grid-column: 1/3;
     grid-row: 2/5;
 }
@@ -190,7 +186,6 @@ nav.checkout-bar h1 {
 .checkout-element input {
     border-radius: 6px;
     border: 1px #B97836 solid;
-    /* width: clamp(30%,280px,70%); */
     width: 280px;
     height: 30px;
     background-color: #1A1A1A;
@@ -216,7 +211,7 @@ nav.checkout-bar h1 {
     color: red;
 }
 
-.box4 {
+.payment-type-container {
     grid-column: 3/5;
     grid-row: 2/4;
     margin: 0px 10px;
@@ -235,15 +230,13 @@ div.payment-type:nth-child(3) {
     cursor: pointer;
 }
 
-.box5 {
+.pay-button {
     grid-row: 4/5;
     grid-column: 5/7;
-    /* text-align: center; */
-    /* align-self: center; */
     margin: 0 auto;
 }
 
-.box5 input {
+.pay-button input {
     font-size: 1.1em;
     font-family: 'Segoe UI', sans-serif;
     color: #B97836;
@@ -255,14 +248,14 @@ div.payment-type:nth-child(3) {
     cursor: pointer;
 }
 
-.box5 input:hover {
+.pay-button input:hover {
     /* opacity: 0.75; */
-    background-color:#B97836;
+    background-color: #B97836;
     color: #ffffff;
     transition: 250ms;
 }
 
-.box5 h6 {
+.pay-button h6 {
     color: #ffffff;
     /* padding-right: 20px; */
     margin: 5px auto;
@@ -311,8 +304,6 @@ footer {
 
 /* ################## Media Queries ##################### */
 
-@media only screen and (max-width:1112px) {}
-
 @media only screen and (max-width:1040px) {
     .content-wrapper {
         display: block;
@@ -322,21 +313,16 @@ footer {
     .content-wrapper>div {
         margin: 50px auto;
     }
-    .box3 form {
-        /* width: 150%; */
-        /* width: clamp(20%, 600px, 90%); */
-    }
-    .box3 input {
-        /* width: clamp(20%, 600px,80%); */
+    .contact-details-container input {
         width: 500px;
     }
-    .box4 {
+    .payment-type-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 1.2em;
-        padding-left: 50px;
+        column-gap: 1.2em;
+        padding-left: 40px;
     }
-    .box4 h2 {
+    .payment-type-container h2 {
         grid-column: 1/3;
     }
     footer {
@@ -353,24 +339,17 @@ footer {
     }
 }
 
-@media only screen and (max-width:540px) {
-    .box1 {
-        /* change to one column */
-    }
+@media only screen and (max-width:580px) {
     .order-info-box {
         display: grid;
         grid-template-rows: auto auto auto;
         padding: 1.3em auto;
     }
-    .box2 {
-        /* margin: 20px auto; */
-    }
-    .box3 input {
+    .contact-details-container input {
         width: 300px;
     }
-    .box4 {
+    .payment-type-container {
         display: block;
-        /* padding-right: 85px; */
         padding: 0 85px 0 40px;
     }
 }
