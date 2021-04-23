@@ -34,6 +34,7 @@ fieldset {
 form {
     text-align: center;
     color: aliceblue;
+    margin-bottom: 25px;
 }
 
 form a {

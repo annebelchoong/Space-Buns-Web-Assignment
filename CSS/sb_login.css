@@ -56,7 +56,6 @@ input {
     text-align: center;
     outline: none;
     color: white;
-    height: 30px;
 }
 
 div.forgotPass a {
@@ -66,8 +65,7 @@ div.forgotPass a {
 }
 
 div.logPass {
-    float: right;
-    padding-right: 5%;
+    text-align: center;
     padding-bottom: 5%;
     padding-top: 5%;
     color: aliceblue;
@@ -77,14 +75,16 @@ input[type=checkbox] {
     margin: 0 5px;
 }
 
+input[type=text], input[type=password] {
+    height: 30px;
+}
+
 input:focus {
     border: 1px solid white;
 }
 
 div.logSubmit {
-    clear: both;
-    float: right;
-    padding-right: 5%;
+    text-align: center;
     padding-bottom: 5%;
 }
 
@@ -111,11 +111,9 @@ div.logSubmit {
 }
 
 div.notMember a {
-    clear: both;
+    text-align: center;
     text-decoration: none;
-    float: right;
     color: aliceblue;
-    padding-right: 5%;
     padding-bottom: 5%;
 }
 
