@@ -17,7 +17,7 @@ html {
     max-width: 1200px;
     text-align: center;
     margin: auto;
-    min-height: 80vh;
+    /* min-height: 100%; */
 }
 
 /* ############### Order Options Styles ############### */
@@ -112,11 +112,6 @@ section>h1 {
     margin: 0 15px;
 }
 
-#pickup-map {
-    width: 65%;
-    margin: 10px auto 40px;
-}
-
 #infowindow-content .title {
     font-weight: bold;
 }
@@ -175,6 +170,11 @@ input::placeholder {
 }
 
 /* ############### Pickup Section Styles ############### */
+
+#pickup-map {
+    width: clamp(50%,800px,80%);
+    margin: 10px auto 40px;
+}
 
 #pickup-section {
     display: none;
