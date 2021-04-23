@@ -75,9 +75,9 @@ h1 {
     width: 180px;
 } */
 
-button[disabled] {
+/* button[disabled] {
     opacity: 0.5;
-}
+} */
 
 .options-block button {
     padding: 8px 20px;
@@ -89,7 +89,8 @@ section>h1 {
     padding-bottom: 25px;
 }
 
-#pickup-button:hover {
+#pickup-button:hover, #pickup-button:active {
+    outline: none;
     cursor: pointer;
 }
 
@@ -200,6 +201,12 @@ input::placeholder {
     font-size: 1.2em;
     margin-top: 6px;
     padding: 10px 15px;
+}
+
+#branch-content+button:hover {
+    background-color: var(--gold);
+    color: #ffffff;
+    transition: 250ms;
 }
 
 /* ############### Popup Styles ############### */
