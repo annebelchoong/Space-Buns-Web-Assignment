@@ -68,6 +68,11 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
     padding: 5px;
 }
 
+.menu-item-price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 .menu-category-name {
     padding-left: 65px;
     font-size: 2em;
