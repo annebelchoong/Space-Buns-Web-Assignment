@@ -73,17 +73,29 @@ article.maincontent1 {
     color: #B97836;
     padding: 20px;
     background-color: hsl(15, 0%, 0%);
+    border-radius: 20px;
 }
 
 /* About Us Ends */
 
 /* Recommendations Image Map Starts */
 
+.imageMap-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 article.maincontent2 {
     padding: 15px;
     margin-top: 40px;
     text-align: center;
     background-color: hsl(15, 0%, 0%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .imageMap-container {
+        width: 100%;
+    }
 }
 
 /* Recommendaitons Image Map Ends */
@@ -102,6 +114,7 @@ article.maincontent3 {
     overflow: hidden;
     position: relative;
     min-width: 700px;
+    border-radius: 20px;
 }
 
 .carousel-slide {
@@ -165,6 +178,7 @@ article.maincontent4 {
 
 .eventsHeader {
     background-color: #B97836;
+    border-radius: 0 0 20px 20px;
     animation-name: eventsHeaderAni;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -204,7 +218,8 @@ article.maincontent4 {
     text-align: Justify;
     color: #B97836;
     background-color: hsl(15, 0%, 0%);
-    overflow: auto;
+    overflow-y: auto;
+    border-radius: 10px;
 }
 
 h2 {
@@ -218,6 +233,7 @@ h2 {
     overflow: hidden;
     text-align: center;
     margin: auto;
+    border-radius: 20px 20px 0 0;
 }
 
 .eventsImg img {
@@ -228,6 +244,20 @@ h2 {
 
 .eventsImg:hover img {
     transform: scale(1.2);
+}
+
+.eventsDesc::-webkit-scrollbar {
+    width: 10px;
+}
+
+.eventsDesc::-webkit-scrollbar-track {
+    background-color: #1A1A1A;
+    border-radius: 20px;
+}
+
+.eventsDesc::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c;
+    border-radius: 20px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -258,6 +288,11 @@ h2 {
     background-size: cover;
 }
 
+.indexReview-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
 .custReview {
     display: flex;
     flex-direction: row;
@@ -276,7 +311,7 @@ h2 {
     padding: 10px;
     flex: 50%;
     border: 0.2px #B97836 solid;
-    margin: 10px;
+    margin: 10px 25px;
     border-radius: 10px;
 }
 
@@ -291,7 +326,7 @@ h2 {
     padding: 10px;
     flex: 50%;
     border: 0.2px #B97836 solid;
-    margin: 10px;
+    margin: 10px 25px;
     border-radius: 10px;
 }
 
@@ -306,6 +341,10 @@ h2 {
 }
 
 @media (max-width: 767px) {
+    .indexReview-container {
+        width: 80%;
+        margin: 0 auto;
+    }
     .custReview {
         flex-direction: column;
     }
