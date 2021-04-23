@@ -59,7 +59,7 @@ html {
 .navbar-links a:hover, .navbar-links a:active {
     padding-bottom: 0.5em;
     border-bottom: 3px solid white;
-    transition: 0.28s;
+    transition: 250ms;
 }
 
 #order a {
@@ -74,7 +74,7 @@ html {
     background-color: #252627;
     /* border-radius: 20px; */
     border-bottom: 0;
-    transition: 0.28s;
+    transition: 250ms;
 }
 
 label.navbar-mobileNav {
@@ -95,6 +95,7 @@ label.navbar-mobileNav {
 
 .navbar-login a:hover, .navbar-login a:active {
     color: #252627;
+    transition: 250ms;
 }
 
 /* ###################################### Banner ##################################### */
@@ -159,12 +160,11 @@ label.navbar-mobileNav {
 /* #################################### Scrollbar ################################### */
 
 body::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-track {
     background-color: #252627;
-    border-radius: 20px;
 }
 
 body::-webkit-scrollbar-thumb {
