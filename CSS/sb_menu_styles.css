@@ -4,8 +4,6 @@
     src: url('Fonts/Amsterdam\ Variation_2.ttf') format(truetype);
 }
 
-/* ##################### HTML style ###################### */
-
 html {
     scroll-padding-top: 66px;
 }
@@ -122,6 +120,8 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
 .menu-wrapper:nth-child(even) {
     background-color: #1A1A1A;
 }
+
+/* ###################### Media Queries ###################### */
 
 @media only screen and (max-width:445px) {
     nav.menu-nav {
