@@ -47,10 +47,9 @@ form {
 
 legend {
     text-align: center;
-    font-weight: bold;
     font-family: 'Amsterdam Variation_2', 'Segoe UI', Verdana, sans-serif;
     color: #B97836;
-    font-size: 4em;
+    font-size: 5em;
 }
 
 input {
