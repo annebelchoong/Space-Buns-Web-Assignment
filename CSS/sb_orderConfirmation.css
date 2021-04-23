@@ -184,10 +184,10 @@ nav.checkout-bar h1 {
 .home-button h4 {
     color: #B97836;
     background-color: #1A1A1A;
-    border-radius: 15px;
+    border-radius: 25px;
     border: 1px #B97836 solid;
     width: fit-content;
-    padding: 2px 14px 5px;
+    padding: 12px 14px;
     margin: 10px auto;
 }
 
