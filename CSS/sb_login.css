@@ -73,6 +73,10 @@ div.logPass {
     color: aliceblue;
 }
 
+input[type=checkbox] {
+    margin: 0 5px;
+}
+
 input[type=submit] {
     text-decoration: none;
     margin: 4px 2px;
