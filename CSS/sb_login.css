@@ -36,12 +36,13 @@ fieldset {
     margin-bottom: 100px;
     margin-top: 100px;
     border: #B97836 2px solid;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 form {
     text-align: center;
     color: aliceblue;
+    margin-bottom: 30px;
 }
 
 legend {
@@ -72,7 +73,6 @@ div.logPass {
 }
 
 input[type=submit] {
-    padding: 10px 20px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
@@ -80,10 +80,11 @@ input[type=submit] {
     background-color: #1A1A1A;
     border: 1px #B97836 solid;
     border-radius: 6px;
+    font-size: 1em;
 }
 
 input:focus {
-    border: 2px solid #B97836;
+    border: 1px solid white;
 }
 
 div.logSubmit {
@@ -97,20 +98,17 @@ div.logSubmit {
     transition: transform .2s ease;
     width: 80px;
     height: 35px;
+    background-color: #1A1A1A;
+    color: #B97836;
+    font-weight: bold;
+    border-radius: 20px;
 }
 
 #loginButton:hover {
     text-decoration: none;
-    color: #B97836;
-    font-weight: bold;
-    transform: scale(1.1);
-    opacity: 0.75;
-}
-
-div.loginRow>a {
-    text-decoration: none;
-    text-align: center;
-    color: aliceblue;
+    color: white;
+    background-color: #B97836;
+    transition: 250ms;
 }
 
 div.notMember a {
@@ -124,16 +122,8 @@ div.notMember a {
 
 div.notMember a:hover, form a:visited {
     text-decoration: underline;
-    font-weight: bold;
     color: #B97836;
-    background-color: transparent;
-}
-
-div.loginRow>a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #B97836;
-    background-color: transparent;
+    transition: 250ms;
 }
 
 @media only screen and (max-width:767px) {
