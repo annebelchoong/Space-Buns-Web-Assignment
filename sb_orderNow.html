@@ -18,20 +18,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('#time').timepicker({
-                timeFormat: 'h:mm p',
-                interval: 15,
-                minTime: '11:00am',
-                maxTime: '9:00pm',
-                startTime: '11:00',
-                dynamic: true,
-                dropdown: true,
-                scrollbar: true
-            });
-        });
-
-
+        // $(document).ready(function () {
+        //     $('#time').timepicker({
+        //         timeFormat: 'h:mm p',
+        //         interval: 15,
+        //         minTime: '11:00am',
+        //         maxTime: '9:00pm',
+        //         startTime: '11:00',
+        //         dynamic: true,
+        //         dropdown: true,
+        //         scrollbar: true
+        //     });
+        // });
     </script>
 </head>
 
@@ -85,25 +83,21 @@
             <h1>Enter your delivery address</h1>
             <div id="pac-container">
                 <div id="delivery-map"></div>
-                <!-- <div id="error"></div> -->
                 <form name="deliveryForm" class="delivery-form" action="javascript:deliveryText();">
                     <!-- onsubmit="return deliveryText();" -->
                     <div>
                         <label for="pac-input" class="required-field">Delivery Address </label>
                         <input id="pac-input" type="text" name="deliveryAddress"
                             placeholder="E.g. PV15 Platinum Lake Condominium, Danau Kota" required minlength="10" />
-                        <!-- <textarea name="" id="pac-input" cols="60" rows="5" placeholder="E.g. PV15 Platinum Lake Condominium, Danau Kota"></textarea> -->
                     </div>
                     <div>
                         <label for="address-input" class="required-field">Address Details (unit number, floor, building
                             name)</label>
-                        <!-- <input id="address-input" type="text" placeholder="E.g. unit number, floor, building name " /> -->
                         <textarea name="" id="address-input" cols="60" rows="2" minlength="5" maxlength="120"
                             placeholder="E.g. unit number, floor, building name" required></textarea>
                     </div>
                     <div>
                         <label for="message-input">Message to driver (optional)</label>
-                        <!-- <input id="message-input" type="text" placeholder="Enter here" /> -->
                         <textarea name="" id="message-input" cols="60" rows="6" placeholder="Enter here"
                             maxlength="300"></textarea>
                     </div>
@@ -111,10 +105,6 @@
                         <span id="place-name" class="title"></span><br />
                         <span id="place-address"></span>
                     </div>
-                    <!-- <div><button id="delivery-button" class="confirm" onclick="deliveryText()">Confirm</button></div> -->
-                    <!-- <div><input type="submit" id="delivery-button" class="confirm" value="Confirm" /></div> -->
-
-                    <!-- <div><button id="delivery-button" class="confirm" onclick="deliveryText()">Confirm</button></div> -->
                     <input type="submit" id="delivery-button" class="confirm" value="Confirm" />
                 </form>
             </div>
@@ -145,11 +135,6 @@
                                     <option id="tomorrow" value=""></option>
                                     <option id="nextDay" value=""></option>
                                 </select>
-                                <!-- <select name="sdfasdf" id="select-date">
-                                <option value="Today">Today</option>
-                                <option value="Tomorrow">Tomorrow</option>
-                                <option value="The day after tomorrow">The day after tomorrow</option>
-                            </select> -->
                             </div>
 
                             <div>
@@ -162,8 +147,9 @@
                                 <option value="">in 1 hour</option>
                                 <option value="">in wtf</option>
                             </select> -->
-                                <input type="text" id="time" name="time" class="timepicker" placeholder="Pick a time"
-                                    required autocomplete="off">
+                                <input type="time" id="time" name="time" class="timepicker" placeholder="Pick a time" required min="11:00" max="22:00" step="900">
+                                <!-- <input type="text" id="time" name="time" class="timepicker" placeholder="Pick a time"
+                                    required autocomplete="off"> -->
                             </div>
                         </div>
 
@@ -174,7 +160,6 @@
                                 close to your selected time as possible 🙂
                             </p>
                         </div>
-                        <!-- <button id="order-now" class="order-now">Order Now</button> -->
                         <div><input type="submit" id="order-now" class="order-now button" value="Order Now" /></div>
 
                     </fieldset>

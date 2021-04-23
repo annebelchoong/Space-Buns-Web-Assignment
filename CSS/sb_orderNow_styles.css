@@ -22,14 +22,6 @@ html {
 
 /* ############### Order Options Styles ############### */
 
-/* #order {
-    display: none;
-} */
-
-.order-options {
-    /* background-color: green; */
-}
-
 .options-block {
     background-color: #1A1A1A;
     margin: 30px auto;
@@ -65,13 +57,7 @@ h1 {
     border-radius: 30px;
 }
 
-button:hover, button:active {
-    /* opacity: 0.6; */
-    /* transition: 0.1s; */
-}
-
 #delivery-button {
-    /* margin: 5px auto 50px; */
     background-color: #000;
     color: var(--gold);
     cursor: pointer;
@@ -79,10 +65,6 @@ button:hover, button:active {
     margin: 20px auto 50px;
     /* width: 150px; */
     /* border: 10px var(--gold) solid; */
-}
-
-input[type=submit] {
-    /* width: 200px; */
 }
 
 /* input[type=time] {
@@ -110,8 +92,6 @@ section>h1 {
 #pickup-button:hover {
     cursor: pointer;
 }
-
-#pickup-button:active, #pickup-button:visited {}
 
 /* ############### Delivery Section Styles ############### */
 
@@ -183,10 +163,6 @@ label {
     float: left;
 }
 
-textarea:hover {
-    /* background-color: transparent; */
-}
-
 .required-field::after {
     content: "*";
     color: red;
@@ -205,7 +181,6 @@ input::placeholder {
 
 #branch-content img {
     float: left;
-    /* vertical-align: middle; */
 }
 
 #branch-content h3 {
@@ -221,7 +196,6 @@ input::placeholder {
     border: none;
     color: var(--gold);
     background-color: #1A1A1A;
-    /* border-radius: 7px; */
     border-radius: 30px;
     font-size: 1.2em;
     margin-top: 6px;
@@ -239,7 +213,6 @@ input::placeholder {
     background: rgba(0, 0, 0, 0.7);
     z-index: 1;
     display: none;
-    /* overflow-y: hidden; */
 }
 
 .popup .content {
@@ -257,8 +230,6 @@ input::placeholder {
     padding: 20px;
     box-sizing: border-box;
     border-radius: 20px;
-    /* border: 2px var(--gold) solid; */
-    /* border: 1px #fff solid; */
     overflow: hidden;
 }
 
@@ -268,14 +239,10 @@ input::placeholder {
     right: 10px;
     top: 10px;
     width: 30px;
-    /* height: 30px; */
-    /* background:#222; */
     color: #fff;
     font-size: 25px;
     font-weight: 600;
-    /* line-height: 30px; */
     text-align: center;
-    /* border-radius: 50%; */
 }
 
 .popup.active .overlay {
@@ -292,24 +259,11 @@ body.popup.open {
     overflow-y: hidden;
 }
 
-/* body.popup {
-    overflow-y: hidden;
-} */
-
-/* .close-btn {
-    transition: all 300ms ease-in-out;
-    transform:translate(-50%,-50%) scale(0);
-} */
-
 #selection-text {
     font-size: 2em;
 }
 
 fieldset {
-    /* all: unset; */
-    /* display: inline-block; */
-    /* display: flex;
-    flex-flow: column nowrap; */
     border: none;
     font-size: 1.1em;
     font-weight: bold;
@@ -329,7 +283,6 @@ legend {
     margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* width: casfsdafsadlamp(20%, auto, 80%); */
 }
 
 .select-field label {
@@ -344,7 +297,7 @@ legend {
 select, input#time {
     display: inline-block;
     width: 170px;
-    height: 2.8em;
+    /* height: 2.8em; */
     font-size: 1em;
     /* background-color: #252627; */
     /* color: #fff; */
