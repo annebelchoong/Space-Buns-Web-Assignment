@@ -69,24 +69,17 @@ nav.checkout-bar h1 {
     margin: 0 auto 2.5em;
 }
 
-/* .content-wrapper {
-    margin: 3em 1em;
-    max-width: 1140px;
-    display: flex;
-    flex-wrap: wrap;
-} */
-
-.box1, .box2 {
+.box {
     text-align: center;
     background-color: #1A1A1A;
     border: 2px #B97836 solid;
     border-radius: 10px;
 }
 
-.box1 {
+.order-info-container {
     height: fit-content;
-    /* width: 700px; */
     width: 80%;
+    max-width: max-content;
     margin: 40px auto;
 }
 
@@ -95,10 +88,9 @@ nav.checkout-bar h1 {
     column-gap: 40px;
     column-rule: 2px solid #8b8888;
     padding: 1.8em;
-    /* display: inline-block; */
 }
 
-.box1 p {
+.order-info-container p {
     font-weight: bold;
     font-size: 0.8em;
     color: #8b8888;
@@ -106,9 +98,8 @@ nav.checkout-bar h1 {
     vertical-align: middle;
 }
 
-.box2 {
+.order-summary {
     text-align: center;
-    /* width: 35%; */
     width: 390px;
     padding: 1em;
     margin: 40px auto;
@@ -124,14 +115,14 @@ nav.checkout-bar h1 {
     padding: 0px 20px 10px;
 }
 
-.box2 table td img {
+.order-summary table td img {
     width: 35px;
     float: left;
     padding: 10px 0px;
     border-radius: 25%;
 }
 
-.box2 table td h6 {
+.order-summary table td h6 {
     font-size: 0.8em;
     float: left;
     padding-left: 15px;
@@ -190,7 +181,7 @@ nav.checkout-bar h1 {
     padding-bottom: 0;
 }
 
-.box5 h4 {
+.home-button h4 {
     color: #B97836;
     background-color: #1A1A1A;
     border-radius: 15px;
@@ -200,13 +191,13 @@ nav.checkout-bar h1 {
     margin: 10px auto;
 }
 
-.box5 h4:hover {
+.home-button h4:hover {
     background-color: #B97836;
     color: #ffffff;
     transition: 250ms;
 }
 
-/* #################################### Scrollbar ################################### */
+/* ##################### Scrollbar #################### */
 
 body::-webkit-scrollbar {
     width: 15px;
@@ -222,7 +213,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-/* ##################footer##################### */
+/* ##################### Footer ##################### */
 
 footer {
     height: 30px;
@@ -238,13 +229,6 @@ footer {
 /* ################## Media Query ##################### */
 
 @media only screen and (max-width:767px) {
-    /* nav.checkout-bar h1 {
-        font-size: 1.5em;
-    }
-    .thankyou-text {
-        font-size: 2em;
-    } */
-
     .order-info-box {
         padding: 15px;
     }
@@ -265,7 +249,7 @@ footer {
     .order-info p, .order-info h3 {
         padding: 0.6em;
     }
-    .box1 {
+    .order-info-container {
         width: fit-content;
         height: fit-content;
     }
