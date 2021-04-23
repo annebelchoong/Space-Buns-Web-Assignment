@@ -48,10 +48,9 @@ form a:hover, form a:visited {
 
 legend {
     text-align: center;
-    font-weight: bold;
     font-family: 'Amsterdam Variation_2', 'Segoe UI', Verdana, sans-serif;
     color: #B97836;
-    font-size: 4em;
+    font-size: 5em;
 }
 
 input {
@@ -66,7 +65,7 @@ input {
 }
 
 input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=email]:focus {
-    border: 2px solid #B97836;
+    border: 1px solid white;
 }
 
 input[type=submit] {
@@ -77,7 +76,7 @@ input[type=submit] {
     color: #B97836;
     background-color: #1A1A1A;
     border: 1px #B97836 solid;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 .signupRow input {
