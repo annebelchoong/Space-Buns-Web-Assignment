@@ -6,6 +6,14 @@ html {
     background-size: cover;
 }
 
+#companylogo {
+    transition: transform .5s ease;
+}
+
+#companylogo:hover {
+    transform: scale(1.2);
+}
+
 div.signupRow {
     margin: 0 auto;
     padding: 10px;
@@ -20,25 +28,22 @@ fieldset {
     margin-bottom: 100px;
     margin-top: 100px;
     border: #B97836 2px solid;
+    border-radius: 10px;
 }
 
 form {
     text-align: center;
-    color: blanchedalmond;
+    color: aliceblue;
 }
 
 form a {
     color: aliceblue;
 }
 
-form a:hover {
+form a:hover, form a:visited {
     font-weight: bold;
     color: #B97836;
     background-color: transparent;
-}
-
-form a:visited {
-    color: slategray;
 }
 
 legend {
@@ -51,6 +56,7 @@ legend {
 
 input {
     text-align: center;
+    outline: none;
 }
 
 #signupPrivacy {
@@ -59,18 +65,62 @@ input {
     margin-top: 5%;
 }
 
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=email]:focus {
+    border: 2px solid #B97836;
+}
+
 input[type=submit] {
-    background-color: white;
-    border: none;
-    color: #B97836;
     padding: 10px 20px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    color: #B97836;
+    background-color: #1A1A1A;
+    border: 1px #B97836 solid;
+    border-radius: 6px;
+}
+
+.signupRow input {
+    border-radius: 6px;
+    border: 1px #B97836 solid;
+    background-color: #1A1A1A;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.requiredInput::after {
+    content: "*";
+    color: red;
+}
+
+.privacyNeeds::before {
+    content: "*";
+    color: red;
+}
+
+#signupButton {
+    transition: transform .2s ease;
+    width: 80px;
+    height: 35px;
 }
 
 #signupButton:hover {
     text-decoration: underline;
     font-weight: bold;
-    border: #B97836 3px solid;
+    transform: scale(1.1);
+    text-decoration: none;
+    color: #B97836;
+    opacity: 0.75;
+}
+
+@media (max-width: 1000px) {
+    fieldset {
+        width: 350px
+    }
+}
+
+@media (max-width: 375px) {
+    fieldset {
+        width: 90%;
+    }
 }
