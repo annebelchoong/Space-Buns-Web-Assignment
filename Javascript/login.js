@@ -1,15 +1,15 @@
 
 //Show Password
 function showPass() {
-    var x = document.getElementById("custPwd");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
+  var x = document.getElementById("LogPwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
   }
+}
 
-  //Login successful
-  function LoginSuccess() {
+//Login successful
+function LoginSuccess() {
   alert('Login Sucessfully');
-  }
+}
