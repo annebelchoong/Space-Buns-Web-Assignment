@@ -80,10 +80,7 @@ input[type=submit] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-    color: #B97836;
-    background-color: #1A1A1A;
     border: 1px #B97836 solid;
-    border-radius: 6px;
     font-size: 1em;
 }
 
