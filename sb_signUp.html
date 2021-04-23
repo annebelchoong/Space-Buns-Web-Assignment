@@ -32,9 +32,9 @@
                 <li class="navbar-item" id="promotions"><a href="sb_promotions.html"> Promotions</a></li>
                 <li class="navbar-item" id="events"><a href="sb_events.html"> Events</a></li>
                 <li class="navbar-item" id="reviews"><a href="sb_reviews.html"> Reviews</a></li>
-                <li class="navbar-item" id="aboutUs"><a href="sb_about.html"> About Us</a></li>
-                <li class="navbar-item" id="contactUs"><a href="sb_contact.html"> Contact Us</a></li>
-                <li class="navbar-item" id="order"><a href="sb_order.html"> Order Now</a></li>
+                <li class="navbar-item" id="aboutUs"><a href="sb_aboutUs.html"> About Us</a></li>
+                <li class="navbar-item" id="contactUs"><a href="sb_contactUs.html"> Contact Us</a></li>
+                <li class="navbar-item" id="order"><a href="sb_orderNow.html"> Order Now</a></li>
             </ul>
 
             <div class="navbar-login">
@@ -46,68 +46,65 @@
 
     <section class="logintab">
 
-    <fieldset style="text-align: center;background-image: url(Media/Login&Signup/logbackg2.jpg); background-size: contain;">
+        <fieldset
+            style="text-align: center;background-image: url(Media/Login&Signup/logbackg2.jpg); background-size: contain;">
 
-    <legend>Sign Up</legend>
-       <a href="sb_index.html"> 
-        <img id="companylogo" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" 
-        height="100px" width="150px" style="padding-top: 5%;"> </a>
-       
-        <form id="SignUpForm" name="SignUpForm" action="sb_login.html" onsubmit="SignUpSuccess()">
+            <legend>Sign Up</legend>
+            <a href="sb_index.html">
+                <img id="companylogo" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" height="100px"
+                    width="150px" style="padding-top: 5%;"> </a>
 
-            <div class="signupRow">
-                <i class='fas fa-user-alt'></i>
-                <label for="custuserName" class="requiredInput">Username</label></br>
-                <input type="text" id="custuserName" name="custuserName"
-                placeholder="Username (min 6 max 12)"
-                minlength="6" maxlength="12" required>
-            </div>
-        
-            <div class="signupRow">
-                <i class="fa fa-lock"></i>
-                <label for="NewPwd" class="requiredInput">Password</label></br>
-                <input type="password" id="NewPwd" name="NewPwd"
-                placeholder="Password (min 8 max 12)" 
-                minlength="8" maxlength="12" required  onblur="checkuserpass()" required>
-            </div>
-            <span id="Notvalid" style="color:red"> </span>
+            <form id="SignUpForm" name="SignUpForm" action="sb_login.html" onsubmit="SignUpSuccess()">
 
-            <div class="signupRow">
-                <i class="fa fa-lock"></i>
-                <label for="confirmPwd" class="requiredInput">Password Confirmation</label></br>
-                <input type="password" id="confirmPwd" name="confirmPwd"
-                placeholder="Re-enter Password" onblur="confirmPass()" required></br>
-            </div>
-            <span id="error" style="color:red"> </span>
-            
-            <div class="signupRow">
-                <i class="fa fa-envelope"></i>
-                <label for="custEmail" class="requiredInput">Email</label></br>
-                <input type="email" id="custEmail" name="custEmail"
-                placeholder="someone@example.123" 
-                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
-                required></br>
-            </div>
+                <div class="signupRow">
+                    <i class='fas fa-user-alt'></i>
+                    <label for="custuserName" class="requiredInput">Username</label></br>
+                    <input type="text" id="custuserName" name="custuserName" placeholder="Username (min 6 max 12)"
+                        minlength="6" maxlength="12" required>
+                </div>
 
-            <div class="signupRow">
-                <i class="fa fa-phone"></i>
-                <label for="custPhoneNo" class="requiredInput">Phone Number</label></br>
-                <input type="tel" id="custPhoneNo" name="custPhoneNo"
-                placeholder="012-345 6789" pattern="[0-9]{3}-[0-9]{3} [0-9]{4}" required></br>
-                <label for="signupPrivacy" class="privacyNeeds"></label>
-                <input type="checkbox" id="signupPrivacy" name="signupPrivacy" required> I have read and accept the 
-                <a href="sb_privacyPolicy.html" target="_blank" class="Privacypolicy">Privacy Policy</a>
-            </div>
+                <div class="signupRow">
+                    <i class="fa fa-lock"></i>
+                    <label for="NewPwd" class="requiredInput">Password</label></br>
+                    <input type="password" id="NewPwd" name="NewPwd" placeholder="Password (min 8 max 12)" minlength="8"
+                        maxlength="12" required onblur="checkuserpass()" required>
+                </div>
+                <span id="Notvalid" style="color:red"> </span>
 
-            <span>Already a member? <a href="sb_login.html">
-            Login</a></span>
+                <div class="signupRow">
+                    <i class="fa fa-lock"></i>
+                    <label for="confirmPwd" class="requiredInput">Password Confirmation</label></br>
+                    <input type="password" id="confirmPwd" name="confirmPwd" placeholder="Re-enter Password"
+                        onblur="confirmPass()" required></br>
+                </div>
+                <span id="error" style="color:red"> </span>
 
-            <div class="signupRow">
-                <input type="submit" value="SignUp" id="signupButton">
-            </div>
-        </form> 
+                <div class="signupRow">
+                    <i class="fa fa-envelope"></i>
+                    <label for="custEmail" class="requiredInput">Email</label></br>
+                    <input type="email" id="custEmail" name="custEmail" placeholder="someone@example.123"
+                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></br>
+                </div>
 
-    </fieldset>
+                <div class="signupRow">
+                    <i class="fa fa-phone"></i>
+                    <label for="custPhoneNo" class="requiredInput">Phone Number</label></br>
+                    <input type="tel" id="custPhoneNo" name="custPhoneNo" placeholder="0123456789"
+                        pattern="^(01)[0-9][0-9]*[0-9]{7,8}$" required></br>
+                    <label for="signupPrivacy" class="privacyNeeds"></label>
+                    <input type="checkbox" id="signupPrivacy" name="signupPrivacy" required> I have read and accept the
+                    <a href="sb_privacyPolicy.html" target="_blank" class="Privacypolicy">Privacy Policy</a>
+                </div>
+
+                <span>Already a member? <a href="sb_login.html">
+                        Login</a></span>
+
+                <div class="signupRow">
+                    <input type="submit" value="SignUp" id="signupButton">
+                </div>
+            </form>
+
+        </fieldset>
 
     </section>
 
@@ -127,10 +124,10 @@
                         <li class="footer-item-promotions"><a href="sb_promotions.html"> Promotions</a></li>
                         <li class="footer-item-events"><a href="sb_events.html"> Events</a></li>
                         <li class="footer-item-reviews"><a href="sb_reviews.html"> Reviews</a></li>
-                        <li class="footer-item-aboutUs"><a href="sb_about.html"> About Us</a></li>
-                        <li class="footer-item-contactUs"><a href="sb_contact.html"> Contact Us</a></li>
-                        <li class="footer-item-order"><a href="sb_order.html"> Order Now</a></li>
-                        <li class="footer-item-privacyPolicy"><a href="sb_privacy.html"> Privacy Policy</a></li>
+                        <li class="footer-item-aboutUs"><a href="sb_aboutUs.html"> About Us</a></li>
+                        <li class="footer-item-contactUs"><a href="sb_contactUs.html"> Contact Us</a></li>
+                        <li class="footer-item-order"><a href="sb_orderNow.html"> Order Now</a></li>
+                        <li class="footer-item-privacyPolicy"><a href="sb_privacyPolicy.html"> Privacy Policy</a></li>
                     </ul>
                 </div>
 
