@@ -40,8 +40,7 @@ form a {
     color: aliceblue;
 }
 
-form a:hover, form a:visited {
-    font-weight: bold;
+form a:hover {
     color: #B97836;
     background-color: transparent;
 }
@@ -56,6 +55,7 @@ legend {
 input {
     text-align: center;
     outline: none;
+    color: white;
 }
 
 #signupPrivacy {
@@ -69,14 +69,9 @@ input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input
 }
 
 input[type=submit] {
-    padding: 10px 20px;
     text-decoration: none;
-    margin: 4px 2px;
     cursor: pointer;
-    color: #B97836;
-    background-color: #1A1A1A;
-    border: 1px #B97836 solid;
-    border-radius: 20px;
+    font-size: 1em;
 }
 
 .signupRow input {
@@ -99,17 +94,19 @@ input[type=submit] {
 
 #signupButton {
     transition: transform .2s ease;
-    width: 80px;
-    height: 35px;
+    width: 90px;
+    height: 40px;
+    background-color: #1A1A1A;
+    color: #B97836;
+    font-weight: bold;
+    border-radius: 20px;
 }
 
 #signupButton:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    transform: scale(1.1);
     text-decoration: none;
-    color: #B97836;
-    opacity: 0.75;
+    color: white;
+    background-color: #B97836;
+    transition: 250ms;
 }
 
 @media (max-width: 1000px) {
