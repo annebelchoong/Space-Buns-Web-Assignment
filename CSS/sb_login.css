@@ -56,6 +56,7 @@ input {
     text-align: center;
     outline: none;
     color: white;
+    height: 30px;
 }
 
 div.forgotPass a {
@@ -74,14 +75,6 @@ div.logPass {
 
 input[type=checkbox] {
     margin: 0 5px;
-}
-
-input[type=submit] {
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: 1px #B97836 solid;
-    font-size: 1em;
 }
 
 input:focus {
@@ -103,6 +96,11 @@ div.logSubmit {
     color: #B97836;
     font-weight: bold;
     border-radius: 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px #B97836 solid;
+    font-size: 1em;
 }
 
 #loginButton:hover {
