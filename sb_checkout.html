@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Media/icons/favicon.ico">
     <link rel="stylesheet" href="CSS/sb_checkout.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Checkout | Space Buns</title>
 </head>
 
@@ -28,11 +27,12 @@
     <section>
         <div class="container">
             <div class="content-wrapper">
-                <div class="box box1">
+
+                <div class="box order-info-container">
                     <div class="order-info-box">
                         <div id="order-location" class="order-info">
                             <h3>Store Location:</h3>
-                            <p>Petaling Jaya - Space Buns</p>
+                            <p>Subang Jaya - Space Buns</p>
                         </div>
                         <div id="order-type" class="order-info">
                             <h3>Order Type:</h3>
@@ -40,17 +40,16 @@
                         </div>
                         <div id="order-time" class="order-info">
                             <h3>Time:</h3>
-                            <p>02 March 2021, 4:30pm</p>
+                            <p>28 April 2021, 4:30pm</p>
                         </div>
                     </div>
                 </div>
-                <div class="box box2">
-                    <h3>Order Summary</h3>
 
+                <div class="box order-summary-container">
+                    <h3>Order Summary</h3>
                     <div class="table-container">
                         <table>
                             <tr>
-                                <!-- <th colspan="2"></th> -->
                                 <th colspan="2">Item</th>
                                 <th>Quantity</th>
                                 <th>Total</th>
@@ -58,51 +57,51 @@
                             <tr>
                                 <td><img src="Media/menuBurgers/chicken1.jpg" alt="Chicken 1"></td>
                                 <td>
-                                    <h6>Chick Bae</h6>
+                                    <h6>Double Trouble</h6>
                                 </td>
                                 <td>2</td>
-                                <td>RM 16.00</td>
+                                <td>RM 17.00</td>
                             </tr>
                             <tr>
                                 <td><img src="Media/menuBurgers/fish1.jpg" alt="Fish 1"></td>
                                 <td>
-                                    <h6>Fish Bae</h6>
+                                    <h6>Salmon Fillet</h6>
                                 </td>
                                 <td>1</td>
-                                <td>RM 14.50</td>
+                                <td>RM 16.00</td>
                             </tr>
                             <tr>
                                 <td><img src="Media/menuBurgers/beef1.jpg" alt="Beef 1"></td>
                                 <td>
-                                    <h6>Beef Bae</h6>
+                                    <h6>You Got Beef</h6>
                                 </td>
                                 <td>3</td>
-                                <td>RM 17.00</td>
+                                <td>RM 15.00</td>
                             </tr>
                             <tr>
                                 <td><img src="Media/menuBurgers/meatless1.jpg" alt="Meatless 1"></td>
                                 <td>
-                                    <h6>Meatless Bae</h6>
+                                    <h6>Mushy Shrooms</h6>
                                 </td>
                                 <td>1</td>
-                                <td>RM 12.00</td>
+                                <td>RM 11.50</td>
                             </tr>
                         </table>
                     </div>
 
                     <div class="total-container">
-                        <div class=" total-left">
-                            <span class="total">No. of Items:</span>
+                        <div class="total total-left">
+                            <span class="total-items">No. of Items:</span>
                             <span class="total-total">Total: </span>
                         </div>
-                        <div class="total-right">
+                        <div class="total total-right">
                             <span class="data-num">7</span>
-                            <span class="data-total">RM109.50</span>
+                            <span class="data-total">RM106.50</span>
                         </div>
                     </div>
-
                 </div>
-                <div class="box box3">
+
+                <div class="contact-details-container">
                     <form action="sb_orderConfirmation.html" id="checkout-form">
                         <h2>Contact Details</h2>
 
@@ -125,13 +124,10 @@
                             <input id="order-notes" type="text" placeholder="Specify your preferences (if any)"
                                 id="order-notes">
                         </div>
-
                 </div>
 
-
-                <div class="box box4">
+                <div class="payment-type-container">
                     <h2>Payment method</h2>
-
 
                     <div class="payment-type">
                         <input type="radio" name="payment" value=”cash” id="cash" required>
@@ -158,7 +154,8 @@
                         <label for="onlineBanking">Online Banking</label>
                     </div>
                 </div>
-                <div class="box box5">
+
+                <div class="pay-button">
                     <input type="submit" value="Pay Now" id="checkout-form">
                     </form>
                     <a href="sb_cart.html">
@@ -166,17 +163,16 @@
                     </a>
                 </div>
 
-
             </div>
         </div>
     </section>
 
     <footer>
         <div class="copyright-small">
-            <p>&#169; 2021 by Space Burger Sdn Bhd. All Right Not Reserved</p>
+            <p>&#169; 2021 by Space Buns Sdn Bhd. All Right Not Reserved</p>
         </div>
     </footer>
-</body>
 
+</body>
 
 </html>

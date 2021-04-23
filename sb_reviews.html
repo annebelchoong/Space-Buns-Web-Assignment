@@ -116,10 +116,6 @@
                     <div class="copyright">
                         <p>&#169; 2021 by Space Burger Sdn Bhd. <br>All Right Not Reserved</p>
                     </div>
-                    <!-- 
-                    <div class="copyright-small">
-                        <p>&#169; 2021 by Space Burger Sdn Bhd. All Right Not Reserved</p>
-                    </div> -->
 
                 </div>
             </div>
@@ -130,11 +126,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
     <script type="text/javascript">
         $(".center").slick({
-            dots: true,
+            // dots: true,
             infinite: true,
             centerMode: true,
             slidesToShow: 3,
-            slidesToScroll: 1
+            speed: 500,
+            centerPadding: '10px',
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1125,
+                    settings: {
+                        centerPadding: '220px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 1025,
+                    settings: { centerPadding: '150px', slidesToShow: 1 }
+                },
+                {
+                    breakpoint: 768,
+                    settings: { centerPadding: '100px', slidesToShow: 1 }
+                },
+                {
+                    breakpoint: 620,
+                    settings: { centerPadding: '50px', slidesToShow: 1 }
+                },
+                {
+                    breakpoint: 450,
+                    settings: { centerPadding: '20px', slidesToShow: 1 }
+                }
+            ]
         });
     </script>
 </body>
