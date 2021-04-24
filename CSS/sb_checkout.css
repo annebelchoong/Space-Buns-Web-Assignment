@@ -294,7 +294,7 @@ body::-webkit-scrollbar-thumb {
 /* ##################footer##################### */
 
 footer {
-    position:absolute;
+    position:relative;
     bottom: 0;
     background-color: #1A1A1A;
     text-align: center;
