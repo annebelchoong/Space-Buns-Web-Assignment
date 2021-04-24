@@ -43,7 +43,7 @@ function initMap() {
                 branchMarker.setIcon(imageMarker);
                 infoWindow1.setContent(
                     '<div id="branch-content">' +
-                    '<h3 class="branch-title"> <img width="30px" src="../Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo">Space Buns @ ' +
+                    '<h3 class="branch-title"> <img width="30px" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo">Space Buns @ ' +
                     branches.title + '</a></h3>' +
                     "</div>"
                 );
