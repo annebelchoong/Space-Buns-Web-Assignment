@@ -4,16 +4,12 @@ function initMap() {
         zoom: 10,
         center: { lat: 3.090762, lng: 101.611560 },
     });
+    var selectedMarker = null;
 
     var imageMarker = {
         url: '../../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
         scaledSize: new google.maps.Size(35, 50),
     };
-    var imageMarkerY = {
-        url: '../../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarkerY.svg',
-        scaledSize: new google.maps.Size(35, 50),
-    };
-
 
     var markers = [
         { coordinates: { lat: 3.119756, lng: 101.580166 }, title: 'Damansara', address: '12, Jalan PJU 1a/20a, Dataran Ara Damansara, 47301 Petaling Jaya, Selangor' },
@@ -53,8 +49,8 @@ function initMap() {
                 );
                 infoWindow1.open(aboutUsMap, branchMarker);
                 aboutUsMap.panTo(branches.coordinates);
-                branchMarker.setIcon(imageMarkerY);
             });
+
         }
 
     }
