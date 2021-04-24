@@ -9,6 +9,10 @@ function initMap() {
         url: '../../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
         scaledSize: new google.maps.Size(35, 50),
     };
+    var imageMarkerY = {
+        url: '../../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarkerY.svg',
+        scaledSize: new google.maps.Size(35, 50),
+    };
 
 
     var markers = [
@@ -40,6 +44,7 @@ function initMap() {
         if (branches.title) {
             branchMarker.addListener('click', function () {
                 location.href = '#location-' + branches.title
+                branchMarker.setIcon(imageMarker);
                 infoWindow1.setContent(
                     '<div id="branch-content">' +
                     '<h3 class="branch-title"> <img width="30px" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo">Space Buns @ ' +
@@ -48,8 +53,10 @@ function initMap() {
                 );
                 infoWindow1.open(aboutUsMap, branchMarker);
                 aboutUsMap.panTo(branches.coordinates);
+                branchMarker.setIcon(imageMarkerY);
             });
-
         }
+
     }
 }
+
