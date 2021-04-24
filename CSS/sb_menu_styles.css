@@ -40,7 +40,6 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
 
 .menu-nav a:hover, .menu-nav a:active {
     color: #B97836;
-    border-bottom: 5px #ffffff;
     transition: 0.25s;
 }
 
@@ -48,7 +47,7 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
 
 .menu-row {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     margin: 0 auto;
     width: 90%;
     max-width: 1140px;
