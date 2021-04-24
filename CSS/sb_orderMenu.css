@@ -1,8 +1,4 @@
 @charset "utf-8";
-.navbar-cart {
-    padding: 30px;
-}
-
 .navbar-cart a {
     font-size: 24px;
     color: white;
@@ -13,7 +9,7 @@
 }
 
 .navbar-cart span {
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 5px 10px;
     font-size: 22px;
     border-radius: 50%;
@@ -98,10 +94,15 @@
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width:940px) {
+@media only screen and (max-width:1200px) {
     .container {
-        width: 700px;
+        width: 80%;
         margin: auto;
+        max-width: fit-content;
+    }
+    .orderMenu-container {
+        width: 100%;
+        margin: 65px auto;
         max-width: fit-content;
     }
 }
