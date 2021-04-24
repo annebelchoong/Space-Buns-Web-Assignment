@@ -1,0 +1,356 @@
+@charset "utf-8";
+.mainh1 {
+    padding: 10px;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+main a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+main a:hover, main a:visited {
+    color: #B97836;
+}
+
+/*Return to top button*/
+
+#goTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    font-size: 25px;
+    font-weight: normal;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: #B97836;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+#goTopBtn:hover {
+    background-color: aliceblue;
+    color: #B97836;
+    border-radius: 50%;
+}
+
+/*Go top Button Ends*/
+
+/* Intro Video */
+
+.introVideo {
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(15, 0%, 0%);
+}
+
+@media only screen and (max-width:767px) {
+    div>video {
+        width: 95%;
+    }
+}
+
+/* Intro Video Ends */
+
+/* About Us Starts */
+
+article.maincontent1 {
+    padding: 15px;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+}
+
+#whoarewecontent {
+    color: #B97836;
+    padding: 20px;
+    background-color: hsl(15, 0%, 0%);
+    border-radius: 20px;
+}
+
+/* About Us Ends */
+
+/* Recommendations Image Map Starts */
+
+.imageMap-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+article.maincontent2 {
+    padding: 15px;
+    margin-top: 40px;
+    text-align: center;
+    background-color: hsl(15, 0%, 0%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .imageMap-container {
+        width: 100%;
+    }
+}
+
+/* Recommendaitons Image Map Ends */
+
+/* Promotions Starts */
+
+article.maincontent3 {
+    padding-top: 15px;
+    margin-top: 40px;
+}
+
+.carousel-container {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    min-width: 700px;
+    border-radius: 20px;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 700px;
+    height: 400px;
+}
+
+.carousel-slide img {
+    width: 700px;
+    height: 400px;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    left: 5%;
+    font-size: 35px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    right: 5%;
+    font-size: 35px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.carousel-container #prevBtn, .carousel-container #nextBtn {
+    opacity: 0.2;
+    transition: opacity .3s;
+}
+
+.carousel-container:hover #prevBtn, .carousel-container:hover #nextBtn {
+    opacity: 1;
+}
+
+/* Screen size less than 705px slider do not display */
+
+@media only screen and (max-width: 705px) {
+    article.maincontent3 {
+        display: none;
+    }
+}
+
+/* Promotions Ends */
+
+/*Events Starts */
+
+article.maincontent4 {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 15px;
+    text-align: center;
+}
+
+.eventsHeader {
+    background-color: #B97836;
+    border-radius: 0 0 20px 20px;
+    animation-name: eventsHeaderAni;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes eventsHeaderAni {
+    0% {
+        background-color: hsl(15, 0%, 0%);
+        text-shadow: 2px 2px #B97836;
+    }
+    25% {
+        background-color: #B97836;
+        text-shadow: 2px 2px hsl(15, 0%, 0%);
+    }
+    50% {
+        background-color: hsl(15, 0%, 0%);
+        text-shadow: 2px 2px #B97836;
+    }
+    75% {
+        background-color: #B97836;
+        text-shadow: 2px 2px hsl(15, 0%, 0%);
+    }
+    100% {
+        background-color: hsl(15, 0%, 0%);
+        text-shadow: 2px 2px #B97836;
+    }
+}
+
+.eventsBox {
+    text-align: center;
+}
+
+.eventsDesc {
+    height: 160px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: Justify;
+    color: #B97836;
+    background-color: hsl(15, 0%, 0%);
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.eventsImg {
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.eventsImg img {
+    width: 100%;
+    display: block;
+    transition: transform .4s ease-in-out;
+}
+
+.eventsImg:hover img {
+    transform: scale(1.2);
+}
+
+.eventsDesc::-webkit-scrollbar {
+    width: 10px;
+}
+
+.eventsDesc::-webkit-scrollbar-track {
+    background-color: #1A1A1A;
+    border-radius: 20px;
+}
+
+.eventsDesc::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .eventsBox {
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .eventsContents {
+        flex: 0 0 calc(50% - 20px);
+        -webkit-flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+/*Events Ends*/
+
+/* Reviews Starts */
+
+.maincontent5 {
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Media/Banner/Backgroundimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.indexReview-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.custReview {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    text-align: center;
+}
+
+#felixK {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.custReview-left {
+    background-color: black;
+    padding: 10px;
+    flex: 50%;
+    border: 0.2px #B97836 solid;
+    margin: 10px 25px;
+    border-radius: 10px;
+}
+
+#iswaryaM {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.custReview-right {
+    background-color: black;
+    padding: 10px;
+    flex: 50%;
+    border: 0.2px #B97836 solid;
+    margin: 10px 25px;
+    border-radius: 10px;
+}
+
+.maincontent5 a:hover {
+    text-decoration: none;
+    color: aliceblue;
+    opacity: 0.8;
+}
+
+#featuredIn {
+    width: 70%;
+}
+
+@media (max-width: 767px) {
+    .indexReview-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .custReview {
+        flex-direction: column;
+    }
+    #featuredIn {
+        width: 90%;
+    }
+}
+
+/*Review Ends*/

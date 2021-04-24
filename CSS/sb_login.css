@@ -6,10 +6,26 @@ html {
     background-size: cover;
 }
 
+#companylogo {
+    transition: transform .5s ease;
+}
+
+#companylogo:hover {
+    transform: scale(1.2);
+}
+
 div.loginRow {
     margin: 0 auto;
     padding: 10px;
     margin-top: 5%;
+}
+
+.logInput {
+    border-radius: 6px;
+    border: 1px #B97836 solid;
+    background-color: #1A1A1A;
+    margin: 10px 0px;
+    padding: 10px;
 }
 
 fieldset {
@@ -25,85 +41,86 @@ fieldset {
 
 form {
     text-align: center;
-    color: blanchedalmond;
+    color: aliceblue;
+    margin-bottom: 30px;
 }
 
 legend {
     text-align: center;
     font-family: 'Amsterdam Variation_2', 'Segoe UI', Verdana, sans-serif;
     color: #B97836;
-    font-size: 6em;
+    font-size: 5em;
 }
 
 input {
     text-align: center;
+    outline: none;
+    color: white;
 }
 
 div.forgotPass a {
     text-align: center;
     padding-top: 10px;
-    color: blanchedalmond;
+    color: aliceblue;
 }
 
 div.logPass {
-    float: right;
-    padding-right: 5%;
+    text-align: center;
     padding-bottom: 5%;
     padding-top: 5%;
     color: aliceblue;
 }
 
-input[type=submit] {
-    background-color: white;
-    border: 2px solid #B97836;
-    color: #B97836;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
+input[type=checkbox] {
+    margin: 0 5px;
+}
+
+input[type=text], input[type=password] {
+    height: 30px;
+}
+
+input:focus {
+    border: 1px solid white;
 }
 
 div.logSubmit {
-    clear: both;
-    float: right;
-    padding-right: 5%;
+    text-align: center;
     padding-bottom: 5%;
+}
+
+#loginButton {
+    transition: transform .2s ease;
+    width: 80px;
+    height: 35px;
+    background-color: #1A1A1A;
+    color: #B97836;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px #B97836 solid;
+    font-size: 1em;
 }
 
 #loginButton:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    border: #B97836 3px solid;
-}
-
-div.loginRow>a {
     text-decoration: none;
-    text-align: center;
-    color: aliceblue;
+    color: white;
+    background-color: #B97836;
+    transition: 250ms;
 }
 
 div.notMember a {
-    clear: both;
+    text-align: center;
     text-decoration: none;
-    float: right;
     color: aliceblue;
-    padding-right: 5%;
     padding-bottom: 5%;
 }
 
-div.notMember a:hover {
+div.notMember a:hover, form a:visited {
     text-decoration: underline;
-    font-weight: bold;
     color: #B97836;
-    background-color: transparent;
-}
-
-div.loginRow>a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #B97836;
-    background-color: transparent;
+    transition: 250ms;
 }
 
 @media only screen and (max-width:767px) {
@@ -114,6 +131,14 @@ div.loginRow>a:hover {
     }
 }
 
-form a:visited {
-    color: slategray;
+@media (max-width: 1000px) {
+    fieldset {
+        width: 350px
+    }
+}
+
+@media (max-width: 375px) {
+    fieldset {
+        width: 90%;
+    }
 }

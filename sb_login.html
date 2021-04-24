@@ -12,7 +12,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
-    <script src="Javascript/membership.js"></script>
+    <script src="Javascript/login.js"></script>
 </head>
 
 <body>
@@ -47,26 +47,26 @@
     <section class="logintab">
 
         <fieldset
-            style="text-align: center;background: url(Media/Login&Signup/logbackg2.jpg); background-size: contain;">
+            style="text-align: center;background-image: url(Media/Login&Signup/logbackg2.jpg); background-size: contain;">
 
             <legend>Login</legend>
             <a href="sb_index.html">
-                <img src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" height="100px" style="padding-top: 5%;">
-            </a>
+                <img id="companylogo" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo" width="120px"
+                    style="padding-top: 5%;"> </a>
 
-            <form id="LoginForm" name="LoginForm" action="sb_index.html">
+            <form id="LoginForm" name="LoginForm" action="sb_index.html" onsubmit="LoginSuccess()">
                 <div class="loginRow"></div>
                 <i class='fas fa-user-alt'></i>
                 <label for="custuserName">Username</label></br>
-                <input type="text" id="custUsername" name="custuserName" placeholder="Username" minlength="6"
-                    maxlength="12" autofocus required>
+                <input type="text" id="custuserName" name="custuserName" placeholder="Username" class="logInput"
+                    minlength="6" maxlength="12" required>
                 </div>
 
                 <div class="loginRow">
                     <i class="fa fa-lock"></i>
                     <label for="LogPwd">&nbsp;Password</label></br>
-                    <input type="password" id="custPwd" name="LogPwd" placeholder="Password" minlength="6"
-                        maxlength="12" required></br></br>
+                    <input type="password" id="LogPwd" name="LogPwd" placeholder="Password" minlength="8" maxlength="12"
+                        class="logInput" required></br></br>
                 </div>
                 <div class="forgotPass">
                     <a href="#">Forget Password</a>
@@ -76,8 +76,7 @@
                     <input id="passShow" type="checkbox" onclick="showPass()"> Show Password
                 </div>
                 <div class="logSubmit">
-                    <input type="submit" value="LOGIN" id="loginButton">
-
+                    <input type="submit" value="Login" id="loginButton">
                 </div>
 
                 <div class="notMember">

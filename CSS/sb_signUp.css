@@ -6,6 +6,14 @@ html {
     background-size: cover;
 }
 
+#companylogo {
+    transition: transform .5s ease;
+}
+
+#companylogo:hover {
+    transform: scale(1.2);
+}
+
 div.signupRow {
     margin: 0 auto;
     padding: 10px;
@@ -20,11 +28,13 @@ fieldset {
     margin-bottom: 100px;
     margin-top: 100px;
     border: #B97836 2px solid;
+    border-radius: 20px;
 }
 
 form {
     text-align: center;
-    color: blanchedalmond;
+    color: aliceblue;
+    margin-bottom: 25px;
 }
 
 form a {
@@ -32,25 +42,22 @@ form a {
 }
 
 form a:hover {
-    font-weight: bold;
     color: #B97836;
     background-color: transparent;
 }
 
-form a:visited {
-    color: slategray;
-}
-
 legend {
     text-align: center;
-    font-weight: bold;
     font-family: 'Amsterdam Variation_2', 'Segoe UI', Verdana, sans-serif;
     color: #B97836;
-    font-size: 4em;
+    font-size: 5em;
+    padding: 0 10px;
 }
 
 input {
     text-align: center;
+    outline: none;
+    color: white;
 }
 
 #signupPrivacy {
@@ -59,18 +66,58 @@ input {
     margin-top: 5%;
 }
 
-input[type=submit] {
-    background-color: white;
-    border: none;
-    color: #B97836;
-    padding: 10px 20px;
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=email]:focus {
+    border: 1px solid white;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=email] {
+    height: 30px;
+    border-radius: 6px;
+    border: 1px #B97836 solid;
+    background-color: #1A1A1A;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.requiredInput::after {
+    content: "*";
+    color: red;
+}
+
+.privacyNeeds::before {
+    content: "*";
+    color: red;
+}
+
+#signupButton {
     text-decoration: none;
-    margin: 4px 2px;
     cursor: pointer;
+    font-size: 1em;
+    transition: transform .2s ease;
+    width: 90px;
+    height: 40px;
+    background-color: #1A1A1A;
+    color: #B97836;
+    border: 1px #B97836 solid;
+    font-weight: bold;
+    border-radius: 20px;
 }
 
 #signupButton:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    border: #B97836 3px solid;
+    text-decoration: none;
+    color: white;
+    background-color: #B97836;
+    transition: 250ms;
+}
+
+@media (max-width: 1000px) {
+    fieldset {
+        width: 350px
+    }
+}
+
+@media (max-width: 375px) {
+    fieldset {
+        width: 90%;
+    }
 }
