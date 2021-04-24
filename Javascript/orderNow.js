@@ -103,18 +103,18 @@ function initMap() {
     });
 
 
-    const deliveryRadius = new google.maps.Circle({
-        strokeColor: "#FF0000",
-        // strokeColor: "#63cf63",
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: "#FFDD21",
-        // fillColor: "#63cf63",
-        fillOpacity: 0.35,
-        map: deliveryMap,
-        center: deliveryMap.center,
-        radius: 33000,
-    });
+    // const deliveryRadius = new google.maps.Circle({
+    //     strokeColor: "#FF0000",
+    //     // strokeColor: "#63cf63",
+    //     strokeOpacity: 0.8,
+    //     strokeWeight: 2,
+    //     fillColor: "#FFDD21",
+    //     // fillColor: "#63cf63",
+    //     fillOpacity: 0.35,
+    //     map: deliveryMap,
+    //     center: deliveryMap.center,
+    //     radius: 33000,
+    // });
 
 
 
@@ -141,7 +141,7 @@ function initMap() {
     });
 
     var imageMarker = {
-        url: '../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
+        url: 'Media/icons/SpaceBunsMarker.svg',
         scaledSize: new google.maps.Size(35, 50),
     };
 
