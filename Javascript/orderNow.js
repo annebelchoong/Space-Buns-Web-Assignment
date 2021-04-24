@@ -27,7 +27,6 @@ function initMap() {
 
     autocomplete.addListener("place_changed", () => {
         infowindow.close();
-        // deliveryMap.strictBounds = false;
         marker.setVisible(false);
         const place = autocomplete.getPlace();
         if (place.geometry.viewport) {
@@ -44,7 +43,7 @@ function initMap() {
         infowindow.open(deliveryMap, marker);
     });
 
-
+    // didn't have enough time to do research on address validation within certain radius :<
     // const deliveryRadius = new google.maps.Circle({
     //     strokeColor: "#FF0000",
     //     // strokeColor: "#63cf63",
@@ -82,7 +81,7 @@ function initMap() {
         { coordinates: { lat: 3.065954, lng: 101.483355 }, title: 'Shah Alam' },
     ];
 
-    //Loop through Markers and Call addMarker function
+    //Loop through Markers and call addMarker function
     for (var i = 0; i < markers.length; i++) {
         addMarker(markers[i]);
     }
@@ -94,7 +93,6 @@ function initMap() {
         var branchMarker = new google.maps.Marker({
             position: branches.coordinates,
             map: pickupMap,
-            // map: deliveryMap,
             icon: imageMarker
         });
 
@@ -111,31 +109,14 @@ function initMap() {
                 );
                 infoWindow1.open(pickupMap, branchMarker);
                 pickupMap.panTo(branches.coordinates);
-                // addMarker(google.maps.Marker({ icon: svgMarkerY }));
-                // icon: svgMarker.scale(3), svgMarker.fillColor(blue);
-                // icon: svgMarker.fillColor("blue");
             });
         }
     }
-
-    // const pickupRadius = new google.maps.Circle({
-    //     strokeColor: "#FF0000",
-    //     // strokeColor: "#63cf63",
-    //     strokeOpacity: 0.8,
-    //     strokeWeight: 2,
-    //     fillColor: "#FFDD21",
-    //     // fillColor: "#63cf63",
-    //     fillOpacity: 0.35,
-    //     map: pickupMap,
-    //     center: pickupMap.center,
-    //     radius: 33000,
-    // });  s[]
 }
 
 function selection(show, hide) {
     var toShow = document.getElementById(show);
     var toHide = document.getElementById(hide);
-    // toShow.style.display = (toShow.style.display == 'block') ? 'none' : 'block';
     toShow.style.display = 'block';
     toHide.style.display = 'none';
 }
@@ -154,43 +135,8 @@ function togglePopup() {
     document.getElementById("popup1").classList.toggle("active");
     var scrollLock = document.getElementsByTagName("body")[0];
     scrollLock.classList.toggle("scroll-lock");
-
-
-
-
-
-    // if (scrollLock == "hidden") {
-    //     scrollLock = "scroll";
-    // } 
-    // if (scrollLock == "scroll") {
-    //     scrollLock = "hidden";
-    // }
-
-
-
-
-    // var lockScroll = document.getElementById("yes");
-    // lockScroll.style.overflowY = "hidden";
+    Scroll.style.overflowY = "hidden";
 }
-
-
-// function validateAddress() {
-
-//     var x = document.forms["deliveryForm"]["deliveryAddress"].value;
-//     if (x == "") {
-//         // alert("HELLO");
-//         return false;
-//     }
-
-//     const address = document.getElementById("confirm");
-//     if (address.value == "") {
-//         // return false;
-//     } else {
-//         togglePopup();
-//         // alert('tes');
-//     }
-// }
-
 
 function deliveryText() {
     document.getElementById("selection-text").innerHTML = "Delivery";
@@ -201,25 +147,6 @@ function pickupText() {
     document.getElementById("selection-text").innerHTML = "Self-Pickup";
     togglePopup();
 }
-
-// function toOrder() {
-//     window.location.href = "sb_orderMenu.html";
-// }
-
-// document.getElementById("pickup-button").addEventListener("click", displayText);
-// document.getElementById("delivery-button").addEventListener("click", displayText);
-
-// function displayText() {
-//     const a = "delivery";
-//     document.getElementById("selection-text").innerHTML = a ;
-// }
-
-
-// var today = new Date();
-// var tomorrow = new Date();
-// var nextDay = new Date();
-// tomorrow.setDate(new Date().getDate()+1);
-// nextDay.setDate(new Date().getDate()+2);
 
 function formatDate(today) {
     var dayNames = [
@@ -262,12 +189,6 @@ var dayAfterTomorrow = new Date();
 tomorrow.setDate(new Date().getDate() + 1);
 dayAfterTomorrow.setDate(new Date().getDate() + 2);
 
-// var today = new Date("May 30, 2021");
-// var tomorrow = new Date("May 30, 2021");
-// var dayAfterTomorrow = new Date("May 30, 2021");
-// tomorrow.setDate(new Date("May 30, 2021").getDate() + 1);
-// dayAfterTomorrow.setDate(new Date("May 30, 2021").getDate() + 2);
-
 function getDate() {
     var formatToday = formatDate(today);
     var formatTomorrow = formatDate(tomorrow);
@@ -276,25 +197,16 @@ function getDate() {
     return [formatToday, formatTomorrow, formatDayAfterTomorrow];
 }
 
-
 function checkTime() {
     var minTime = new Date();
     var newHour = minTime.getHours();
     var newMin = minTime.getMinutes();
     var stringTime = newHour + ":" + newMin.toString().padStart(2, '0');
-    console.log(stringTime); //delete later
-    // updateTime.setAttribute("min", stringTime);
+    console.log(stringTime);
 
     if (document.getElementById("select-date").value == "1") {
         updateTime.min = stringTime;
     } else {
-        updateTime.min = "11:00";
+        updateTime.min = "10:00";
     }
-
-    // var selectedDay = document.getElementById("today");
-
-    // if (selectedDay.selected == true) {
-    //     updateTime.min = stringTime;
-    // }
-
 }
