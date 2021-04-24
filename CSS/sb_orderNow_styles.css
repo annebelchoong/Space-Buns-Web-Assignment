@@ -62,9 +62,6 @@ h1 {
 }
 
 #delivery-button {
-    /* background-color: #000; */
-    /* color: var(--gold); */
-    /* cursor: pointer; */
     padding: 8px 20px;
     margin: 20px auto 50px;
 }
@@ -87,14 +84,6 @@ h1 {
     outline: none;
     cursor: pointer;
 }
-
-/* input[type=time] {
-    border: none;
-    color: #2a2c2d;
-    font-size: 1em;
-    font-family: helvetica;
-    width: 180px;
-} */
 
 .options-block button {
     padding: 8px 20px;
@@ -189,11 +178,6 @@ input::placeholder {
     margin-bottom: 5px;
 }
 
-/* #branch-content a:link, #branch-content a:visited {
-    color: var(--gold); 
-    text-decoration: none;
-}  */
-
 /* ############### Popup Styles ############### */
 
 .scroll-lock {
@@ -248,10 +232,6 @@ input::placeholder {
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* body.popup.open {
-    overflow-y: hidden;
-} */
-
 #selection-text {
     font-size: 2em;
 }
@@ -279,11 +259,6 @@ legend {
 }
 
 .select-field label {
-    /* display: grid; */
-    /* align-items: center; */
-    /* margin: auto 55px; */
-    /* margin: 10px 70px 0px 30px; */
-    /* text-align: center; */
     margin: 0 0 0 20px;
 }
 
@@ -298,18 +273,10 @@ select, input#time {
     border-radius: 6px;
 }
 
-/* input#time::placeholder {
-    padding-top: 5px;
-} */
-
 input#time {
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 600;
 }
-
-/* option {
-    font-weight: bold;
-} */
 
 .delay-text {
     background-color: var(--darkgray);

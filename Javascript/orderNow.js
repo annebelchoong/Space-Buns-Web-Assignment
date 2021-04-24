@@ -1,7 +1,6 @@
 function initMap() {
 
     const deliveryMap = new google.maps.Map(document.getElementById("delivery-map"), {
-        // center: { lat: 3.081249, lng: 101.634908 },
         center: { lat: 3.041249, lng: 101.634908 },
         zoom: 10,
         disableDefaultUI: true,
@@ -19,7 +18,6 @@ function initMap() {
     };
     deliveryMap.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
     const autocomplete = new google.maps.places.Autocomplete(input, options);
-    // marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
 
     autocomplete.bindTo("bounds", deliveryMap);
     const infowindow = new google.maps.InfoWindow();
@@ -32,64 +30,8 @@ function initMap() {
         // deliveryMap.strictBounds = false;
         marker.setVisible(false);
         const place = autocomplete.getPlace();
-
-        // if (!place.geometry || !place.geometry.location) {
-        //     window.alert("No details available for input: '" + place.name + "'");
-        //     // input.focus();
-        //     event.preventDefault();
-        //     return;
-        // }
-
-
-
-//         // if (!place.geometry || !place.geometry.location) {
-//         //     do {
-//         //         // User entered the name of a Place that was not suggested and
-//         //         // pressed the Enter key, or the Place Details request failed.
-//         //         window.alert("No details available for input: '" + place.name + "'");
-//         //         return;
-//         //     } while (!place.geometry || !place.geometry.location)
-//         // }
-
-// asdfasdf
-//         // if (place !== (place.geometry || place.geometry.location)) {
-//         //     window.alert("test");
-//         //     return;
-//         // }
-
-//         // do {
-//         //     document.getElementById("confirm").disabled = true;
-//         // }while(place.name !== place.geometry)
-//         //     document.getElementById("confirm").disabled = false;
-
-
-//         // function disableBtn() {
-//         //     document.getElementById("myBtn").disabled = true;
-//         // }
-
-//         // function enableBtn() {
-//         //     document.getElementById("myBtn").disabled = false;
-//         // }
-
-
-
-//         // if (!place.geometry || !place.geometry.location) {
-//         //     // User entered the name of a Place that was not suggested and
-//         //     // pressed the Enter key, or the Place Details request failed.
-//         //     window.alert("No details available for input: " + place.name + "");
-//         //     return;
-//         // }
-
-
-//         // const result = (google.maps.geometry.poly.containsLocation(deliveryRadius.radius)) ? "yes" : "no";
-
-//         // console.log(result);
-
-
         if (place.geometry.viewport) {
             deliveryMap.fitBounds(place.geometry.viewport);
-            // document.getElementById("confirm").disabled = false;
-            //deliveryMap.setCenter(place.geometry.location);
         } else {
             deliveryMap.setCenter(place.geometry.location);
             deliveryMap.setZoom(17);
@@ -116,22 +58,7 @@ function initMap() {
     //     radius: 33000,
     // });
 
-
     /* ############### Pickup Map ############### */
-
-
-
-    // //Map Options
-    // var startMap = {
-    //     zoom: 11,
-    //     center: { lat: 3.090762, lng: 101.611560 }, // this will have to be their current location
-    //     disableDefaultUI: true,
-    // }
-
-    // //New map
-    // var pickupMap = new google.maps.Map(document.getElementById('pickup-map'), startMap);
-
-
     const pickupMap = new google.maps.Map(document.getElementById("pickup-map"), {
         zoom: 11,
         center: { lat: 3.090762, lng: 101.611560 },
@@ -265,21 +192,8 @@ function togglePopup() {
 // }
 
 
-
 function deliveryText() {
     document.getElementById("selection-text").innerHTML = "Delivery";
-
-    const address1 = document.getElementById("pac-input");
-    const address2 = document.getElementById("address=input");
-
-
-
-    // if (address1.value == "" || address2.value == "") {
-    //     // alert("no");
-    //     return false; 
-    // } else {
-    //     togglePopup();
-    // }
     togglePopup();
 }
 
@@ -292,8 +206,6 @@ function pickupText() {
 //     window.location.href = "sb_orderMenu.html";
 // }
 
-
-
 // document.getElementById("pickup-button").addEventListener("click", displayText);
 // document.getElementById("delivery-button").addEventListener("click", displayText);
 
@@ -301,10 +213,6 @@ function pickupText() {
 //     const a = "delivery";
 //     document.getElementById("selection-text").innerHTML = a ;
 // }
-
-function validateSelection() {
-
-}
 
 
 // var today = new Date();
@@ -354,10 +262,6 @@ var dayAfterTomorrow = new Date();
 tomorrow.setDate(new Date().getDate() + 1);
 dayAfterTomorrow.setDate(new Date().getDate() + 2);
 
-
-tomorrow
-dayAfterTomorrow
-
 // var today = new Date("May 30, 2021");
 // var tomorrow = new Date("May 30, 2021");
 // var dayAfterTomorrow = new Date("May 30, 2021");
@@ -373,22 +277,24 @@ function getDate() {
 }
 
 
+function checkTime() {
+    var minTime = new Date();
+    var newHour = minTime.getHours();
+    var newMin = minTime.getMinutes();
+    var stringTime = newHour + ":" + newMin.toString().padStart(2, '0');
+    console.log(stringTime); //delete later
+    // updateTime.setAttribute("min", stringTime);
 
+    if (document.getElementById("select-date").value == "1") {
+        updateTime.min = stringTime;
+    } else {
+        updateTime.min = "11:00";
+    }
 
+    // var selectedDay = document.getElementById("today");
 
-
-
-var hour = today.getHours();
-var min = today.getMinutes();
-hour
-min
-
-
-
-function getTime() {
+    // if (selectedDay.selected == true) {
+    //     updateTime.min = stringTime;
+    // }
 
 }
-
-
-
-
