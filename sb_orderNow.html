@@ -105,7 +105,7 @@
                         <span id="place-name" class="title"></span><br />
                         <span id="place-address"></span>
                     </div>
-                    <input type="submit" id="delivery-button" class="confirm" value="Confirm" />
+                    <input type="submit" id="delivery-button" class="button" value="Confirm" />
                 </form>
             </div>
         </section>
@@ -123,7 +123,8 @@
             <div class="overlay"></div>
             <div class="content">
                 <div class="close-btn" onclick="togglePopup()">&times;</div>
-                <form id="popup-form" name="popupForm" class="popup-form" action="javascript:toOrder();">
+                <!-- <form id="popup-form" name="popupForm" class="popup-form" action="javascript:toOrder();"> -->
+                <form id="popup-form" name="popupForm" class="popup-form" action="sb_orderMenu.html">
                     <fieldset>
                         <legend id="selection-text"></legend>
 
@@ -147,14 +148,16 @@
                                 <option value="">in 1 hour</option>
                                 <option value="">in wtf</option>
                             </select> -->
-                                <input type="time" id="time" name="time" class="timepicker" placeholder="Pick a time" required min="11:00" max="22:00" step="900">
+                                <input type="time" id="time" name="time" class="timepicker" placeholder="Pick a time"
+                                    required min="11:00" max="22:00" step="900">
                                 <!-- <input type="text" id="time" name="time" class="timepicker" placeholder="Pick a time"
                                     required autocomplete="off"> -->
                             </div>
                         </div>
 
                         <div class="delay-text">
-                            <p>Note : There may be a variance of 10-15 mins from
+                            <p>
+                                Note : There may be a variance of 10-15 mins from
                                 your selected pickup/delivery time during peak hours.
                                 But we will do our best to have your order ready as
                                 close to your selected time as possible 🙂

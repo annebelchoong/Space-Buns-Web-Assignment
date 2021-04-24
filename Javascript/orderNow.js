@@ -181,7 +181,7 @@ function initMap() {
                     branches.title + ' branch</h3>' +
                     '<a href="https://www.google.com/maps" target="_blank">Directions</a>' +
                     "</div>" +
-                    '<button id="pickup-button" onclick="pickupText()"><h4>Select</h4></button>'
+                    '<button id="pickup-button" class="button" onclick="pickupText()"><h4>Select</h4></button>'
                 );
                 infoWindow1.open(pickupMap, branchMarker);
                 pickupMap.panTo(branches.coordinates);
@@ -289,9 +289,11 @@ function pickupText() {
     togglePopup();
 }
 
-function toOrder() {
-    window.location.href = "sb_checkout.html";
-}
+// function toOrder() {
+//     window.location.href = "sb_orderMenu.html";
+// }
+
+
 
 // document.getElementById("pickup-button").addEventListener("click", displayText);
 // document.getElementById("delivery-button").addEventListener("click", displayText);
@@ -376,23 +378,9 @@ min
 
 
 
-
 function getTime() {
 
 
 }
-
-
-// var thisDay = Date();
-
-// var hh = thisDay.getHours();
-// var ms = thisDay.getMinutes();
-// var ss = thisDay.getSeconds();
-
-// hh
-// ms
-// ss
-
-
 
 
