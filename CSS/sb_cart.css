@@ -1,7 +1,4 @@
 @charset "utf-8";
-.navbar-cart {
-    padding: 30px;
-}
 
 .navbar-cart a {
     font-size: 24px;
@@ -13,12 +10,12 @@
 }
 
 .navbar-cart span {
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 5px 10px;
     font-size: 22px;
     border-radius: 50%;
     background-color: red;
-}
+}s
 
 /*==========Cart Section===========*/
 
