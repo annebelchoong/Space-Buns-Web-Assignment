@@ -115,6 +115,7 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
 
 .menu-item-desc {
     max-width: fit-content;
+    opacity: 0.6;
 }
 
 .menu-wrapper:nth-child(even) {
