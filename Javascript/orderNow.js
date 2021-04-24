@@ -117,7 +117,6 @@ function initMap() {
     // });
 
 
-
     /* ############### Pickup Map ############### */
 
 
@@ -355,6 +354,10 @@ var dayAfterTomorrow = new Date();
 tomorrow.setDate(new Date().getDate() + 1);
 dayAfterTomorrow.setDate(new Date().getDate() + 2);
 
+
+tomorrow
+dayAfterTomorrow
+
 // var today = new Date("May 30, 2021");
 // var tomorrow = new Date("May 30, 2021");
 // var dayAfterTomorrow = new Date("May 30, 2021");
@@ -371,6 +374,10 @@ function getDate() {
 
 
 
+
+
+
+
 var hour = today.getHours();
 var min = today.getMinutes();
 hour
@@ -380,7 +387,8 @@ min
 
 function getTime() {
 
-
 }
+
+
 
 

@@ -14,8 +14,8 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script> -->
 
     <script>
         // $(document).ready(function () {
@@ -149,7 +149,7 @@
                                 <option value="">in wtf</option>
                             </select> -->
                                 <input type="time" id="time" name="time" class="timepicker" placeholder="Pick a time"
-                                    required min="11:00" max="22:00">
+                                    oninput="checkTime()" required min="11:00" max="22:00">
                                 <!-- <input type="text" id="time" name="time" class="timepicker" placeholder="Pick a time"
                                     required autocomplete="off"> -->
                             </div>
@@ -232,13 +232,26 @@
         // }, 1000);
 
         $("#pac-input,textarea").keydown(function (e) {
-            // Enter was pressed without shift key
+            // If Enter was pressed without shift key
             if (e.keyCode == 13 && !e.shiftKey) {
-                // prevent default behavior
                 e.preventDefault();
             }
         });
 
+        var updateTime = document.getElementById("time");
+
+        setInterval(function () {
+            checkTime();
+        }, 8000);
+
+        function checkTime() {
+            var minTime = new Date();
+            var newHour = minTime.getHours();
+            var newMins = minTime.getMinutes();
+            var stringTime = newHour + ":" + newMins.toString().padStart(2, '0');
+            console.log(stringTime);
+            updateTime.setAttribute("min", stringTime);
+        }
 
     </script>
 </body>
