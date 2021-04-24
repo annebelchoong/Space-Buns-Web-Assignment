@@ -1,6 +1,6 @@
 section {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto;
     position: relative;
 }
 
@@ -143,50 +143,7 @@ h3 {
 .description {
     max-width: fit-content;
     color: #ffffff;
-    text-align: left;
-}
-
-.menu_container {
-    width: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-
-.menu-item {
     text-align: center;
-    margin: 10px;
-}
-
-.menu-item img {
-    border-style: none;
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 25px;
-}
-
-.menu-item-texts {
-    text-align: center;
-    font-size: 0.9em;
-}
-
-.menu-item-name {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #B97836;
-    margin: 5px auto;
-    text-align: center;
-}
-
-.menu-item-desc {
-    max-width: fit-content;
-    color: #ffffff;
-}
-
-.menu-item-price {
-    color: #ffffff;
-    padding: 5px;
 }
 
 @media only screen and (max-width:650px) {
