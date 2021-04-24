@@ -40,8 +40,16 @@
 }
 
 @media(max-width: 500px) {
-    body {
+    .events-container {
         font-size: 30px;
+    }
+    .events-container p {
+        font-size: 15px;
+    }
+    #button a {
+        font-size: 15px;
+        vertical-align: middle;
+        text-decoration: none;
     }
 }
 
@@ -255,4 +263,17 @@ section {
 
 .rsvp-section .form .input-control:focus {
     outline: none;
+}
+
+@media(max-width: 500px) {
+    .rsvp-section .form {
+        max-width: 320px;
+    }
+    .rsvp-section .form .input-group.w50 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .btn-1 {
+        margin-left: 60px;
+    }
 }
