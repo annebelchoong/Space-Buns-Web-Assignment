@@ -117,7 +117,7 @@ div.notMember a {
     padding-bottom: 5%;
 }
 
-div.notMember a:hover, form a:visited {
+div.notMember a:hover {
     text-decoration: underline;
     color: #B97836;
     transition: 250ms;

@@ -6,9 +6,10 @@
 
 html {
     scroll-padding-top: 66px;
+    color: #ffffff;
 }
 
-/* ##################### Menu Navigation Style ###################### */
+/* ##################### Menu Navigation Styles ###################### */
 
 nav.menu-nav {
     float: none;
@@ -39,39 +40,27 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
 
 .menu-nav a:hover, .menu-nav a:active {
     color: #B97836;
-    border-bottom: 5px #ffffff;
     transition: 0.25s;
 }
 
-/* ###################### Menu Item Style ###################### */
-
-.menu-wrapper {
-    padding-bottom: 15px;
-}
+/* ###################### Menu Item Styles ###################### */
 
 .menu-row {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     margin: 0 auto;
     width: 90%;
     max-width: 1140px;
 }
 
-.menu-category-name {
-    color: #B97836
-}
-
-.menu-item-desc, .menu-item-price {
-    color: #ffffff;
-    padding: 5px;
-}
-
-.menu-item-price {
-    font-size: 1.2em;
-    font-weight: bold;
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
 .menu-category-name {
+    color: #B97836;
     padding-left: 65px;
     font-size: 2em;
     font-weight: 800;
@@ -81,15 +70,13 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
     width: 100%;
 }
 
-.menu-container {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-
 .menu-item {
     text-align: center;
     margin: 10px;
+}
+
+.menu-item article>* {
+    padding: 5px;
 }
 
 .menu-item img {
@@ -97,27 +84,26 @@ nav.menu-nav ul li a:link, nav.menu-nav ul li a:visited {
     max-width: 250px;
     max-height: 250px;
     border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.menu-item-texts {
-    text-align: center;
-    font-size: 0.9em;
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.3);
+    margin-bottom: 10px;
 }
 
 .menu-item-name {
     font-size: 1.4em;
     font-weight: bold;
     color: #B97836;
-    margin: 5px auto;
-    text-align: center;
+
+}
+.menu-item-desc{
+    font-size: 0.9em;
 }
 
 .menu-item-desc {
     max-width: fit-content;
+    opacity: 0.6;
 }
 
-.menu-wrapper:nth-child(even) {
+.menu-content section:nth-child(even) {
     background-color: #1A1A1A;
 }
 
