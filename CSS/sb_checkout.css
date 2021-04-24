@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Verdana, sans-serif;
     color: #ffffff;
-    height: 100%;
 }
 
 /* ################# Checkout Navigation Styles ################# */
@@ -271,8 +270,12 @@ div.payment-type:nth-child(3) {
 
 .pay-button h6 {
     color: #ffffff;
-    /* padding-right: 20px; */
     margin: 5px auto;
+}
+
+.pay-button h6:hover {
+    color: #B97836;
+    transition: 250ms;
 }
 
 /* ####################### Scrollbar ###################### */
