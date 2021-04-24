@@ -3,8 +3,6 @@ function initMap() {
     const aboutUsMap = new google.maps.Map(document.getElementById("googleMap"), {
         zoom: 10,
         center: { lat: 3.090762, lng: 101.611560 },
-        // disableDefaultUI: true,
-        // gestureHandling: "none",
     });
 
     var imageMarker = {
@@ -38,6 +36,7 @@ function initMap() {
             map: aboutUsMap,
             icon: imageMarker
         });
+        //Display branch name when click on the marker
         if (branches.title) {
             branchMarker.addListener('click', function () {
                 '<a href="aboutUs.html#location-kajang"></a>'
