@@ -39,7 +39,6 @@ function initMap() {
         //Display branch name when click on the marker
         if (branches.title) {
             branchMarker.addListener('click', function () {
-                '<a href="aboutUs.html#location-kajang"></a>'
                 infoWindow1.setContent(
                     '<div id="branch-content">' +
                     '<h3 class="branch-title"> <img width="30px" src="Media/icons/SpaceBunsLogo.png" alt="Space Buns Logo"> <a href="#location-' + branches.title + '">Space Buns @ ' +
