@@ -7,7 +7,7 @@ function initMap() {
     var selectedMarker = null;
 
     var imageMarker = {
-        url: '../../Space-Buns-Web-Assignment/Media/icons/SpaceBunsMarker.svg',
+        url: 'Media/icons/SpaceBunsMarker.svg',
         scaledSize: new google.maps.Size(35, 50),
     };
 
