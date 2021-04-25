@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 .navbar-cart a {
     font-size: 24px;
     color: white;
@@ -15,7 +14,7 @@
     font-size: 22px;
     border-radius: 50%;
     background-color: red;
-}s
+}
 
 /*==========Cart Section===========*/
 
